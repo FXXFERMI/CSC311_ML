@@ -1,11 +1,23 @@
+#### Preamble ####
+# Introduction: clean data analysis, create plots
+# Author: Siqi Fei
+# Date: 21 March 2024
+# Contact: fermi.fei@mail.utoronto.ca
+# License: MIT
+# Pre-requisites: install pip pandas, numpy, random and sklearn
+
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
+
+
+#### Data Summary ####
 # Load the dataset
 analysis_data_path = os.path.join('..', '..', 'data', 'Q10_analysis_data', 'Q10_analysis_data.csv')
 pic_path = os.path.join('..', '..', 'data', 'Q10_analysis_data', 'Q10_data_plots')
 pic_path_name = os.path.join(pic_path, 'Q10_data_summary_1.png')
 df = pd.read_csv(analysis_data_path)
+
 # Define a dictionary with cities as keys and lists of keywords as values
 city_keywords = {
     'Dubai': ['Dubai'],
@@ -61,7 +73,7 @@ the_table = ax.table(cellText=results_df.values,
                      cellLoc='center',
                      colColours=["#CCCCCC"] * len(results_df.columns))  # Adding a grey color to the header
 
-# Adjust the table scale and font sizethe header
+# Adjust the table scale and font size of the header
 the_table.auto_set_font_size(False)
 the_table.set_fontsize(10)
 the_table.scale(1.2, 1.2)
@@ -70,13 +82,14 @@ the_table.scale(1.2, 1.2)
 plt.savefig(pic_path_name, bbox_inches='tight', dpi=300)
 plt.close()
 
+#### Pie Chart ####
 # Loop through the city data and create pie charts
 for city_info in city_data:
     # Data to plot
     labels = 'Keyword Occurrences', 'Other Mentions'
     sizes = [city_info['Keyword Occurrences'], city_info['Other Mentions']]
-    colors = ['pink','yellow']  # You can choose your own colors
-    explode = (0.1, 0)  # Only "explode" the 1st slice (i.e., 'Keyword Occurrences')
+    colors = ['pink', 'yellow']
+    explode = (0.1, 0)
 
     # Plot
     fig1, ax1 = plt.subplots()
@@ -90,6 +103,8 @@ for city_info in city_data:
     # Save the figure
     plt.savefig(os.path.join(pic_path, f"{city_info['City']}_keyword_proportion.png"), bbox_inches='tight')
 
+
+#### Keywords Summary ####
     # Create a DataFrame for keywords
     keywords_summary = pd.DataFrame({
         'City': list(city_keywords.keys()),
@@ -120,4 +135,3 @@ for city_info in city_data:
 
     # Close the plot to free up memory
     plt.close(fig)
-
