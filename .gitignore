@@ -167,3 +167,4 @@ cython_debug/
 
 # mistakly added
  .idea/
+.Rproj.user
