@@ -1,3 +1,6 @@
+#IDLE files
+.idea/
+
 #Macbook System files
 .DS_Store
 
