@@ -21,10 +21,10 @@ raw_data_path = os.path.join('..', '..', 'data', 'raw_data', 'clean_dataset.csv'
 analysis_data_path = os.path.join('..', '..', 'data', 'Q10_analysis_data')
 
 # Define file names for the datasets
-clean_data_filename = os.path.join(analysis_data_path, 'analysis_data.csv')
-train_data_filename = os.path.join(analysis_data_path, 'train_set.csv')
-valid_data_filename = os.path.join(analysis_data_path, 'valid_set.csv')
-test_data_filename = os.path.join(analysis_data_path, 'test_set.csv')
+clean_data_filename = os.path.join(analysis_data_path, 'Q10_analysis_data.csv')
+train_data_filename = os.path.join(analysis_data_path, 'Q10_train_set.csv')
+valid_data_filename = os.path.join(analysis_data_path, 'Q10_valid_set.csv')
+test_data_filename = os.path.join(analysis_data_path, 'Q10_test_set.csv')
 
 ### Clean Data ####
 # Read the CSV file
@@ -58,6 +58,7 @@ train_set = shuffled_data.iloc[:train_end]
 valid_set = shuffled_data.iloc[train_end:valid_end]
 test_set = shuffled_data.iloc[valid_end:]
 
+#### Save Data ####
 # Save the splits as CSV files
 train_set.to_csv(train_data_filename, index=False)
 valid_set.to_csv(valid_data_filename, index=False)
