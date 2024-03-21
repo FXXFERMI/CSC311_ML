@@ -1,10 +1,14 @@
 #### Preamble ####
-# Purpose:
+# Introduction: Extract Q10 from clean_dataset.csv, clean the N/A then make a new csv with only Q10 and label.
+# Split the new csv into training set, valid set and test set. Each set be stored as a new csv file.
+# training set: 70% of clean_dataset.csv
+# valid set: 15% of clean_dataset.csv
+# test set: 15% of clean_dataset.csv
 # Author: Siqi Fei
 # Date: 21 March 2024
 # Contact: fermi.fei@mail.utoronto.ca
 # License: MIT
-# Pre-requisites:
+# Pre-requisites: install pip pandas, os, numpy and random
 
 import pandas as pd
 import os
