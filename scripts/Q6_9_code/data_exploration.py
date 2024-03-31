@@ -10,6 +10,7 @@ import random as Random
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
 #
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -129,6 +130,34 @@ def get_column(c, s):
     return s[c]
 
 
+def label_onehot(s):
+    # targets = np.zeros(4)
+    # if s == "Paris":
+    #     targets[0] = 1
+    # elif s == "Dubai":
+    #     targets[1] = 1
+    # elif s == "New York City":
+    #     targets[2] = 1
+    # elif s == "Rio de Janeiro":
+    #     targets[3] = 1
+    # else:
+    #     print(f'error! {s}.')
+
+
+    target = 0
+    if s == "Paris":
+        target = 1
+    elif s == "Dubai":
+        target = 2
+    elif s == "New York City":
+        target = 3
+    elif s == "Rio de Janeiro":
+        target = 4
+    else:
+        print(f'error! {s}.')
+
+    # return targets[0], targets[1], targets[2], targets[3]
+    return target
 
 
 if __name__ == "__main__":
@@ -139,6 +168,7 @@ if __name__ == "__main__":
     df["Q7"] = df["Q7"].apply(Q7_normalize_temp).fillna(-1)
     df["Q8"] = df["Q8"].apply(Q8_normalize_languages).fillna(-1)
     df["Q9"] = df["Q9"].apply(Q9_normalize_fashion).fillna(-1)
+    df["LVec"] = df["Label"].apply(label_onehot).fillna(-1)
 
     # Format Q6
     df["Q6_original"] = df["Q6"].apply(get_number_list_clean)
@@ -150,6 +180,8 @@ if __name__ == "__main__":
     df["Q6_4"] = df["Q6_original"].str[3]
     df["Q6_5"] = df["Q6_original"].str[4]
     df["Q6_6"] = df["Q6_original"].str[5]
+
+
 
     # shuffle data
     # *note that this is already done by train_test_split*
@@ -170,7 +202,11 @@ if __name__ == "__main__":
     ], axis=1)
 
     X = data_fets
-    t = np.array(df["Label"])
+    # t = np.array(df["Label"])
+    t = np.array(df["LVec"])
+
+    # for i in range(30):
+    #     print(t[i])
 
     # Split into 8:1:1 train:valid:test (approx 1175 train, 145 valid, 145 test)
     validN = int(0.10 * X.shape[0])
@@ -184,17 +220,17 @@ if __name__ == "__main__":
     tree.fit(X_train, t_train)
 
     # tuning hyper-parameters: depth
-    # depths = [3, 4, 5, 6, 7, 8, 10, 50]
-    # accuracies = []
-    # for depth in range(1, 25, 1):
-    #     tree = DecisionTreeClassifier(criterion="entropy", max_depth=depth)
-    #     tree.fit(X_train, t_train)
-    #     accuracies.append([depth, tree.score(X_train, t_train), "training"])
-    #     accuracies.append([depth, tree.score(X_valid, t_valid), "validation"])
-    #
-    # acDF = pandas.DataFrame(data=accuracies, columns=["depth", "score", "type"])
-    # sns.set_style("darkgrid")
-    # sns.relplot(data = acDF, kind="line", x="depth", y="score", hue="type", dashes=False, marker="o")
+    depths = [3, 4, 5, 6, 7, 8, 10, 50]
+    accuracies = []
+    for depth in range(1, 25, 1):
+        tree = DecisionTreeClassifier(criterion="entropy", max_depth=depth)
+        tree.fit(X_train, t_train)
+        accuracies.append([depth, tree.score(X_train, t_train), "training"])
+        accuracies.append([depth, tree.score(X_valid, t_valid), "validation"])
+
+    acDF = pandas.DataFrame(data=accuracies, columns=["depth", "score", "type"])
+    sns.set_style("darkgrid")
+    sns.relplot(data = acDF, kind="line", x="depth", y="score", hue="type", dashes=False, marker="o")
 
     # best validation comes with depth 6
     print(f'Decision Tree: ')
@@ -207,6 +243,7 @@ if __name__ == "__main__":
     # now we train an MLP
     mlp = MLPClassifier(hidden_layer_sizes=(10, 10), activation='relu', solver='sgd')
     # mlp.fit(X_train, t_train)
+
 
     # tune hyperparameters - num iterations, hidden layer sizes, num hidden layers
     accuracies = []
@@ -221,6 +258,17 @@ if __name__ == "__main__":
 
     acDF = pandas.DataFrame(data=accuracies, columns=["n-iter", "score", "type"])
     sns.relplot(data=acDF, kind="line", x="n-iter", y="score", style="type")
+
+    classes = np.unique(t_train)
+
+    logReg = LogisticRegression(max_iter=1000)
+    logReg.fit(X_train, t_train)
+    a = logReg.score(X_train, t_train)
+    v = logReg.score(X_valid, t_valid)
+    print(f'Logistic Regression')
+    print(f'Training Accuracy: {a}')
+    print(f'Validation Accuracy: {v}')
+    print()
 
     # accuracies = []
     # classes = np.unique(t_train)
