@@ -1,4 +1,4 @@
-#IDLE files
+# IDLE files
 .idea/
 
 #Macbook System files
@@ -166,4 +166,4 @@ cython_debug/
 #.idea/
 
 # mistakly added
- .idea/
+.Rproj.user
