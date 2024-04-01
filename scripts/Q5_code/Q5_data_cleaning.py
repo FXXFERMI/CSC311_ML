@@ -3,12 +3,11 @@ import os
 import numpy as np
 from random import Random
 
+# cleaned data set path
 raw_data_path = os.path.join('..', '..', 'data', 'raw_data', 'clean_dataset.csv')
 analysis_data_path = os.path.join('..', '..', 'data', 'Q5_analysis_data')
 
-# Create the directory if it doesn't exist
-os.makedirs(analysis_data_path, exist_ok=True)
-
+# train,valid,test dataset paths
 clean_data_filename = os.path.join(analysis_data_path, 'Q5_analysis_data.csv')
 train_data_filename = os.path.join(analysis_data_path, 'Q5_train_set.csv')
 valid_data_filename = os.path.join(analysis_data_path, 'Q5_valid_set.csv')
@@ -22,22 +21,22 @@ raw_data.replace('', np.nan, inplace=True)
 # Clean the data by removing rows with NA values
 cleaned_data = raw_data.dropna()
 
-# Select Q5 specifically and the target column
+# Select Q5 specifically
 cleaned_data = cleaned_data[['Q5', 'Label']]
 
-# Split Q5 answers into separate columns and create dummy variables
+# One-Hot
 cleaned_data['Q5'] = cleaned_data['Q5'].str.split(',')
 dummies = cleaned_data['Q5'].apply(lambda x: pd.Series(1, index=x)).fillna(0)
+cleaned_data = pd.concat([cleaned_data, dummies], axis=1).drop('Q5', axis=1)
+df = pd.concat([cleaned_data, dummies], axis=1)
 
-# Convert dummy variables to integer
-dummies = dummies.astype(int)
-cleaned_data = pd.concat([cleaned_data.drop('Q5', axis=1), dummies], axis=1)
-
-
-# Save cleaned data
+# save cleaned data with one-hot
 cleaned_data.to_csv(clean_data_filename, index=False)
 
+#### Split Dataset ####
+# Shuffle the dataset
 r = Random(18)
+
 shuffled_indices = list(cleaned_data.index)
 r.shuffle(shuffled_indices)
 shuffled_data = cleaned_data.loc[shuffled_indices]
@@ -57,3 +56,4 @@ test_set = shuffled_data.iloc[valid_end:]
 train_set.to_csv(train_data_filename, index=False)
 valid_set.to_csv(valid_data_filename, index=False)
 test_set.to_csv(test_data_filename, index=False)
+
