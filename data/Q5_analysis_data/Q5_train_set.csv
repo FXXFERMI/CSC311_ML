@@ -1,0 +1,992 @@
+Label,Co-worker,Partner,Friends,Siblings
+Paris,0,1,0,0
+Dubai,0,1,1,1
+New York City,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,1
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,0,1,1
+New York City,1,1,0,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,1,1,0
+New York City,1,1,1,1
+Rio de Janeiro,0,1,0,1
+New York City,1,0,1,1
+Paris,0,1,0,0
+Paris,0,1,0,0
+New York City,1,1,1,1
+Paris,0,1,0,1
+Dubai,0,1,0,0
+Dubai,0,1,1,0
+New York City,1,0,1,0
+Dubai,1,0,1,0
+Rio de Janeiro,0,1,1,1
+New York City,1,1,1,0
+New York City,1,1,1,1
+Dubai,1,0,0,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,1,1,0,0
+New York City,1,0,1,1
+Dubai,0,1,1,1
+Paris,0,1,0,0
+Paris,0,1,0,0
+Rio de Janeiro,0,0,0,1
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+Dubai,1,1,1,1
+New York City,0,1,1,0
+Dubai,1,0,0,0
+Rio de Janeiro,0,0,1,0
+New York City,1,0,0,1
+Rio de Janeiro,0,1,1,1
+New York City,1,1,1,1
+New York City,0,1,1,1
+Dubai,0,1,0,0
+Paris,0,0,0,1
+Dubai,0,0,1,0
+Dubai,0,0,1,0
+New York City,1,1,1,1
+New York City,1,1,1,1
+Dubai,0,1,1,0
+Dubai,0,0,1,0
+New York City,0,0,1,0
+Dubai,0,1,1,0
+New York City,0,1,1,1
+New York City,1,1,1,1
+Paris,0,0,0,1
+Dubai,0,1,0,0
+Dubai,0,1,1,1
+Paris,0,1,1,0
+Paris,0,1,1,1
+New York City,0,1,1,0
+Dubai,0,0,1,0
+Paris,1,0,1,1
+Paris,0,1,0,0
+New York City,1,0,0,0
+New York City,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,1,1,0
+New York City,0,0,0,1
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,1,1,0
+New York City,1,1,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,0
+Dubai,0,1,0,0
+Dubai,0,1,1,1
+Paris,1,1,1,1
+Paris,0,1,0,0
+Paris,0,1,0,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,0,1,0
+New York City,0,0,0,1
+Dubai,0,1,1,1
+Dubai,0,0,0,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,0,0
+Paris,0,0,1,1
+Dubai,0,1,1,0
+New York City,0,0,0,1
+Dubai,0,1,0,0
+Paris,0,1,0,1
+Dubai,1,0,1,0
+Dubai,0,1,1,1
+Rio de Janeiro,0,1,1,1
+Paris,0,1,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Paris,1,1,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,0,0,1
+New York City,1,1,1,1
+Dubai,1,0,0,0
+Paris,1,1,1,0
+Dubai,1,0,0,0
+Rio de Janeiro,0,1,1,0
+Dubai,0,1,1,1
+Rio de Janeiro,1,1,1,1
+Rio de Janeiro,0,1,1,1
+Dubai,0,1,0,0
+Paris,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,0,1,0
+Dubai,0,1,1,1
+Rio de Janeiro,0,1,1,1
+Paris,0,1,1,0
+Paris,1,1,0,0
+New York City,1,0,0,0
+New York City,0,0,1,1
+New York City,1,1,1,1
+Paris,0,1,1,1
+Dubai,0,0,1,0
+Dubai,0,1,1,0
+Paris,0,1,0,0
+Paris,0,1,0,0
+Dubai,0,0,0,1
+Dubai,0,1,1,1
+Dubai,0,0,1,0
+Rio de Janeiro,0,1,1,1
+Dubai,1,0,0,1
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,0
+Rio de Janeiro,1,0,0,0
+Paris,0,1,0,0
+Rio de Janeiro,0,1,1,0
+New York City,0,1,0,0
+Dubai,0,1,1,0
+Paris,0,1,1,1
+Paris,0,1,1,1
+Dubai,1,1,1,1
+Rio de Janeiro,0,1,1,1
+New York City,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,1,1,0
+New York City,1,1,1,1
+Dubai,0,0,1,1
+Dubai,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Paris,0,1,0,0
+Paris,0,1,0,0
+Rio de Janeiro,0,0,0,1
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+New York City,0,0,1,0
+Paris,1,0,1,1
+New York City,0,1,1,1
+Paris,0,1,0,0
+Paris,0,1,1,0
+New York City,1,1,1,1
+Paris,1,1,1,1
+New York City,0,1,1,0
+Paris,0,1,1,0
+Dubai,1,1,1,1
+Dubai,0,1,0,1
+Rio de Janeiro,0,1,1,0
+Dubai,1,1,1,1
+Paris,0,1,0,0
+Dubai,0,0,1,1
+Rio de Janeiro,0,1,1,0
+New York City,1,1,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,1
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,1
+New York City,1,1,1,1
+Rio de Janeiro,0,1,1,1
+Paris,0,0,1,0
+Dubai,0,0,1,1
+Paris,0,1,0,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,1,0,0
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+Paris,0,1,1,0
+Paris,0,1,1,1
+Paris,0,0,1,1
+New York City,1,1,1,1
+Dubai,0,1,1,0
+Paris,0,1,0,0
+New York City,1,1,1,1
+New York City,1,1,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,1
+Paris,0,1,0,0
+Dubai,1,0,1,0
+Rio de Janeiro,0,1,1,0
+Paris,0,1,0,0
+New York City,0,0,1,0
+Paris,0,1,0,0
+Paris,0,1,1,1
+New York City,1,1,1,1
+Paris,0,1,1,1
+Paris,0,1,0,0
+Dubai,0,1,0,0
+Paris,0,1,0,1
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,1,1,0
+Paris,0,1,0,0
+Dubai,0,0,1,0
+New York City,1,0,1,1
+Dubai,1,1,1,1
+Rio de Janeiro,0,1,1,0
+Paris,0,1,1,0
+New York City,1,1,1,1
+Rio de Janeiro,0,1,1,0
+Paris,1,0,1,0
+Rio de Janeiro,0,1,1,0
+Dubai,0,1,1,1
+Dubai,1,1,1,1
+New York City,1,0,1,0
+Dubai,0,0,1,0
+New York City,1,1,1,1
+Rio de Janeiro,1,1,1,1
+Rio de Janeiro,0,1,1,0
+Paris,0,1,0,0
+Dubai,0,0,1,0
+New York City,1,1,1,1
+New York City,0,0,0,1
+Rio de Janeiro,0,1,1,0
+New York City,0,1,1,1
+Dubai,1,0,1,0
+New York City,1,1,1,1
+New York City,0,0,1,1
+Dubai,0,1,1,0
+New York City,1,1,1,1
+New York City,0,1,1,1
+Dubai,0,1,1,0
+Paris,0,1,0,1
+Paris,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,1,1,0
+New York City,1,1,1,0
+New York City,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,1,0,0
+Paris,0,1,0,0
+Dubai,0,1,0,0
+New York City,0,1,1,1
+Dubai,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,1,1,1
+New York City,0,0,1,0
+Dubai,1,0,1,0
+New York City,1,1,1,1
+Paris,0,0,1,1
+Paris,0,1,0,0
+New York City,1,1,1,0
+Dubai,1,0,1,0
+New York City,0,1,1,0
+Dubai,0,1,1,0
+Paris,0,1,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,0,1
+Rio de Janeiro,1,1,1,1
+Dubai,0,1,1,1
+New York City,1,1,1,1
+New York City,1,1,0,1
+Rio de Janeiro,0,1,1,0
+Paris,0,1,0,0
+Rio de Janeiro,0,1,0,0
+Paris,0,0,1,0
+Rio de Janeiro,0,1,1,1
+Dubai,0,0,1,0
+Dubai,0,1,1,0
+New York City,1,0,0,0
+Dubai,0,0,1,0
+New York City,0,1,1,1
+Rio de Janeiro,0,1,0,0
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+Rio de Janeiro,0,0,1,1
+Paris,0,1,0,0
+Rio de Janeiro,0,1,0,0
+Dubai,0,1,0,0
+Rio de Janeiro,0,1,0,0
+Paris,0,1,0,0
+Dubai,0,1,1,1
+Rio de Janeiro,0,1,0,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,0
+Dubai,0,1,1,1
+Paris,1,1,0,0
+New York City,0,1,0,0
+Paris,0,1,0,0
+Dubai,1,0,1,0
+Paris,0,1,0,0
+Paris,0,1,0,0
+Dubai,0,1,1,1
+Rio de Janeiro,0,1,1,0
+Dubai,0,0,1,0
+Paris,0,1,0,0
+Rio de Janeiro,0,0,1,1
+Paris,0,1,0,1
+New York City,1,0,1,1
+Rio de Janeiro,0,0,1,0
+Paris,0,1,1,0
+New York City,1,1,1,1
+Dubai,1,0,0,0
+New York City,1,0,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Dubai,1,0,0,0
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,1,1,0
+New York City,1,1,1,1
+Paris,0,1,1,1
+Paris,0,1,1,1
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,1,0,0,0
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,0
+Paris,1,1,1,1
+Dubai,0,1,0,0
+Paris,0,1,1,0
+Dubai,0,1,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Paris,0,1,1,0
+Dubai,0,0,1,1
+Dubai,0,0,1,0
+Paris,0,1,0,0
+Paris,0,1,0,0
+New York City,0,1,1,0
+Dubai,0,1,1,0
+Dubai,0,1,0,0
+New York City,0,0,1,0
+Rio de Janeiro,1,1,1,0
+New York City,0,0,1,0
+New York City,1,0,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,0
+Paris,0,1,0,0
+Paris,0,0,0,1
+Rio de Janeiro,0,0,1,1
+Rio de Janeiro,0,0,1,1
+New York City,0,1,0,0
+Dubai,0,0,1,0
+Paris,0,1,0,0
+Rio de Janeiro,1,0,0,0
+Dubai,0,1,1,0
+Dubai,0,0,1,1
+Paris,0,1,0,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,0
+Dubai,1,1,1,0
+New York City,0,1,0,0
+Dubai,0,1,1,0
+Dubai,0,1,1,0
+Paris,1,1,1,1
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,0
+Dubai,1,1,1,1
+Paris,0,0,0,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Dubai,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,1,1,0
+Paris,0,1,0,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,1,1,0
+Dubai,1,0,1,1
+Paris,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,0
+New York City,0,1,1,1
+New York City,0,1,1,0
+Dubai,1,0,0,0
+Paris,0,1,0,0
+Paris,0,1,1,1
+New York City,1,1,1,0
+New York City,0,1,1,1
+Paris,0,1,0,0
+New York City,1,1,0,0
+Paris,0,0,0,1
+Dubai,1,1,0,0
+Rio de Janeiro,0,1,1,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,1
+Paris,0,1,0,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,0,1,1
+Paris,1,1,1,1
+New York City,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+Paris,0,1,0,0
+New York City,1,1,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,1,1,1,1
+New York City,0,1,1,0
+New York City,1,1,1,1
+Paris,0,1,0,0
+Dubai,0,0,1,0
+Paris,1,1,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Paris,0,1,1,0
+Rio de Janeiro,0,1,0,0
+Dubai,1,0,0,1
+Paris,0,1,0,0
+New York City,1,1,1,1
+Rio de Janeiro,0,1,1,0
+New York City,0,0,1,0
+Dubai,0,0,1,0
+New York City,1,1,1,0
+Paris,0,1,1,1
+Rio de Janeiro,0,0,1,1
+New York City,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Dubai,0,1,1,1
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,0
+New York City,0,0,1,0
+New York City,1,1,0,0
+Paris,1,1,1,1
+Paris,0,1,1,1
+New York City,1,1,1,0
+New York City,0,0,1,1
+Dubai,0,1,0,0
+Paris,0,1,1,0
+Paris,0,1,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Paris,0,1,0,0
+Rio de Janeiro,0,1,0,1
+Rio de Janeiro,0,1,1,0
+Paris,0,1,1,0
+Dubai,0,0,1,1
+Paris,0,1,0,0
+Paris,0,1,1,1
+Dubai,1,1,1,1
+New York City,0,1,1,1
+Dubai,1,0,1,0
+Dubai,0,0,1,0
+New York City,0,0,1,0
+New York City,1,1,1,1
+New York City,0,1,1,1
+Dubai,0,0,1,0
+Dubai,0,0,1,1
+New York City,1,1,1,1
+New York City,1,1,1,1
+New York City,0,1,0,0
+Paris,0,0,1,0
+Rio de Janeiro,0,0,1,1
+Dubai,1,0,0,0
+New York City,0,0,1,0
+Dubai,1,0,1,0
+New York City,0,1,1,1
+New York City,0,1,1,1
+Rio de Janeiro,0,1,1,1
+New York City,1,0,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,0
+New York City,1,0,0,0
+Dubai,0,0,1,0
+New York City,0,1,1,0
+New York City,0,1,1,0
+Paris,0,1,0,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,0
+Paris,0,1,1,0
+New York City,1,0,0,0
+Paris,1,1,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+New York City,1,0,1,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,1,1,1
+Paris,0,1,0,0
+New York City,0,1,1,1
+Dubai,0,0,0,1
+New York City,0,1,1,1
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,0
+Dubai,0,0,1,0
+Dubai,0,1,1,0
+Dubai,0,0,1,1
+Rio de Janeiro,0,0,1,0
+New York City,0,0,0,1
+New York City,1,1,1,1
+Dubai,1,1,1,0
+New York City,1,1,1,1
+New York City,1,0,1,0
+Paris,0,1,0,0
+Paris,0,1,0,1
+Dubai,0,1,1,1
+Dubai,1,0,0,0
+Rio de Janeiro,0,1,1,1
+New York City,1,0,1,0
+Paris,0,1,0,0
+Paris,0,1,0,0
+New York City,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Paris,0,0,1,0
+Paris,0,1,1,0
+Paris,1,0,0,0
+Paris,0,1,0,0
+Paris,0,1,1,0
+Dubai,0,1,1,1
+Rio de Janeiro,1,0,0,0
+Paris,0,1,0,0
+Dubai,0,1,1,0
+New York City,1,1,1,1
+Rio de Janeiro,0,0,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Paris,0,1,1,1
+Rio de Janeiro,0,0,1,0
+New York City,1,0,1,0
+New York City,1,1,1,1
+New York City,1,1,1,1
+New York City,1,0,1,1
+Dubai,0,1,1,1
+Rio de Janeiro,1,1,1,1
+New York City,1,1,1,0
+Paris,0,1,1,1
+New York City,0,1,1,1
+New York City,1,1,1,1
+Rio de Janeiro,1,1,1,1
+New York City,0,1,1,1
+Paris,0,1,0,1
+Dubai,0,0,1,0
+Paris,0,1,1,1
+Paris,0,1,0,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,0
+Dubai,1,0,0,0
+Dubai,1,1,1,1
+New York City,0,1,0,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,1,0,1,0
+Paris,0,0,0,1
+Paris,0,1,1,1
+Dubai,0,1,1,1
+Dubai,0,1,1,1
+New York City,0,0,1,1
+Dubai,1,0,0,0
+Dubai,0,0,0,1
+New York City,1,0,1,0
+New York City,1,1,1,1
+Paris,0,1,0,1
+Rio de Janeiro,0,1,1,1
+Dubai,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Dubai,0,1,1,1
+New York City,1,0,0,0
+New York City,1,0,0,0
+Dubai,0,0,1,0
+New York City,0,0,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,1,1,1,0
+Paris,0,1,1,1
+Paris,0,1,0,0
+Dubai,1,0,1,0
+Paris,0,1,0,0
+Rio de Janeiro,0,1,1,1
+Paris,0,1,0,0
+Paris,0,0,1,1
+Paris,0,1,0,0
+Dubai,0,1,1,0
+New York City,1,0,0,0
+New York City,0,0,1,0
+Dubai,1,1,1,0
+Paris,0,0,1,0
+Paris,1,1,1,1
+New York City,0,1,1,1
+Paris,0,1,1,1
+New York City,0,0,1,0
+Rio de Janeiro,0,1,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,1,0,1,0
+Dubai,0,0,1,0
+Paris,0,0,1,1
+New York City,0,0,1,0
+Dubai,0,1,0,1
+Dubai,0,0,0,1
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+Paris,0,1,0,0
+Paris,0,1,0,0
+New York City,0,1,1,1
+Dubai,0,0,1,0
+Paris,0,1,1,1
+New York City,1,1,1,1
+Dubai,1,0,1,0
+Dubai,1,0,0,0
+Rio de Janeiro,0,1,0,0
+Rio de Janeiro,1,1,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,1,1,1,1
+New York City,0,0,1,0
+Rio de Janeiro,0,0,1,1
+Paris,1,1,1,1
+Dubai,0,1,1,0
+Paris,0,1,0,0
+New York City,0,1,1,1
+Dubai,1,0,0,1
+Dubai,0,1,1,1
+Paris,1,1,1,1
+New York City,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,0
+Paris,0,0,1,0
+Paris,0,1,0,1
+Dubai,1,1,1,1
+New York City,1,1,1,1
+Rio de Janeiro,0,1,1,1
+New York City,0,0,0,1
+Paris,0,1,0,0
+New York City,0,1,0,0
+Paris,0,1,1,0
+Paris,0,1,1,1
+New York City,0,0,1,1
+Paris,0,1,0,1
+Dubai,0,1,1,1
+New York City,0,0,1,0
+New York City,1,1,1,1
+Dubai,1,0,0,0
+Dubai,1,0,0,0
+Paris,0,1,1,1
+Rio de Janeiro,0,1,1,1
+New York City,0,1,1,1
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,1,0
+New York City,0,1,1,1
+New York City,0,0,1,0
+Paris,0,1,0,0
+New York City,1,1,1,1
+New York City,0,0,0,1
+New York City,1,1,1,1
+Dubai,1,0,1,0
+Dubai,0,0,1,0
+New York City,1,0,0,0
+New York City,1,1,1,1
+Dubai,0,1,0,0
+Dubai,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,0,1,0
+Dubai,1,0,0,1
+New York City,1,1,1,1
+New York City,1,1,1,1
+New York City,1,1,1,1
+New York City,1,0,1,1
+Dubai,0,1,0,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,0
+Rio de Janeiro,0,0,1,0
+Paris,1,1,1,1
+Dubai,0,0,0,1
+New York City,1,1,1,1
+Paris,0,1,0,0
+Paris,0,0,1,0
+New York City,1,0,0,0
+Paris,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,1,1,0
+New York City,1,1,0,1
+New York City,1,1,1,1
+Paris,0,1,0,0
+New York City,0,1,1,0
+Rio de Janeiro,0,1,1,1
+New York City,1,1,0,0
+Paris,0,1,0,0
+Dubai,0,1,1,1
+Rio de Janeiro,0,0,1,0
+New York City,0,0,1,0
+Paris,0,1,1,1
+Paris,0,0,1,1
+Dubai,1,0,1,1
+New York City,1,0,1,0
+Dubai,1,0,1,0
+Dubai,0,0,1,0
+Paris,1,1,1,1
+New York City,0,1,1,1
+New York City,1,0,0,1
+Rio de Janeiro,0,1,0,0
+New York City,1,0,1,1
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,1,1,0
+Paris,0,1,1,1
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,1,0,0
+Dubai,0,1,1,1
+Dubai,1,0,1,1
+Dubai,0,0,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,1,0,0,0
+Dubai,1,0,0,0
+Rio de Janeiro,0,1,1,1
+Dubai,1,1,0,0
+Paris,0,1,0,0
+Dubai,0,1,1,1
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,0,1,0
+New York City,1,1,0,0
+Dubai,0,0,1,0
+Paris,0,1,1,1
+Dubai,0,1,0,1
+Paris,0,1,0,0
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+Paris,0,1,1,1
+Paris,0,1,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,1,0,1,0
+Rio de Janeiro,0,0,1,0
+New York City,1,1,0,1
+Dubai,1,0,1,0
+Dubai,1,0,0,0
+New York City,1,0,1,1
+Dubai,1,0,0,0
+Dubai,0,1,1,0
+Paris,0,1,0,0
+New York City,1,1,1,0
+Paris,1,1,1,0
+Rio de Janeiro,0,1,1,0
+Paris,0,1,0,1
+Rio de Janeiro,0,1,1,0
+New York City,0,0,0,1
+New York City,1,1,1,1
+New York City,1,1,1,1
+New York City,0,0,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Dubai,0,0,0,1
+New York City,0,1,0,0
+Paris,0,1,0,0
+New York City,0,1,1,1
+New York City,0,0,1,0
+Paris,0,1,1,0
+Paris,0,1,0,0
+Paris,0,1,0,0
+Paris,0,1,1,1
+Dubai,0,1,1,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,1,0,0
+Paris,0,1,0,0
+Paris,0,0,1,0
+Rio de Janeiro,0,1,1,0
+Dubai,1,0,1,1
+New York City,1,1,0,0
+Dubai,0,1,0,0
+New York City,0,0,1,1
+New York City,0,0,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,1,0,1,0
+Dubai,0,1,0,0
+New York City,1,1,1,1
+Rio de Janeiro,1,1,1,0
+New York City,1,0,1,1
+Paris,0,1,1,1
+New York City,0,1,1,1
+New York City,0,0,1,1
+Dubai,0,1,1,0
+Paris,0,1,1,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,1,0,0
+Rio de Janeiro,0,1,1,0
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,1
+Dubai,0,1,0,1
+Paris,0,1,1,0
+Paris,1,1,1,1
+New York City,0,1,1,0
+Dubai,1,1,0,0
+New York City,0,0,1,0
+New York City,1,1,1,1
+Dubai,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,0,1,0
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,1
+New York City,0,0,0,1
+New York City,1,1,1,1
+New York City,1,1,1,1
+Dubai,0,1,1,1
+Dubai,0,1,1,1
+Rio de Janeiro,0,1,1,0
+Dubai,0,1,1,0
+Paris,0,1,0,1
+New York City,0,0,1,1
+Dubai,0,1,0,0
+New York City,1,1,1,1
+Dubai,0,1,0,1
+Dubai,0,0,0,1
+New York City,0,1,1,1
+Paris,0,1,0,0
+New York City,0,1,1,1
+New York City,1,1,1,1
+New York City,0,1,1,1
+Dubai,1,1,1,1
+Rio de Janeiro,0,1,1,0
+New York City,1,0,0,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,0
+Dubai,0,1,1,0
+Paris,1,1,1,1
+Dubai,1,0,1,1
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,0,0,1
+New York City,0,1,1,1
+Paris,1,0,1,0
+New York City,0,0,1,1
+Rio de Janeiro,1,1,0,0
+Dubai,0,1,0,0
+Dubai,1,1,1,1
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,0
+Dubai,0,1,1,0
+Dubai,0,1,1,1
+Dubai,0,1,0,0
+Paris,0,1,0,0
+Rio de Janeiro,0,1,1,0
+Paris,0,1,0,0
+Paris,0,1,1,1
+Dubai,0,0,0,1
+Dubai,0,1,1,1
+Paris,0,1,1,0
+Paris,0,1,0,0
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,1
+New York City,1,1,1,1
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Rio de Janeiro,0,0,1,1
+Paris,0,1,1,0
+Dubai,1,1,1,1
+Paris,0,1,0,0
+Paris,0,1,1,0
+Dubai,0,1,1,1
+Paris,0,1,1,0
+Dubai,0,1,1,1
+New York City,0,1,1,1
+New York City,0,0,1,0
+Dubai,0,1,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,0,0
+New York City,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,0,0,1
+New York City,1,1,1,1
+Dubai,1,0,1,0
+Paris,0,1,1,0
+New York City,1,0,1,0
+New York City,1,0,0,0
+Dubai,0,1,1,1
+New York City,1,1,1,1
+Paris,0,1,1,0
+Paris,0,1,0,0
+Paris,0,1,1,0
+Dubai,0,1,1,0
+New York City,1,0,1,0
+Paris,0,1,1,0
+Dubai,1,0,1,0
+Rio de Janeiro,0,0,1,0
+Paris,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,0
+Paris,0,1,0,0
+New York City,0,1,0,0
+Rio de Janeiro,0,0,1,1
+Dubai,0,1,1,1
+Paris,0,0,1,0
+Paris,0,1,0,0
+Paris,0,1,1,1
+Dubai,0,0,1,0
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,0,1,0
+New York City,1,0,0,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,0,1,1
+New York City,0,1,0,0
+Dubai,1,0,0,0
+Rio de Janeiro,0,0,1,0
+New York City,0,1,1,1
+Dubai,1,0,0,0
+New York City,0,0,1,0
+Rio de Janeiro,0,1,1,0
+New York City,1,1,1,0
+Dubai,0,0,1,0
+Rio de Janeiro,0,0,1,0
+Dubai,0,1,1,1
+Rio de Janeiro,0,1,0,0
+New York City,0,1,1,1
+Rio de Janeiro,0,1,1,0
+Paris,1,1,1,1
+Paris,0,0,1,0
+Dubai,0,1,1,1
+Dubai,0,1,1,0
+Rio de Janeiro,0,0,1,0
+New York City,1,1,1,1
+Dubai,0,1,0,1
+Dubai,0,0,1,1
+Paris,1,1,1,1
+Rio de Janeiro,0,1,1,1
+Rio de Janeiro,0,1,1,0
+New York City,1,1,1,1
+Rio de Janeiro,0,1,0,0
+New York City,1,1,0,0
+New York City,1,1,1,1
+Dubai,1,1,1,1
+New York City,1,1,1,1
+Dubai,0,0,0,1
+New York City,1,1,1,1
+New York City,1,1,1,1
+New York City,0,1,1,0
+New York City,1,1,1,1
+Rio de Janeiro,0,1,1,1
+Paris,0,1,0,0
+Paris,0,1,1,0
+Dubai,0,1,1,1
+New York City,1,1,1,1
+Rio de Janeiro,0,1,1,0
+Paris,0,0,1,0
+Dubai,0,0,1,1
+Dubai,0,1,0,0
+Rio de Janeiro,0,1,1,0
+Rio de Janeiro,0,1,1,0
+New York City,1,1,1,1
+New York City,1,1,1,1
+Dubai,0,0,1,0
+Dubai,0,0,1,0
+Paris,0,1,1,1
+Dubai,0,1,1,0
+Dubai,0,1,0,0
+Dubai,0,0,1,0
+Paris,0,1,0,1
+Paris,0,1,0,0
+Paris,0,1,1,1
+Paris,0,1,1,0
+Paris,1,1,1,1
+Dubai,0,1,0,0
+New York City,0,0,1,0
