@@ -34,4 +34,3 @@ Keep a journal and record the experiments that we perform during CSC311 ML Chall
     
   - `repot/`:
     - `report.md`: where to write our report.
-
