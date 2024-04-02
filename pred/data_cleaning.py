@@ -285,31 +285,13 @@ test_set.to_csv(test_data_filename, index=False)
 #### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10)
 vocab = list()
 
-for row in clean_data['Q10']:
+for row in train_set['Q10']:
     a = row.lower().split()
     for word in a:
         if word not in vocab:
             vocab.append(word)
 # print("Vocabulary Size: ", len(vocab))
 # print(vocab)
-
-vocab_2 = list()
-for row in train_set['Q10']:
-    a = row.lower().split()
-    for word in a:
-        if word not in vocab_2:
-            vocab_2.append(word)
-# print("Vocabulary Size: ", len(vocab_2))
-# print(vocab_2)
-
-vocab_3 = list()
-for row in valid_set['Q10']:
-    a = row.lower().split()
-    for word in a:
-        if word not in vocab_3:
-            vocab_3.append(word)
-# print("Vocabulary Size: ", len(vocab_3))
-# print(vocab_3)
 
 def make_bow(data, vocab):
     """
@@ -356,10 +338,10 @@ data_1 = list(zip(clean_data['Q10'], clean_data['Label']))
 data_2 = list(zip(train_set['Q10'], train_set['Label']))
 data_3 = list(zip(valid_set['Q10'], valid_set['Label']))
 X_t, t_t = make_bow(data_1, vocab)
-X_train_bow, t_train = make_bow(data_2, vocab_2)
-X_valid_bow, t_valid = make_bow(data_3, vocab_3)
+X_train_bow, t_train = make_bow(data_2, vocab)
+X_valid_bow, t_valid = make_bow(data_3, vocab)
 np.savetxt("X_train_bow.csv", X_train_bow, delimiter=",", fmt='%i')
-np.savetxt("t_train_train.csv", t_train, delimiter=",", fmt='%i')
+np.savetxt("t_train.csv", t_train, delimiter=",", fmt='%i')
 
 # produce the mapping of words to count
 vocab_count_mapping = list(zip(vocab, np.sum(X_t, axis=0)))
@@ -368,16 +350,16 @@ vocab_count_mapping = sorted(vocab_count_mapping, key=lambda e: e[1], reverse=Tr
 #     print(word, cnt)
 
 # produce the mapping of words to count
-vocab_2_count_mapping = list(zip(vocab_2, np.sum(X_train_bow, axis=0)))
+vocab_2_count_mapping = list(zip(vocab, np.sum(X_train_bow, axis=0)))
 vocab_2_count_mapping = sorted(vocab_2_count_mapping, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_2_count_mapping:
-#     print(word, cnt)
+#    print(word, cnt)
 
 # produce the mapping of words to count
-vocab_3_count_mapping = list(zip(vocab_3, np.sum(X_valid_bow, axis=0)))
+vocab_3_count_mapping = list(zip(vocab, np.sum(X_valid_bow, axis=0)))
 vocab_3_count_mapping = sorted(vocab_3_count_mapping, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_3_count_mapping:
 #     print(word, cnt)
 
 
-# print(type(X_train_bow))
+#print(type(X_train_bow))

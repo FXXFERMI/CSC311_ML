@@ -1,7 +1,6 @@
-from sklearn.tree import DecisionTreeClassifier
 import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.tree import plot_tree
+from sklearn.neural_network import MLPClassifier
+
 
 df = pd.read_csv('/Users/张润石/Desktop/CSC311_ML/data/pred_data/train_dataset.csv')
 
@@ -38,14 +37,15 @@ columns_to_drop.extend([keyword for keyword in keywords if keyword in df.columns
 # 删除列
 X = df.drop(columns_to_drop, axis=1) # 删除原始的文本列和标签列
 
-dtree = DecisionTreeClassifier(random_state=42, max_depth=3)
+# 创建神经网络模型
+mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=1000, random_state=42)
 
-dtree.fit(X, y)
 
-print("Feature importances:")
-for feature, importance in zip(X.columns, dtree.feature_importances_):
-    print(f"{feature}: {importance}")
+# 训练神经网络模型
+mlp.fit(X, y)
 
-plt.figure(figsize=(20,10))  # 设置图形的大小
-plot_tree(dtree, filled=True, feature_names=X.columns, rounded=True)
-plt.show()
+for i, (weights, biases) in enumerate(zip(mlp.coefs_, mlp.intercepts_)):
+    print(f"Weights of layer {i}:")
+    print(weights)
+    print(f"Biases of layer {i}:")
+    print(biases)
