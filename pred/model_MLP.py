@@ -9,19 +9,19 @@ keywords = ['dubai','ny', 'new york', 'new york city', 'rio','rio de janeiro','p
             'the city of love', 'eiffel', 'apple', 'football', 'soccer', 'rich', 'money', 'burj khalifa']
 
 
-# 计算每个关键词在每个标签下的条件概率
+# calculate the conditional probability of each keyword under each label
 keyword_probs = {}
 for label in df['Label'].unique():
     label_df = df[df['Label'] == label]
     total_count = len(label_df)
     keyword_probs[label] = {}
     for keyword in keywords:
-        # 计算每个关键词在当前标签下的出现次数
+        # calculate times the keywords appeared under specific label
         keyword_count = label_df['Q10'].str.contains(keyword).sum()
-        # 计算条件概率
+        # calculate the presence of keywords
         keyword_probs[label][keyword] = keyword_count / total_count
 
-# 为每行数据添加关键词的条件概率作为新特征
+# add probability keywords as new feature
 for keyword in keywords:
     df[f'prob_{keyword}'] = df.apply(
         lambda row: keyword_probs[row['Label']][keyword] if pd.notnull(row['Q10']) and keyword in row['Q10']
@@ -29,19 +29,19 @@ for keyword in keywords:
 
 
 y = df['Label']
-# 分割特征和标签
+# split label and features
 columns_to_drop = ['Label', 'Q10','id']
-# 仅当关键词确实是列名时才添加到删除列表中
+# add to drop list when the keywords really in the col names
 columns_to_drop.extend([keyword for keyword in keywords if keyword in df.columns])
 
-# 删除列
-X = df.drop(columns_to_drop, axis=1) # 删除原始的文本列和标签列
+# delete the col
+X = df.drop(columns_to_drop, axis=1) # delete origin useless cols
 
-# 创建神经网络模型
+# build mlp model
 mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=1000, random_state=42)
 
 
-# 训练神经网络模型
+# train model
 mlp.fit(X, y)
 
 for i, (weights, biases) in enumerate(zip(mlp.coefs_, mlp.intercepts_)):
