@@ -19,6 +19,10 @@ data_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/raw_data/clean_dataset.
 clean_data = pd.read_csv(data_path)
 clean_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/analysis_dataset.csv'
 
+train_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv'
+valid_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv'
+test_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv'
+
 #### Clean Data - EACH Question ####
 """
 - We don't have to reformat Q1-4 since they are numerical value
@@ -315,5 +319,24 @@ vocab_count_mapping = sorted(vocab_count_mapping, key=lambda e: e[1], reverse=Tr
 # for word, cnt in vocab_count_mapping:
 #     print(word, cnt)
 
-# save cleaned data with one-hot
+# save cleaned data
 clean_data.to_csv(clean_data_filename, index=False)
+
+# Shuffle the dataset
+shuffled_indices = np.random.permutation(clean_data.index)
+shuffled_data = clean_data.loc[shuffled_indices]
+
+# Calculate the indices for splitting
+total_rows = len(shuffled_data)
+train_end = int(total_rows * 0.8)
+valid_end = int(total_rows * 0.90)
+
+# Split the data
+train_set = shuffled_data.iloc[:train_end]
+valid_set = shuffled_data.iloc[train_end:valid_end]
+test_set = shuffled_data.iloc[valid_end:]
+
+# Save the splits as CSV files
+train_set.to_csv(train_data_filename, index=False)
+valid_set.to_csv(valid_data_filename, index=False)
+test_set.to_csv(test_data_filename, index=False)
