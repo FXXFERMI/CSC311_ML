@@ -236,7 +236,7 @@ def clean_text(text):
         # Replace apostrophes with nothing
         text = text.replace("'", "")
         # Keep only standard letters (A-Z, a-z), numbers, commas, and spaces
-        cleaned_text = ''.join([char for char in text if char.isalnum() or char in [',', ' '] and char.isascii()])
+        cleaned_text = ''.join([char for char in text if char.isalnum() or char in [ ' '] and char.isascii()])
         return cleaned_text
     else:
         # If 'text' is not a string (e.g., NaN), return 'missla'
