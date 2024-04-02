@@ -287,7 +287,6 @@ def make_bow(data, vocab):
         `t`: A numpy array of shape [len(data)], with `t[i] == 1` if
              `data[i]` is a positive review, and `t[i] == 0` otherwise.
     """
-
     X = np.zeros([len(data), len(vocab)])
     t = np.zeros([len(data)])
     for i, (review, label) in enumerate(data):
@@ -296,14 +295,17 @@ def make_bow(data, vocab):
             if w in vocab:
                 j = vocab.index(w)
                 X[i, j] = 1
-        if label.lower() == "Dubai":
+
+        label = label.lower().strip()  # Convert to lowercase and strip whitespace
+        if label == "dubai":
             t[i] = 1
-        elif label.lower() == "Rio de Janeiro":
+        elif label == "rio de janeiro":
             t[i] = 2
-        elif label.lower() == "New York City":
+        elif label == "new york city":
             t[i] = 3
-        elif label.lower() == "Paris":
+        elif label == "paris":
             t[i] = 4
+
     return X, t
 
 
