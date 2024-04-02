@@ -9,12 +9,9 @@
 import sys
 import csv
 import random
-from typing import Any
 
 import numpy as np
 import pandas as pd
-from numpy import ndarray, dtype, floating, float_
-from numpy._typing import _64Bit
 
 #### Import Data ####
 # Load the dataset
@@ -252,7 +249,7 @@ clean_data['Q10'] = clean_data['Q10'].str.replace('-', ' ', regex=False)
 # Apply the clean_text function
 clean_data['Q10'] = clean_data['Q10'].apply(clean_text)
 
-# Replace empty strings with 'do not have anything'
+# Replace empty strings with 'missla'
 clean_data['Q10'] = clean_data['Q10'].apply(lambda x: 'missla' if x == '' else x)
 
 vocab = list()
@@ -309,7 +306,6 @@ def make_bow(data, vocab):
 data = list(zip(clean_data['Q10'], clean_data['Label']))
 X_train, t_train = make_bow(data, vocab)
 
-# Assuming X_train and t_train are numpy arrays from your previous operations
 np.savetxt("X_train.csv", X_train, delimiter=",", fmt='%i')
 np.savetxt("t_train.csv", t_train, delimiter=",", fmt='%i')
 
