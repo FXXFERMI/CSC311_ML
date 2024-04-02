@@ -66,7 +66,7 @@ Skyscrapers,Sport,Art and Music,Carnival,Cuisine,Economic
   and produces a data matrix consisting of bag-of-word features, along with a vector of labels.
   (like what we did in lab9)
   
-- We will replaced all missing value with 'missla'
+- We will replaced all missing value with 'without'
 
 - There will not have outlier
 """
@@ -77,7 +77,7 @@ clean_data.replace('', np.nan)
 # fill the missing values with median
 # Calculate the median of Q1
 median_q1 = clean_data['Q1'].median()
-print("Median Q1: ", median_q1)
+# print("Median Q1: ", median_q1)
 # Replace missing values in Q1 with its median
 clean_data['Q1'] = clean_data['Q1'].fillna(median_q1)
 
@@ -153,7 +153,7 @@ for option, res in binary_outcomes.items():
 # print(replacement)
 
 clean_data['Q5'] = clean_data['Q5'].str.split(',')
-print(clean_data['Q5'][120:129])
+# print(clean_data['Q5'][120:129])
 clean_data['Q5'] = clean_data['Q5'].apply(lambda x: x if isinstance(x, list) else replacement)
 # print(clean_data['Q5'][120:129])
 
@@ -169,7 +169,9 @@ df = pd.concat([clean_data, dummies], axis=1)
 - then replace missing values with median
 """
 clean_data_Q6 = clean_data['Q6'].str.split(',')
-print(clean_data_Q6.head())
+
+
+# print(clean_data_Q6.head())
 
 
 def extract_category_value(row, category_name):
@@ -226,7 +228,7 @@ for column in ['Q7', 'Q8', 'Q9']:
 """
 - We first cleaned the reviews, make them all lowercase
 - removed apostrophes, period, non-standard letter, '\n', '-' etc.
-- replace all the missing value with 'missla' 
+- replace all the missing value with 'without' 
 """
 
 
@@ -236,11 +238,11 @@ def clean_text(text):
         # Replace apostrophes with nothing
         text = text.replace("'", "")
         # Keep only standard letters (A-Z, a-z), numbers, commas, and spaces
-        cleaned_text = ''.join([char for char in text if char.isalnum() or char in [ ' '] and char.isascii()])
+        cleaned_text = ''.join([char for char in text if char.isalnum() or char in [' '] and char.isascii()])
         return cleaned_text
     else:
-        # If 'text' is not a string (e.g., NaN), return 'missla'
-        return 'missla'
+        # If 'text' is not a string (e.g., NaN), return 'without'
+        return 'without'
 
 
 # Covert all to lowercase
@@ -253,9 +255,34 @@ clean_data['Q10'] = clean_data['Q10'].str.replace('-', ' ', regex=False)
 # Apply the clean_text function
 clean_data['Q10'] = clean_data['Q10'].apply(clean_text)
 
-# Replace empty strings with 'missla'
-clean_data['Q10'] = clean_data['Q10'].apply(lambda x: 'missla' if x == '' else x)
+# Replace empty strings with 'without'
+clean_data['Q10'] = clean_data['Q10'].apply(lambda x: 'without' if x == '' else x)
 
+# save cleaned data
+clean_data.to_csv(clean_data_filename, index=False)
+
+# Shuffle the dataset
+shuffled_indices = np.random.permutation(clean_data.index)
+shuffled_data = clean_data.loc[shuffled_indices]
+
+# Calculate the indices for splitting
+total_rows = len(shuffled_data)
+train_end = int(total_rows * 0.8)
+valid_end = int(total_rows * 0.90)
+
+# Split the data
+train_set = shuffled_data.iloc[:train_end]
+valid_set = shuffled_data.iloc[train_end:valid_end]
+test_set = shuffled_data.iloc[valid_end:]
+
+# Save the splits as CSV files
+train_set.to_csv(train_data_filename, index=False)
+valid_set.to_csv(valid_data_filename, index=False)
+test_set.to_csv(test_data_filename, index=False)
+
+
+
+#### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10)
 vocab = list()
 
 for row in clean_data['Q10']:
@@ -263,10 +290,26 @@ for row in clean_data['Q10']:
     for word in a:
         if word not in vocab:
             vocab.append(word)
-
 # print("Vocabulary Size: ", len(vocab))
 # print(vocab)
 
+vocab_2 = list()
+for row in train_set['Q10']:
+    a = row.lower().split()
+    for word in a:
+        if word not in vocab_2:
+            vocab_2.append(word)
+# print("Vocabulary Size: ", len(vocab_2))
+# print(vocab_2)
+
+vocab_3 = list()
+for row in valid_set['Q10']:
+    a = row.lower().split()
+    for word in a:
+        if word not in vocab_3:
+            vocab_3.append(word)
+# print("Vocabulary Size: ", len(vocab_3))
+# print(vocab_3)
 
 def make_bow(data, vocab):
     """
@@ -309,36 +352,32 @@ def make_bow(data, vocab):
     return X, t
 
 
-data = list(zip(clean_data['Q10'], clean_data['Label']))
-X_train, t_train = make_bow(data, vocab)
-
-np.savetxt("X_train.csv", X_train, delimiter=",", fmt='%i')
-np.savetxt("t_train.csv", t_train, delimiter=",", fmt='%i')
+data_1 = list(zip(clean_data['Q10'], clean_data['Label']))
+data_2 = list(zip(train_set['Q10'], train_set['Label']))
+data_3 = list(zip(valid_set['Q10'], valid_set['Label']))
+X_t, t_t = make_bow(data_1, vocab)
+X_train_bow, t_train = make_bow(data_2, vocab_2)
+X_valid_bow, t_valid = make_bow(data_3, vocab_3)
+np.savetxt("X_train_bow.csv", X_train_bow, delimiter=",", fmt='%i')
+np.savetxt("t_train_train.csv", t_train, delimiter=",", fmt='%i')
 
 # produce the mapping of words to count
-vocab_count_mapping = list(zip(vocab, np.sum(X_train, axis=0)))
+vocab_count_mapping = list(zip(vocab, np.sum(X_t, axis=0)))
 vocab_count_mapping = sorted(vocab_count_mapping, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_count_mapping:
 #     print(word, cnt)
 
-# save cleaned data
-clean_data.to_csv(clean_data_filename, index=False)
+# produce the mapping of words to count
+vocab_2_count_mapping = list(zip(vocab_2, np.sum(X_train_bow, axis=0)))
+vocab_2_count_mapping = sorted(vocab_2_count_mapping, key=lambda e: e[1], reverse=True)
+# for word, cnt in vocab_2_count_mapping:
+#     print(word, cnt)
 
-# Shuffle the dataset
-shuffled_indices = np.random.permutation(clean_data.index)
-shuffled_data = clean_data.loc[shuffled_indices]
+# produce the mapping of words to count
+vocab_3_count_mapping = list(zip(vocab_3, np.sum(X_valid_bow, axis=0)))
+vocab_3_count_mapping = sorted(vocab_3_count_mapping, key=lambda e: e[1], reverse=True)
+# for word, cnt in vocab_3_count_mapping:
+#     print(word, cnt)
 
-# Calculate the indices for splitting
-total_rows = len(shuffled_data)
-train_end = int(total_rows * 0.8)
-valid_end = int(total_rows * 0.90)
 
-# Split the data
-train_set = shuffled_data.iloc[:train_end]
-valid_set = shuffled_data.iloc[train_end:valid_end]
-test_set = shuffled_data.iloc[valid_end:]
-
-# Save the splits as CSV files
-train_set.to_csv(train_data_filename, index=False)
-valid_set.to_csv(valid_data_filename, index=False)
-test_set.to_csv(test_data_filename, index=False)
+# print(type(X_train_bow))
