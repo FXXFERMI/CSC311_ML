@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree
 
-df = pd.read_csv('/Users/张润石/Desktop/CSC311_ML/data/pred_data/train_dataset.csv')
+df = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv')
 
 # define keywords
 keywords = ['dubai','ny', 'new york', 'new york city', 'rio','rio de janeiro','paris', 'cest la vie',
@@ -42,7 +42,7 @@ dtree = DecisionTreeClassifier(random_state=42, max_depth=3)
 
 dtree.fit(X, y)
 
-print("Feature importances:")
+print("Feature Importance:")
 for feature, importance in zip(X.columns, dtree.feature_importances_):
     print(f"{feature}: {importance}")
 

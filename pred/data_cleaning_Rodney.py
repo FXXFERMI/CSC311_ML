@@ -23,7 +23,6 @@ train_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/tra
 valid_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv'
 test_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv'
 
-#####################################################################################################################
 #### Clean Data - EACH Question ####
 """
 - We don't have to reformat Q1-4 since they are numerical value
@@ -74,7 +73,6 @@ Skyscrapers,Sport,Art and Music,Carnival,Cuisine,Economic
 # Replace empty strings with NaN
 clean_data.replace('', np.nan)
 
-#####################################################################################################################
 #### Q1 ####
 # fill the missing values with median
 # Calculate the median of Q1
@@ -83,7 +81,6 @@ median_q1 = clean_data['Q1'].median()
 # Replace missing values in Q1 with its median
 clean_data['Q1'] = clean_data['Q1'].fillna(median_q1)
 
-#####################################################################################################################
 #### Q2 ####
 # fill the missing values with median
 
@@ -93,7 +90,6 @@ median_q2 = clean_data['Q2'].median()
 # Replace missing values in Q1 with its median
 clean_data['Q2'] = clean_data['Q2'].fillna(median_q2)
 
-#####################################################################################################################
 #### Q3 ####
 # fill the missing values with median
 
@@ -103,7 +99,6 @@ median_q3 = clean_data['Q3'].median()
 # Replace missing values in Q1 with its median
 clean_data['Q3'] = clean_data['Q3'].fillna(median_q3)
 
-#####################################################################################################################
 #### Q4 ####
 # fill the missing values with median
 
@@ -115,7 +110,6 @@ clean_data['Q4'] = clean_data['Q4'].fillna(median_q4)
 
 clean_data.to_csv(clean_data_filename, index=False)
 
-#####################################################################################################################
 #### Q5 ####
 """
 Find the mode for each option. If the answer has the option, we will add 1 to this option count, if not, add 1 to this 
@@ -169,7 +163,6 @@ dummies = clean_data['Q5'].apply(lambda x: pd.Series(1, index=x)).fillna(0)
 clean_data = pd.concat([clean_data, dummies], axis=1).drop('Q5', axis=1)
 df = pd.concat([clean_data, dummies], axis=1)
 
-#####################################################################################################################
 #### Q6 ####
 """
 - We first split it to six different variables
@@ -207,7 +200,6 @@ for category in categories:
 # drop Q6
 clean_data = clean_data.drop('Q6', axis=1)
 
-#####################################################################################################################
 #### Q7 | Q8 | Q9 ####
 """
 - We first normalize all the data, then find the outlier,
@@ -232,7 +224,6 @@ for column in ['Q7', 'Q8', 'Q9']:
     clean_data[column] = clean_data[column] * col_std + col_mean
     clean_data[column] = clean_data[column].mask(outliers | clean_data[column].isna(), col_mean)
 
-#####################################################################################################################
 #### Q10 ####
 """
 - We first cleaned the reviews, make them all lowercase
@@ -289,18 +280,21 @@ train_set.to_csv(train_data_filename, index=False)
 valid_set.to_csv(valid_data_filename, index=False)
 test_set.to_csv(test_data_filename, index=False)
 
-#####################################################################################################################
-#####################################################################################################################
-#### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10) ####
-vocab = list()
 
-for row in train_set['Q10']:
-    a = row.lower().split()
-    for word in a:
-        if word not in vocab:
-            vocab.append(word)
+
+#### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10)
+
+vocab = ['dubai','ny', 'new york', 'new york city', 'rio','rio de janeiro','paris', 'cest la vie',
+            'the city of love', 'eiffel', 'apple', 'football', 'soccer', 'rich', 'money', 'burj khalifa']
+#vocab = list()
+
+#for row in keywords:
+    #a = row.lower().split()
+    #for word in a:
+        #if word not in vocab:
+            #vocab.append(word)
 # print("Vocabulary Size: ", len(vocab))
-# print(vocab)
+#print(vocab)
 
 def make_bow(data, vocab):
     """
@@ -346,39 +340,31 @@ def make_bow(data, vocab):
 data_1 = list(zip(clean_data['Q10'], clean_data['Label']))
 data_2 = list(zip(train_set['Q10'], train_set['Label']))
 data_3 = list(zip(valid_set['Q10'], valid_set['Label']))
-data_4 = list(zip(test_set['Q10'], test_set['Label']))
-X_t, t_t = make_bow(data_1, vocab)
-X_train_bow, t_train = make_bow(data_2, vocab)
-X_valid_bow, t_valid = make_bow(data_3, vocab)
-X_test_bow, t_test = make_bow(data_4, vocab)
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_train_bow.csv", X_train_bow, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_train.csv", t_train, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_valid_bow.csv", X_train_bow, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_valid.csv", t_train, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_test_bow.csv", X_train_bow, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_test.csv", t_train, delimiter=",", fmt='%i')
+X_t_Rodeny, t_t_Rodeny = make_bow(data_1, vocab)
+X_train_bow_Rodeny, t_train_Rodeny = make_bow(data_2, vocab)
+X_valid_bow_Rodeny, t_valid_v = make_bow(data_3, vocab)
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/X_train_bow_Rodeny.csv", X_train_bow_Rodeny, delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/t_train_Rodeny.csv", t_train_Rodeny, delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/X_valid_bow_Rodeny.csv", X_train_bow_Rodeny, delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/t_valid_Rodeny.csv", t_train_Rodeny, delimiter=",", fmt='%i')
 
-# produce the mapping of words to count - whole dataset
-vocab_count_mapping = list(zip(vocab, np.sum(X_t, axis=0)))
-vocab_count_mapping = sorted(vocab_count_mapping, key=lambda e: e[1], reverse=True)
-# for word, cnt in vocab_count_mapping:
-#    print(word, cnt)
+# produce the mapping of words to count
+vocab_count_mapping_Rodeny = list(zip(vocab, np.sum(X_t_Rodeny, axis=0)))
+vocab_count_mapping_Rodeny = sorted(vocab_count_mapping_Rodeny, key=lambda e: e[1], reverse=True)
+for word, cnt in vocab_count_mapping_Rodeny:
+   print(word, cnt)
 
-# produce the mapping of words to count - train dataset
-vocab_2_count_mapping = list(zip(vocab, np.sum(X_train_bow, axis=0)))
-vocab_2_count_mapping = sorted(vocab_2_count_mapping, key=lambda e: e[1], reverse=True)
+# produce the mapping of words to count
+vocab_2_count_mapping_Rodeny = list(zip(vocab, np.sum(X_train_bow_Rodeny, axis=0)))
+vocab_2_count_mapping_Rodeny = sorted(vocab_2_count_mapping_Rodeny, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_2_count_mapping:
 #    print(word, cnt)
 
-# produce the mapping of words to count - validation dataset
-vocab_3_count_mapping = list(zip(vocab, np.sum(X_valid_bow, axis=0)))
-vocab_3_count_mapping = sorted(vocab_3_count_mapping, key=lambda e: e[1], reverse=True)
+# produce the mapping of words to count
+vocab_3_count_mapping_Rodeny = list(zip(vocab, np.sum(X_valid_bow_Rodeny, axis=0)))
+vocab_3_count_mapping_Rodeny = sorted(vocab_3_count_mapping_Rodeny, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_3_count_mapping:
 #     print(word, cnt)
 
-# produce the mapping of words to count - validation dataset - test dataset
-vocab_4_count_mapping = list(zip(vocab, np.sum(X_test_bow, axis=0)))
-vocab_4_count_mapping = sorted(vocab_4_count_mapping, key=lambda e: e[1], reverse=True)
-# for word, cnt in vocab_3_count_mapping:
-#     print(word, cnt)
+
 #print(type(X_train_bow))

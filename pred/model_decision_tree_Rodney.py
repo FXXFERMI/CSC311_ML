@@ -1,13 +1,13 @@
+from sklearn.tree import DecisionTreeClassifier
 import pandas as pd
-from sklearn.neural_network import MLPClassifier
-
+import matplotlib.pyplot as plt
+from sklearn.tree import plot_tree
 
 df = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv')
 
 # define keywords
 keywords = ['dubai','ny', 'new york', 'new york city', 'rio','rio de janeiro','paris', 'cest la vie',
             'the city of love', 'eiffel', 'apple', 'football', 'soccer', 'rich', 'money', 'burj khalifa']
-
 
 # calculate the conditional probability of each keyword under each label
 keyword_probs = {}
@@ -37,15 +37,14 @@ columns_to_drop.extend([keyword for keyword in keywords if keyword in df.columns
 # delete the col
 X = df.drop(columns_to_drop, axis=1) # delete origin useless cols
 
-# build mlp model
-mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=1000, random_state=42)
+dtree = DecisionTreeClassifier(random_state=42, max_depth=3)
 
+dtree.fit(X, y)
 
-# train model
-mlp.fit(X, y)
+print("Feature Importance:")
+for feature, importance in zip(X.columns, dtree.feature_importances_):
+    print(f"{feature}: {importance}")
 
-for i, (weights, biases) in enumerate(zip(mlp.coefs_, mlp.intercepts_)):
-    print(f"Weights of layer {i}:")
-    print(weights)
-    print(f"Biases of layer {i}:")
-    print(biases)
+plt.figure(figsize=(20,10))  # adjust plot size
+plot_tree(dtree, filled=True, feature_names=X.columns, rounded=True)
+plt.show()

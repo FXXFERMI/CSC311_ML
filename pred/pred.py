@@ -44,3 +44,5 @@ def predict_all(filename):
         predictions.append(pred)
 
     return predictions
+
+predictions = predict_all("test_dataset.csv")
