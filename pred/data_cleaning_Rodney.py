@@ -344,9 +344,9 @@ X_t_Rodeny, t_t_Rodeny = make_bow(data_1, vocab)
 X_train_bow_Rodeny, t_train_Rodeny = make_bow(data_2, vocab)
 X_valid_bow_Rodeny, t_valid_v = make_bow(data_3, vocab)
 np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/X_train_bow_Rodeny.csv", X_train_bow_Rodeny, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/t_train_Rodeny.csv", t_train_Rodeny, delimiter=",", fmt='%i')
+np.savetxt("/data/pred_data/matrix/t_train_Rodeny.csv", t_train_Rodeny, delimiter=",", fmt='%i')
 np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/X_valid_bow_Rodeny.csv", X_train_bow_Rodeny, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/t_valid_Rodeny.csv", t_train_Rodeny, delimiter=",", fmt='%i')
+np.savetxt("/data/pred_data/matrix/t_valid_Rodeny.csv", t_train_Rodeny, delimiter=",", fmt='%i')
 
 # produce the mapping of words to count
 vocab_count_mapping_Rodeny = list(zip(vocab, np.sum(X_t_Rodeny, axis=0)))

@@ -23,6 +23,18 @@ train_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/tra
 valid_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv'
 test_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv'
 
+final_train_data_filename = '/Users/fermis/Desktop//CSC311/CSC311_ML/data/pred_data/final/final_train_dataset.csv'
+final_test_data_filename_1 = '/Users/fermis/Desktop//CSC311/CSC311_ML/data/pred_data/final/final_test_dataset_1.csv'
+final_test_data_filename_2 = '/Users/fermis/Desktop//CSC311/CSC311_ML/data/pred_data/final/final_test_dataset_2.csv'
+
+
+# DO NOT touch!!!
+#final_test_dddddata = pd.read_csv(data_path)
+#seed = 42
+#shuffled_final_test_data = final_test_dddddata.sample(frac=1, random_state=seed).reset_index(drop=True)
+#final_test_set_1 = shuffled_final_test_data.iloc[-500:]
+#final_test_set_1 = final_test_set_1.drop(['Label'], axis=1)
+#final_test_set_1.to_csv(final_test_data_filename_1, index=False)
 #####################################################################################################################
 #### Clean Data - EACH Question ####
 """
@@ -167,7 +179,8 @@ clean_data['Q5'] = clean_data['Q5'].apply(lambda x: x if isinstance(x, list) els
 # one-hot
 dummies = clean_data['Q5'].apply(lambda x: pd.Series(1, index=x)).fillna(0)
 clean_data = pd.concat([clean_data, dummies], axis=1).drop('Q5', axis=1)
-df = pd.concat([clean_data, dummies], axis=1)
+
+clean_data.to_csv(clean_data_filename, index=False)
 
 #####################################################################################################################
 #### Q6 ####
@@ -267,6 +280,7 @@ clean_data['Q10'] = clean_data['Q10'].apply(clean_text)
 # Replace empty strings with 'without'
 clean_data['Q10'] = clean_data['Q10'].apply(lambda x: 'without' if x == '' else x)
 
+# Save for pred_training file
 # save cleaned data
 clean_data.to_csv(clean_data_filename, index=False)
 
@@ -283,12 +297,13 @@ valid_end = int(total_rows * 0.90)
 train_set = shuffled_data.iloc[:train_end]
 valid_set = shuffled_data.iloc[train_end:valid_end]
 test_set = shuffled_data.iloc[valid_end:]
+pred_training = train_set.drop(['Label'], axis=1)
 
 # Save the splits as CSV files
 train_set.to_csv(train_data_filename, index=False)
 valid_set.to_csv(valid_data_filename, index=False)
 test_set.to_csv(test_data_filename, index=False)
-
+pred_training.to_csv(final_train_data_filename, index=False)
 #####################################################################################################################
 #####################################################################################################################
 #### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10) ####
@@ -302,10 +317,21 @@ for row in train_set['Q10']:
     for word in a:
         if word not in vocab:
             vocab.append(word)
+vocab_2 = list()
+for row in clean_data['Q10']:
+    a = row.lower().split()
+    for word in a:
+        if word not in vocab_2:
+            vocab_2.append(word)
 
+# DO NOT TOUCH!!!
+#save vocab
+#vocab_df = pd.DataFrame(vocab, columns=['word'])
+# Save the DataFrame to a CSV file
+#vocab_df.to_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final_vocab.csv', index=False)
 
 # print("Vocabulary Size: ", len(vocab))
-# print(vocab)
+#print(vocab)
 
 def make_bow(data, vocab):
     """
@@ -352,7 +378,7 @@ data_1 = list(zip(clean_data['Q10'], clean_data['Label']))
 data_2 = list(zip(train_set['Q10'], train_set['Label']))
 data_3 = list(zip(valid_set['Q10'], valid_set['Label']))
 data_4 = list(zip(test_set['Q10'], test_set['Label']))
-X_t, t_t = make_bow(data_1, vocab)
+X_t, t_t = make_bow(data_1, vocab_2)
 X_train_bow, t_train = make_bow(data_2, vocab)
 X_valid_bow, t_valid = make_bow(data_3, vocab)
 X_test_bow, t_test = make_bow(data_4, vocab)

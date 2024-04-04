@@ -24,13 +24,14 @@ coefficients_path = 'final_coefficients.csv'
 with open(intercept_path, 'r') as file:
     line = file.readline()
     intercept_str = line.strip().split(": ")[1]
-    #print(intercept_str)
+    # print(intercept_str)
     numbers_str = intercept_str.strip('[]').split()
     model_intercept = [float(num) for num in numbers_str]
 
 # Read the coefficients into a DataFrame and then extract the coefficients column
 model_coefs_df = pd.read_csv(coefficients_path)
 model_coefs = model_coefs_df.iloc[:, 1:].values
+
 
 def predict(x):
     """
@@ -246,19 +247,19 @@ def predict_all(filename):
     vocab_path = 'final_vocab.csv'
     vocab_df = pd.read_csv(vocab_path)
     vocab = vocab_df['word'].tolist()
-    #print("Vocabulary Size: ", len(vocab))
-    #print(vocab)
+    # print("Vocabulary Size: ", len(vocab))
+    # print(vocab)
 
     # create X_test_Q10 here
     test_data_lst = list(clean_data['Q10'])
     X_test_bow = make_bow(test_data_lst, vocab)
 
     # X_test for whole test set
-    features_test_df = clean_data.drop(['id', 'Q10'], axis=1, errors='ignore')
+    features_test_df = clean_data.drop(['id', 'Q10', 'Label'], axis=1, errors='ignore')
     X_test_bow_df = pd.DataFrame(X_test_bow, index=features_test_df.index)
     X_test_df = pd.concat([features_test_df, X_test_bow_df], axis=1)
     X_test_df = X_test_df[1:]
-    #print(X_test_df.head())
+    # print(X_test_df.head())
     predictions = []
     for index, test_example in X_test_df.iterrows():
         # obtain a prediction for this test example
@@ -310,3 +311,8 @@ def make_bow(data, vocab):
                 X[i, j] = 1
 
     return X
+
+
+if __name__ == '__main__':
+    res = predict_all('/Users/fermis/Desktop/CSC311/CSC311_ML/data/raw_data/clean_dataset.csv'  )
+    print(res)

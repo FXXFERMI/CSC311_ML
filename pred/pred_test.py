@@ -15,10 +15,10 @@ import random
 import numpy as np
 import pandas as pd
 
-intercept_path = 'final_intercept.txt'
-coefficients_path = 'final_coefficients.csv'
-# train_path = 'final_train_dataset.csv'
-# train_data = pd.read_csv(train_path)
+intercept_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_intercept.txt'
+coefficients_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_coefficients.csv'
+train_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_train_dataset.csv'
+train_data = pd.read_csv(train_path)
 
 # Read the intercept value from the file
 with open(intercept_path, 'r') as file:
@@ -243,7 +243,7 @@ def predict_all(filename):
     #### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10) ####
     # all the code below References: CSC311 Winter2023-2024 lab9
 
-    vocab_path = 'final_vocab.csv'
+    vocab_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_vocab.csv'
     vocab_df = pd.read_csv(vocab_path)
     vocab = vocab_df['word'].tolist()
     #print("Vocabulary Size: ", len(vocab))

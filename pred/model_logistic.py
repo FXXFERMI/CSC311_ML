@@ -34,6 +34,11 @@ X_train_df = pd.concat([features_train_df, X_train_bow_df], axis=1)
 X_train = X_train_df.values
 # print(X_train)
 
+# X_train_for final
+#features_train_df = clean_data.drop(['id', 'Label', 'Q10'], axis=1)
+#X_t_df = pd.DataFrame(dc.X_t, index=features_train_df.index)
+#X_t_df = pd.concat([features_train_df, X_t_df], axis=1)
+#X_train = X_t_df.values
 
 # X_valid
 features_valid_df = valid_data.drop(['id', 'Label', 'Q10'], axis=1)
@@ -46,6 +51,15 @@ features_test_df = test_data.drop(['id', 'Label', 'Q10'], axis=1)
 X_test_bow_df = pd.DataFrame(dc.X_test_bow, index=features_test_df.index)
 X_test_df = pd.concat([features_test_df, X_test_bow_df], axis=1)
 X_test = X_test_df.values
+
+# Using pandas to get descriptive statistics
+#print(X_train_bow_df.describe())
+#np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_train.csv", X_train, delimiter=",", fmt='%i')
+
+# Save to CSV
+#train_final_dataset_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_final_dataset.csv'
+## Save coefficients to their own CSV file
+#X_train_df.to_csv(train_final_dataset_path, index=False)
 
 
 ##### K-fold cross-validation ####
@@ -90,12 +104,12 @@ def train_and_evaluate_k_fold(folds, model_init_func):
 # References: CSC311 Winter2023-2024 lab9
 # Logistic Regression Model
 model = LogisticRegression(max_iter=2000)
-model.fit(X_train, dc.t_train)
+model.fit(X_train, dc.t_t)
 train_pre = model.predict(X_train)
 val_pre = model.predict(X_valid)
-train_corr = train_pre[train_pre == dc.t_train]
+train_corr = train_pre[train_pre == dc.t_t]
 val_corr = val_pre[val_pre == dc.t_valid]
-train_acc = len(train_corr) / len(dc.t_train)
+train_acc = len(train_corr) / len(dc.t_t)
 val_acc = len(val_corr) / len(dc.t_valid)
 
 print("LR Train Acc:", train_acc)
@@ -111,7 +125,58 @@ def init_log_reg_model():
 mean_acc, scores = train_and_evaluate_k_fold(k_folds, init_log_reg_model)
 print(f"Mean Accuracy: {mean_acc}")
 
-#### Prediction ####
+##### Prediction ####
 test_pred = model.predict(X_test)
 print(f"Test Accuracy: {accuracy_score(dc.t_test, test_pred)}")
 print(f"Precision:{precision_score(dc.t_test, test_pred, average='macro')}")
+
+#### Store coefficients and intercept for this model #####
+print("Model intercept:", model.intercept_)
+intercept = model.intercept_
+# Save intercept to its own text file
+intercept_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/intercept.txt'
+with open(intercept_path, 'w') as file:
+    file.write(f"Model intercept: {intercept}\n")
+
+## for final inter
+#intercept = model.intercept_
+## Save intercept to its own text file
+#intercept_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_intercept.txt'
+#with open(intercept_path, 'w') as file:
+#    file.write(f"Model intercept: {intercept}\n")
+
+coefficients = []
+#print("Model coefficients:")
+for feature, cof in zip(X_train_df.columns, model.coef_[0]):
+    #print(f"{feature}: {cof}")
+    coefficients.append(cof)
+
+features = X_train_df.columns
+# Combine the feature names and coefficients into a DataFrame
+coefs_df = pd.DataFrame({
+    'Feature': features,
+    'Coefficient': coefficients
+})
+
+# for final coef
+#coefficients = []
+##print("Model coefficients:")
+#for feature, cof in zip(X_t_df.columns, model.coef_[0]):
+#    #print(f"{feature}: {cof}")
+#    coefficients.append(cof)
+#
+#features = X_t_df.columns
+## Combine the feature names and coefficients into a DataFrame
+#coefs_df = pd.DataFrame({
+#   'Feature': features,
+#   'Coefficient': coefficients
+#})
+# Save to CSV
+csv_file_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/coefficients.csv'
+# Save coefficients to their own CSV file
+coefs_df.to_csv(csv_file_path, index=False)
+
+# Save to CSV
+#sv_file_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_coefficients.csv'
+# Save coefficients to their own CSV file
+#oefs_df.to_csv(csv_file_path, index=False)
