@@ -1,51 +1,68 @@
 import pandas as pd
 from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import precision_score, accuracy_score, mean_squared_error
+
+import data_cleaning as dc
 
 
-df = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv')
+t_train = dc.t_train
+t_test = dc.t_test
+t_valid = dc.t_valid
 
-# define keywords
-keywords = ['dubai','ny', 'new york', 'new york city', 'rio','rio de janeiro','paris', 'cest la vie',
-            'the city of love', 'eiffel', 'apple', 'football', 'soccer', 'rich', 'money', 'burj khalifa']
+# load dataset
+clean_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/analysis_dataset.csv')
+train_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv')
+valid_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv')
+test_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv')
 
-
-# calculate the conditional probability of each keyword under each label
-keyword_probs = {}
-for label in df['Label'].unique():
-    label_df = df[df['Label'] == label]
-    total_count = len(label_df)
-    keyword_probs[label] = {}
-    for keyword in keywords:
-        # calculate times the keywords appeared under specific label
-        keyword_count = label_df['Q10'].str.contains(keyword).sum()
-        # calculate the presence of keywords
-        keyword_probs[label][keyword] = keyword_count / total_count
-
-# add probability keywords as new feature
-for keyword in keywords:
-    df[f'prob_{keyword}'] = df.apply(
-        lambda row: keyword_probs[row['Label']][keyword] if pd.notnull(row['Q10']) and keyword in row['Q10']
-        else 0, axis=1)
+# X_train
+features_train_df = train_data.drop(['id', 'Label', 'Q10'], axis=1)
+X_train_bow_df = pd.DataFrame(dc.X_train_bow, index=features_train_df.index)
+X_train_df = pd.concat([features_train_df, X_train_bow_df], axis=1)
+X_train = X_train_df.values
+# print(X_train)
 
 
-y = df['Label']
-# split label and features
-columns_to_drop = ['Label', 'Q10','id']
-# add to drop list when the keywords really in the col names
-columns_to_drop.extend([keyword for keyword in keywords if keyword in df.columns])
+# X_valid
+features_valid_df = valid_data.drop(['id', 'Label', 'Q10'], axis=1)
+X_valid_bow_df = pd.DataFrame(dc.X_valid_bow, index=features_valid_df.index)
+X_valid_df = pd.concat([features_valid_df, X_valid_bow_df], axis=1)
+X_valid = X_valid_df.values
 
-# delete the col
-X = df.drop(columns_to_drop, axis=1) # delete origin useless cols
+# X_test
+features_test_df = test_data.drop(['id', 'Label', 'Q10'], axis=1)
+X_test_bow_df = pd.DataFrame(dc.X_test_bow, index=features_test_df.index)
+X_test_df = pd.concat([features_test_df, X_test_bow_df], axis=1)
+X_test = X_test_df.values
 
-# build mlp model
-mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=1000, random_state=42)
 
 
-# train model
-mlp.fit(X, y)
 
-for i, (weights, biases) in enumerate(zip(mlp.coefs_, mlp.intercepts_)):
-    print(f"Weights of layer {i}:")
-    print(weights)
-    print(f"Biases of layer {i}:")
-    print(biases)
+# 创建神经网络模型
+mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=5000, random_state=42)
+
+
+# 训练神经网络模型
+mlp.fit(X_train, t_train)
+
+
+train_pre = mlp.predict(X_train)
+val_pre = mlp.predict(X_valid)
+train_corr = train_pre[train_pre == t_train]
+val_corr = val_pre[val_pre == t_valid]
+train_acc = len(train_corr) / len(t_train)
+val_acc = len(val_corr) / len(t_valid)
+
+print("LR Train Acc:", train_acc)
+print("LR Valid Acc:", val_acc)
+
+
+#### Prediction ####
+test_pre = mlp.predict(X_test)
+print(f"Test Accuracy: {accuracy_score(t_test, test_pre)}")
+print(f"Test Precision: {precision_score(t_test, test_pre, average='macro')}")
+
+
+mse = mean_squared_error(t_test, test_pre)
+
+print(f'test MSE: {mse}')

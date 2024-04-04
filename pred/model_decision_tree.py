@@ -1,51 +1,66 @@
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import classification_report, accuracy_score, precision_score
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree
-
-df = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv')
-
-# define keywords
-keywords = ['dubai','ny', 'new york', 'new york city', 'rio','rio de janeiro','paris', 'cest la vie',
-            'the city of love', 'eiffel', 'apple', 'football', 'soccer', 'rich', 'money', 'burj khalifa']
+import data_cleaning as dc
 
 
-# calculate the conditional probability of each keyword under each label
-keyword_probs = {}
-for label in df['Label'].unique():
-    label_df = df[df['Label'] == label]
-    total_count = len(label_df)
-    keyword_probs[label] = {}
-    for keyword in keywords:
-        # calculate times the keywords appeared under specific label
-        keyword_count = label_df['Q10'].str.contains(keyword).sum()
-        # calculate the presence of keywords
-        keyword_probs[label][keyword] = keyword_count / total_count
+t_train = dc.t_train
+t_test = dc.t_test
+t_valid = dc.t_valid
 
-# add probability keywords as new feature
-for keyword in keywords:
-    df[f'prob_{keyword}'] = df.apply(
-        lambda row: keyword_probs[row['Label']][keyword] if pd.notnull(row['Q10']) and keyword in row['Q10']
-        else 0, axis=1)
+# load dataset
+clean_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/analysis_dataset.csv')
+train_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv')
+valid_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv')
+test_data = pd.read_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv')
+
+# X_train
+features_train_df = train_data.drop(['id', 'Label', 'Q10'], axis=1)
+X_train_bow_df = pd.DataFrame(dc.X_train_bow, index=features_train_df.index)
+X_train_df = pd.concat([features_train_df, X_train_bow_df], axis=1)
+X_train = X_train_df.values
+# print(X_train)
 
 
-y = df['Label']
-# split label and features
-columns_to_drop = ['Label', 'Q10','id']
-# add to drop list when the keywords really in the col names
-columns_to_drop.extend([keyword for keyword in keywords if keyword in df.columns])
+# X_valid
+features_valid_df = valid_data.drop(['id', 'Label', 'Q10'], axis=1)
+X_valid_bow_df = pd.DataFrame(dc.X_valid_bow, index=features_valid_df.index)
+X_valid_df = pd.concat([features_valid_df, X_valid_bow_df], axis=1)
+X_valid = X_valid_df.values
 
-# delete the col
-X = df.drop(columns_to_drop, axis=1) # delete origin useless cols
+# X_test
+features_test_df = test_data.drop(['id', 'Label', 'Q10'], axis=1)
+X_test_bow_df = pd.DataFrame(dc.X_test_bow, index=features_test_df.index)
+X_test_df = pd.concat([features_test_df, X_test_bow_df], axis=1)
+X_test = X_test_df.values
 
-dtree = DecisionTreeClassifier(random_state=42, max_depth=3)
+dtree = DecisionTreeClassifier(random_state=42, max_depth=6)
+dtree.fit(X_train, t_train)
 
-dtree.fit(X, y)
+train_pre = dtree.predict(X_train)
+val_pre = dtree.predict(X_valid)
+train_corr = train_pre[train_pre == t_train]
+val_corr = val_pre[val_pre == t_valid]
+train_acc = len(train_corr) / len(t_train)
+val_acc = len(val_corr) / len(t_valid)
 
-print("Feature Importance:")
-for feature, importance in zip(X.columns, dtree.feature_importances_):
-    print(f"{feature}: {importance}")
+print("LR Train Acc:", train_acc)
+print("LR Valid Acc:", val_acc)
 
-plt.figure(figsize=(20,10))  # adjust plot size
-plot_tree(dtree, filled=True, feature_names=X.columns, rounded=True)
-plt.show()
+
+#### Prediction ####
+test_pre = dtree.predict(X_test)
+print(f"Test Accuracy: {accuracy_score(t_test, test_pre)}")
+print(f"Test Precision: {precision_score(t_test, test_pre, average='macro')}")
+
+#print("Feature importances:")
+#for feature, importance in zip(ml.X_train_df.columns, dtree.feature_importances_):
+    #print(f"{feature}: {importance}")
+
+# plt.figure(figsize=(20,10))  # 设置图形的大小
+# plot_tree(dtree, filled=True, feature_names=X.columns, rounded=True)
+# plt.show()
+
+

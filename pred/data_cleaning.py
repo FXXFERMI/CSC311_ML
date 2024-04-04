@@ -87,33 +87,33 @@ clean_data['Q1'] = clean_data['Q1'].fillna(median_q1)
 #### Q2 ####
 # fill the missing values with median
 
-# Calculate the median of Q1
+# Calculate the median of Q2
 median_q2 = clean_data['Q2'].median()
 
-# Replace missing values in Q1 with its median
+# Replace missing values in Q2 with its median
 clean_data['Q2'] = clean_data['Q2'].fillna(median_q2)
 
 #####################################################################################################################
 #### Q3 ####
 # fill the missing values with median
 
-# Calculate the median of Q1
+# Calculate the median of Q3
 median_q3 = clean_data['Q3'].median()
 
-# Replace missing values in Q1 with its median
+# Replace missing values in Q3 with its median
 clean_data['Q3'] = clean_data['Q3'].fillna(median_q3)
 
 #####################################################################################################################
 #### Q4 ####
 # fill the missing values with median
 
-# Calculate the median of Q1
+# Calculate the median of Q4
 median_q4 = clean_data['Q4'].median()
 
-# Replace missing values in Q1 with its median
+# Replace missing values in Q4 with its median
 clean_data['Q4'] = clean_data['Q4'].fillna(median_q4)
 
-clean_data.to_csv(clean_data_filename, index=False)
+# clean_data.to_csv(clean_data_filename, index=False)
 
 #####################################################################################################################
 #### Q5 ####
@@ -292,6 +292,9 @@ test_set.to_csv(test_data_filename, index=False)
 #####################################################################################################################
 #####################################################################################################################
 #### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10) ####
+# all the code below References: CSC311 Winter2023-2024 lab9
+
+
 vocab = list()
 
 for row in train_set['Q10']:
@@ -299,6 +302,8 @@ for row in train_set['Q10']:
     for word in a:
         if word not in vocab:
             vocab.append(word)
+
+
 # print("Vocabulary Size: ", len(vocab))
 # print(vocab)
 
@@ -351,12 +356,18 @@ X_t, t_t = make_bow(data_1, vocab)
 X_train_bow, t_train = make_bow(data_2, vocab)
 X_valid_bow, t_valid = make_bow(data_3, vocab)
 X_test_bow, t_test = make_bow(data_4, vocab)
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_train_bow.csv", X_train_bow, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_train.csv", t_train, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_valid_bow.csv", X_train_bow, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_valid.csv", t_train, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_test_bow.csv", X_train_bow, delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_test.csv", t_train, delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_train_bow.csv", X_train_bow,
+           delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_train.csv", t_train,
+           delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_valid_bow.csv", X_train_bow,
+           delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_valid.csv", t_train,
+           delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_test_bow.csv", X_train_bow,
+           delimiter=",", fmt='%i')
+np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_test.csv", t_train,
+           delimiter=",", fmt='%i')
 
 # produce the mapping of words to count - whole dataset
 vocab_count_mapping = list(zip(vocab, np.sum(X_t, axis=0)))
@@ -381,4 +392,5 @@ vocab_4_count_mapping = list(zip(vocab, np.sum(X_test_bow, axis=0)))
 vocab_4_count_mapping = sorted(vocab_4_count_mapping, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_3_count_mapping:
 #     print(word, cnt)
-#print(type(X_train_bow))
+
+# print(type(X_train_bow))
