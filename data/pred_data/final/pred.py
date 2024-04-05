@@ -44,6 +44,7 @@ def predict(x):
 
     # calculate the probability of each city name
     probabilities = []
+    print("Shape of model_coefs:", model_coefs.shape)
     # Calculate the probability for each city
     for inter in model_intercept:
         linear_combination = np.dot(x, model_coefs) + inter
@@ -72,7 +73,7 @@ def predict_all(filename):
     # Replace empty strings with NaN for future use
     # We can not simply drop everything because it will affect our matrix size
     clean_data.replace('', np.nan)
-
+    #####################################################################################################################
     #### Q1 ####
     # We don't have to reformat Q1 since they are numerical value
     # fill the missing values with median
@@ -84,6 +85,7 @@ def predict_all(filename):
     # Replace missing values in Q1 with its median
     clean_data['Q1'] = clean_data['Q1'].fillna(median_q1)
 
+    #####################################################################################################################
     #### Q2 ####
     # We don't have to reformat Q2 since they are numerical value
     # fill the missing values with median
@@ -95,6 +97,7 @@ def predict_all(filename):
     # Replace missing values in Q2 with its median
     clean_data['Q2'] = clean_data['Q2'].fillna(median_q2)
 
+    #####################################################################################################################
     #### Q3 ####
     # We don't have to reformat Q3 since they are numerical value
     # fill the missing values with median
@@ -106,6 +109,7 @@ def predict_all(filename):
     # Replace missing values in Q3 with its median
     clean_data['Q3'] = clean_data['Q3'].fillna(median_q3)
 
+    #####################################################################################################################
     #### Q4 ####
     # We don't have to reformat Q4 since they are numerical value
     # fill the missing values with median
@@ -116,6 +120,7 @@ def predict_all(filename):
     # Replace missing values in Q4 with its median
     clean_data['Q4'] = clean_data['Q4'].fillna(median_q4)
 
+    #####################################################################################################################
     #### Q5 ####
     # Find the mode for each option. If the answer has the option, we will add 1 to this option count, if not,
     # add 1 to this no_option count. We do same thing for each four options. Then, compare option count and no_option
@@ -123,66 +128,41 @@ def predict_all(filename):
     # it will be marked as 1 Follow above steps, now we have the binary outcome set for the whole dataset,
     # for example: {'Friends': 1, 'Siblings': 0, 'Co-worker': 0, 'Partner': 1} We will then reformat the whole Q5
     # data into one hot, then replace the missing value with the binary outcome.
-
     clean_data_Q5 = clean_data['Q5'].str.split(', ')
+    for option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+        clean_data[option] = 0
 
-    # Flatten the list to get all unique options
-    all_individual_options = set(
-        [item for sublist in clean_data_Q5.dropna().tolist() for combined in sublist for item in combined.split(',')])
+    for i, options_lst in clean_data_Q5.items():
+        print(i, options_lst)
+        if options_lst is not np.nan:
+            for lst in options_lst:
+                options = lst.split(',')
+                for option in options:
+                    option = option.strip()  # Remove leading/trailing whitespace
+                    if option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+                        clean_data.at[i, option] = 1
 
-    # Initialize counters for presence of each option
-    option_presence_counts = {option.strip(): 0 for option in all_individual_options}
+    option_majority = {}
+    for option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+        total_presence = clean_data[option].sum()
+        # If more than half of the responses include the option, it's predominantly present
+        option_majority[option] = 1 if total_presence >= (len(clean_data) / 2) else 0
 
-    # Count the presence of each option in each list
-    for sublist in clean_data_Q5.dropna().tolist():
-        for combined in sublist:
-            for item in combined.split(','):
-                option_presence_counts[item.strip()] += 1
+    for idx, row in clean_data.iterrows():
+        if pd.isnull(clean_data.at[idx, 'Q5']):  # If the original Q5 value is missing
+            for option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+                clean_data.at[idx, option] = option_majority[option]
 
-    total_lists = len(clean_data_Q5.dropna())
+    # drop Q5 in dataset
+    clean_data = clean_data.drop('Q5', axis=1)
 
-    # Determine the binary outcome for each option (1 for presence, 0 for absence)
-    binary_outcomes = {}
-    for option, count in option_presence_counts.items():
-        # If the option is present in more than half of the lists, it's considered as 1 (presence)
-        binary_outcomes[option] = 1 if count > total_lists / 2 else 0
-
-    # print(binary_outcomes)
-
-    # find the replacement of NaN value in Dataset Q5, and replace it with replacement
-    replacement = []
-    for option, res in binary_outcomes.items():
-        if res == 1 or res == 1.0:
-            replacement.append(option)
-    # print(replacement)
-
-    clean_data['Q5'] = clean_data['Q5'].str.split(',')
-    # print(clean_data['Q5'][120:129])
-    clean_data['Q5'] = clean_data['Q5'].apply(lambda x: x if isinstance(x, list) else replacement)
-    # print(clean_data['Q5'][120:129])
-
-    # one-hot
-    dummies = clean_data['Q5'].apply(lambda x: pd.Series(1, index=x)).fillna(0)
-
-    # drop Q5
-    clean_data = pd.concat([clean_data, dummies], axis=1).drop('Q5', axis=1)
-
+    #####################################################################################################################
     #### Q6 ####
     # We first split it to six different variables
     # then replace missing values with median
 
     clean_data_Q6 = clean_data['Q6'].str.split(',')
-
     # print(clean_data_Q6.head())
-
-    def extract_category_value(row, category_name):
-        for item in row:
-            if item.startswith(f'{category_name}=>'):
-                value_part = item.split('=>')[1]
-                if value_part.isdigit():
-                    return int(value_part)
-        return np.nan  # Return None or a default value if the category is not found
-
     categories = ['Skyscrapers', 'Sport', 'Art and Music', 'Carnival', 'Cuisine', 'Economic']
 
     for category in categories:
@@ -200,6 +180,7 @@ def predict_all(filename):
     # drop Q6 in dataset
     clean_data = clean_data.drop('Q6', axis=1)
 
+    #####################################################################################################################
     #### Q7 | Q8 | Q9 ####
     # We first normalize all the data, then find the outlier,
     # after we find all the outliers, we de-normalize all the data
@@ -223,6 +204,7 @@ def predict_all(filename):
         clean_data[column] = clean_data[column] * col_std + col_mean
         clean_data[column] = clean_data[column].mask(outliers | clean_data[column].isna(), col_mean)
 
+    #####################################################################################################################
     #### Q10 ####
     # We first cleaned the reviews, make them all lowercase
     # removed apostrophes, period, non-standard letter, '\n', '-' etc.
@@ -241,34 +223,35 @@ def predict_all(filename):
     # Replace empty strings with 'without'
     clean_data['Q10'] = clean_data['Q10'].apply(lambda x: 'without' if x == '' else x)
 
+    #####################################################################################################################
     #### Generate t_train, t_valid, X_train_bow(only have the BoW of Q10) and X_valid_bow((only have the BoW of Q10) ####
     # all the code below References: CSC311 Winter2023-2024 lab9
 
     vocab_path = 'final_vocab.csv'
     vocab_df = pd.read_csv(vocab_path)
     vocab = vocab_df['word'].tolist()
-    # print("Vocabulary Size: ", len(vocab))
-    # print(vocab)
+    print("Vocabulary Size: ", len(vocab))
+    print(vocab)
 
     # create X_test_Q10 here
     test_data_lst = list(clean_data['Q10'])
     X_test_bow = make_bow(test_data_lst, vocab)
 
     # X_test for whole test set
-    features_test_df = clean_data.drop(['id', 'Q10', 'Label'], axis=1, errors='ignore')
+    features_test_df = clean_data.drop(['id', 'Q10'], axis=1)
     X_test_bow_df = pd.DataFrame(X_test_bow, index=features_test_df.index)
     X_test_df = pd.concat([features_test_df, X_test_bow_df], axis=1)
-    X_test_df = X_test_df[1:]
     # print(X_test_df.head())
     predictions = []
     for index, test_example in X_test_df.iterrows():
+        print("Shape of test_example:", test_example.values.shape)
         # obtain a prediction for this test example
         pred = predict(test_example.values)
         predictions.append(pred)
 
     return predictions
 
-
+#####################################################################################################################
 ######## Helper Functions #######
 # helper function to clean the text in Q10
 def clean_text(text):
@@ -313,6 +296,10 @@ def make_bow(data, vocab):
     return X
 
 
-if __name__ == '__main__':
-    res = predict_all('/Users/fermis/Desktop/CSC311/CSC311_ML/data/raw_data/clean_dataset.csv'  )
-    print(res)
+def extract_category_value(row, category_name):
+    for item in row:
+        if item.startswith(f'{category_name}=>'):
+            value_part = item.split('=>')[1]
+            if value_part.isdigit():
+                return int(value_part)
+    return np.nan  # Return None or a default value if the category is not found

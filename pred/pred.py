@@ -15,7 +15,7 @@ import random
 import numpy as np
 import pandas as pd
 
-intercept_path = 'final_intercept.txt'
+intercept_path = 'User/final_intercept.txt'
 coefficients_path = 'final_coefficients.csv'
 # train_path = 'final_train_dataset.csv'
 # train_data = pd.read_csv(train_path)
@@ -310,3 +310,4 @@ def make_bow(data, vocab):
                 X[i, j] = 1
 
     return X
+

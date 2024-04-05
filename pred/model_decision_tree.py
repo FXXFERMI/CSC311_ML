@@ -36,7 +36,7 @@ X_test_bow_df = pd.DataFrame(dc.X_test_bow, index=features_test_df.index)
 X_test_df = pd.concat([features_test_df, X_test_bow_df], axis=1)
 X_test = X_test_df.values
 
-dtree = DecisionTreeClassifier(random_state=42, max_depth=6)
+dtree = DecisionTreeClassifier(random_state=42, max_depth=100)
 dtree.fit(X_train, t_train)
 
 train_pre = dtree.predict(X_train)

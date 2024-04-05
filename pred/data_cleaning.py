@@ -9,7 +9,6 @@
 import sys
 import csv
 import random
-
 import numpy as np
 import pandas as pd
 
@@ -139,48 +138,32 @@ We will then reformat the whole Q5 data into one hot, then replace the missing v
 
 """
 clean_data_Q5 = clean_data['Q5'].str.split(', ')
+for option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+    clean_data[option] = 0
 
-# Flatten the list to get all unique options
-all_individual_options = set(
-    [item for sublist in clean_data_Q5.dropna().tolist() for combined in sublist for item in combined.split(',')])
+for i, options_lst in clean_data_Q5.items():
+    #print(i, options_lst)
+    if options_lst is not np.nan:
+        for lst in options_lst:
+            options = lst.split(',')
+            for option in options:
+                option = option.strip()  # Remove leading/trailing whitespace
+                if option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+                    clean_data.at[i, option] = 1
 
-# Initialize counters for presence of each option
-option_presence_counts = {option.strip(): 0 for option in all_individual_options}
+option_majority = {}
+for option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+    total_presence = clean_data[option].sum()
+    # If more than half of the responses include the option, it's predominantly present
+    option_majority[option] = 1 if total_presence >= (len(clean_data) / 2) else 0
 
-# Count the presence of each option in each list
-for sublist in clean_data_Q5.dropna().tolist():
-    for combined in sublist:
-        for item in combined.split(','):
-            option_presence_counts[item.strip()] += 1
+for idx, row in clean_data.iterrows():
+    if pd.isnull(clean_data.at[idx, 'Q5']):  # If the original Q5 value is missing
+        for option in ['Partner', 'Friends', 'Siblings', 'Co-worker']:
+            clean_data.at[idx, option] = option_majority[option]
 
-total_lists = len(clean_data_Q5.dropna())
-
-# Determine the binary outcome for each option (1 for presence, 0 for absence)
-binary_outcomes = {}
-for option, count in option_presence_counts.items():
-    # If the option is present in more than half of the lists, it's considered as 1 (presence)
-    binary_outcomes[option] = 1 if count > total_lists / 2 else 0
-
-# print(binary_outcomes)
-
-# find the replacement of NaN value in Dataset Q5, and replace it with replacement
-replacement = []
-for option, res in binary_outcomes.items():
-    if res == 1 or res == 1.0:
-        replacement.append(option)
-# print(replacement)
-
-clean_data['Q5'] = clean_data['Q5'].str.split(',')
-# print(clean_data['Q5'][120:129])
-clean_data['Q5'] = clean_data['Q5'].apply(lambda x: x if isinstance(x, list) else replacement)
-# print(clean_data['Q5'][120:129])
-
-
-# one-hot
-dummies = clean_data['Q5'].apply(lambda x: pd.Series(1, index=x)).fillna(0)
-clean_data = pd.concat([clean_data, dummies], axis=1).drop('Q5', axis=1)
-
-clean_data.to_csv(clean_data_filename, index=False)
+        # drop Q5 in dataset
+clean_data = clean_data.drop('Q5', axis=1)
 
 #####################################################################################################################
 #### Q6 ####
@@ -239,7 +222,7 @@ for column in ['Q7', 'Q8', 'Q9']:
     # Normalize the column
     clean_data[column] = (clean_data[column] - col_mean) / col_std
 
-    # Identify outliers as values more than 3 standard deviations from the mean
+    # Identify outliers as values more than 2 standard deviations from the mean
     outliers = (clean_data[column] < -2) | (clean_data[column] > 2)
     # Replace outliers and NaNs with the mean of the column
     clean_data[column] = clean_data[column] * col_std + col_mean
@@ -317,21 +300,22 @@ for row in train_set['Q10']:
     for word in a:
         if word not in vocab:
             vocab.append(word)
-vocab_2 = list()
-for row in clean_data['Q10']:
-    a = row.lower().split()
-    for word in a:
-        if word not in vocab_2:
-            vocab_2.append(word)
+# DO NOT TOUCH!!!
+#vocab_2 = list()
+#for row in clean_data['Q10']:
+#    a = row.lower().split()
+#    for word in a:
+#        if word not in vocab_2:
+#            vocab_2.append(word)
 
 # DO NOT TOUCH!!!
 #save vocab
-#vocab_df = pd.DataFrame(vocab, columns=['word'])
-# Save the DataFrame to a CSV file
-#vocab_df.to_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final_vocab.csv', index=False)
-
-# print("Vocabulary Size: ", len(vocab))
-#print(vocab)
+#vocab_df = pd.DataFrame(vocab_2, columns=['word'])
+## Save the DataFrame to a CSV file
+#vocab_df.to_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_vocab.csv', index=False)
+#
+#print("Vocabulary Size: ", len(vocab_2))
+#print(vocab_2)
 
 def make_bow(data, vocab):
     """
@@ -378,7 +362,7 @@ data_1 = list(zip(clean_data['Q10'], clean_data['Label']))
 data_2 = list(zip(train_set['Q10'], train_set['Label']))
 data_3 = list(zip(valid_set['Q10'], valid_set['Label']))
 data_4 = list(zip(test_set['Q10'], test_set['Label']))
-X_t, t_t = make_bow(data_1, vocab_2)
+X_t, t_t = make_bow(data_1, vocab)
 X_train_bow, t_train = make_bow(data_2, vocab)
 X_valid_bow, t_valid = make_bow(data_3, vocab)
 X_test_bow, t_test = make_bow(data_4, vocab)
@@ -399,7 +383,7 @@ np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_test.
 vocab_count_mapping = list(zip(vocab, np.sum(X_t, axis=0)))
 vocab_count_mapping = sorted(vocab_count_mapping, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_count_mapping:
-#    print(word, cnt)
+   #print(word, cnt)
 
 # produce the mapping of words to count - train dataset
 vocab_2_count_mapping = list(zip(vocab, np.sum(X_train_bow, axis=0)))

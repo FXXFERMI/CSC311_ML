@@ -310,3 +310,8 @@ def make_bow(data, vocab):
                 X[i, j] = 1
 
     return X
+
+
+if __name__ == '__main__':
+    res = predict_all('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_test_dataset_1.csv')
+    print(res)
