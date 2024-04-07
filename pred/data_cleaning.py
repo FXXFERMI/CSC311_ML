@@ -15,13 +15,13 @@ import pandas as pd
 
 #### Import Data ####
 # Load the dataset
-data_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/raw_data/clean_dataset.csv'
+data_path = 'data/raw_data/clean_dataset.csv'
 clean_data = pd.read_csv(data_path)
-clean_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/analysis_dataset.csv'
+clean_data_filename = 'data/pred_data/analysis_dataset.csv'
 
-train_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv'
-valid_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv'
-test_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv'
+train_data_filename = 'data/pred_data/train_dataset.csv'
+valid_data_filename = 'data/pred_data/valid_dataset.csv'
+test_data_filename = 'data/pred_data/test_dataset.csv'
 
 #####################################################################################################################
 #### Clean Data - EACH Question ####
@@ -356,17 +356,17 @@ X_t, t_t = make_bow(data_1, vocab)
 X_train_bow, t_train = make_bow(data_2, vocab)
 X_valid_bow, t_valid = make_bow(data_3, vocab)
 X_test_bow, t_test = make_bow(data_4, vocab)
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_train_bow.csv", X_train_bow,
+np.savetxt("data/pred_data/matrix/X_train_bow.csv", X_train_bow,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_train.csv", t_train,
+np.savetxt("data/pred_data/matrix/t_train.csv", t_train,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_valid_bow.csv", X_train_bow,
+np.savetxt("data/pred_data/matrix/X_valid_bow.csv", X_train_bow,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_valid.csv", t_train,
+np.savetxt("data/pred_data/matrix/t_valid.csv", t_train,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_test_bow.csv", X_train_bow,
+np.savetxt("data/pred_data/matrix/X_test_bow.csv", X_train_bow,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_test.csv", t_train,
+np.savetxt("data/pred_data/matrix/t_test.csv", t_train,
            delimiter=",", fmt='%i')
 
 # produce the mapping of words to count - whole dataset

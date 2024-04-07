@@ -15,13 +15,13 @@ import pandas as pd
 
 #### Import Data ####
 # Load the dataset
-data_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/raw_data/clean_dataset.csv'
+data_path = 'data/raw_data/clean_dataset.csv'
 clean_data = pd.read_csv(data_path)
-clean_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/analysis_dataset.csv'
+clean_data_filename = 'data/pred_data/analysis_dataset.csv'
 
-train_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv'
-valid_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv'
-test_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv'
+train_data_filename = '/data/pred_data/train_dataset.csv'
+valid_data_filename = 'data/pred_data/valid_dataset.csv'
+test_data_filename = 'data/pred_data/test_dataset.csv'
 
 #### Clean Data - EACH Question ####
 """
