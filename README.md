@@ -7,7 +7,7 @@ Keep a journal and record the experiments that we perform during CSC311 ML Chall
     - `Q5_analysis_data/`:
     - `Q6_9_analysis_data/`:
     - `Q10_analysis_data/`
-    -`raw_data/`:
+    - `raw_data/`:
         - Where the raw dataset from quercus stores
     - `pred_data`:
       - `final`:
