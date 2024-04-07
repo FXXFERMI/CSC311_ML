@@ -41,7 +41,7 @@ def to_numeric(s):
             return float(s)
 
 def adjust_languages(s):
-    if float(s) >= 50:
+    if float(s) >= 25:
         return pd.isna(s)
     else:
         return float(s)
@@ -259,9 +259,9 @@ if __name__ == "__main__":
 
     acDF = pandas.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
 
-    sns.set_style("darkgrid")
-    palette = sns.cubehelix_palette(light=.8, n_colors=4)
-    sns.relplot(data = acDF, kind="line", x="n-iter", y="score", hue="size", style="type")
+    # sns.set_style("darkgrid")
+    # palette = sns.cubehelix_palette(light=.8, n_colors=4)
+    # sns.relplot(data = acDF, kind="line", x="n-iter", y="score", hue="size", style="type")
 
     all_coefs = mlp.coefs_[0]
 
@@ -308,23 +308,51 @@ if __name__ == "__main__":
     #     sns.catplot(data=df, x=x, hue="Label", kind="count")
     #     plt.xlabel(column_names[i-1][3:])
 
-    # sns.catplot(data=df, x="Label", hue="Q6_1", kind="count")
+    # sns.catplot(data=df, x="Label", hue="Q6_1", kind="count", legend="full", palette="icefire")
     # plt.xlabel("Skyscraper")
-
-    # sns.catplot(data=df, x="Label", hue="Q6_2", kind="count")
+    #
+    # sns.catplot(data=df, x="Label", hue="Q6_2", kind="count", legend="full", palette="icefire")
     # plt.xlabel("Sport")
-    # sns.catplot(data=df, x="Label", hue="Q6_3", kind="count")
+    # sns.catplot(data=df, x="Label", hue="Q6_3", kind="count", legend="full", palette="icefire")
     # plt.xlabel("Art & Music")
-    # sns.catplot(data=df, x="Label", hue="Q6_4", kind="count")
+    # sns.catplot(data=df, x="Label", hue="Q6_4", kind="count", legend="full", palette="icefire")
     # plt.xlabel("Carnival")
-    # sns.catplot(data=df, x="Label", hue="Q6_5", kind="count")
+    # sns.catplot(data=df, x="Label", hue="Q6_5", kind="count", legend="full", palette="icefire")
     # plt.xlabel("Cuisine")
-    # sns.catplot(data=df, x="Label", hue="Q6_6", kind="count")
+    # sns.catplot(data=df, x="Label", hue="Q6_6", kind="count", legend="full", palette="icefire")
     # plt.xlabel("Economic")
 
-    # sns.catplot(data=df, x="Label", hue="Q6_0", kind="count")
+    # sns.catplot(data=df, x="Label", y="Q7", kind="boxen")
+    # sns.boxenplot(data=df, x="Label", y="Q8")
+    # sns.boxenplot(data=df, x="Label", y="Q9")
+
+
 
     # sns.catplot(data=df, x="Label", hue="Q6_4", kind="count")
+    # d1 = df.pivot(index="Q6_6", columns="Q6_5", values="Label")
+    # sns.heatmap(data=d1)
+    df2 = pd.crosstab(df['Q6_6'], df['Q6_1']).div(len(df))
+    print(df2)
+    dfP = df.loc[df['Label'] == 'Paris']
+    dfR = df.loc[df['Label'] == 'Rio de Janeiro']
+    dfN = df.loc[df['Label'] == 'New York City']
+    dfD = df.loc[df['Label'] == 'Dubai']
+
+
+
+    for i in range(1, 7):
+        for j in range(i, 7):
+            if i != j:
+                x = f'Q6_{i}'
+                y = f'Q6_{j}'
+                print(f'x: {x}, y: {y}')
+                # sns.jointplot(data=df, x=x, y=y, hue="Label", kind='kde')
+
+    # sns.jointplot(data=df, x="Q6_6", y="Q6_1", hue="Label", kind='kde')
+
+
+    # sns.heatmap(data=df, index="Q6_6", columns="Q6_1", values="Label")
+
     # sns.jointplot(data=df, x="Q7", y="Q8", hue="Label")
     # sns.catplot(x=df["Label"], y=df["Q7"])
     plt.show()
