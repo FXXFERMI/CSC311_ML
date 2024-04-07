@@ -1,0 +1,1175 @@
+id,Q1,Q2,Q3,Q4,Q7,Q8,Q9,Q10,Label,Partner,Friends,Siblings,Co-worker,Skyscrapers,Sport,Art and Music,Carnival,Cuisine,Economic
+495084,4.0,3.0,4.0,3.0,27.0,2.0,2.0,food,Paris,0,1,1,1,4.0,5.0,3.0,2.0,6.0,1.0
+519782,1.0,1.0,1.0,1.0,24.0,3.0,3.0,soulless artificial,Dubai,1,1,0,0,5.0,1.0,1.0,1.0,1.0,1.0
+602496,5.0,5.0,5.0,4.0,0.0,12.0,18.0,big apple,New York City,1,0,1,1,6.0,3.0,6.0,2.0,5.0,6.0
+523486,4.0,4.0,4.0,4.0,23.0,3.0,2.0,what happens in vegas stays in vegas,Dubai,1,1,0,0,1.0,5.0,6.0,3.0,4.0,2.0
+526497,4.0,3.0,5.0,2.0,10.0,3.0,5.0,come to dubai,Dubai,1,1,1,0,6.0,3.0,4.0,2.0,4.0,5.0
+411011,4.0,3.0,3.0,4.0,30.0,4.0,5.0,carnavalâ,Rio de Janeiro,0,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+521180,5.0,3.0,4.0,2.0,30.0,4.0,6.0,big buildings big cars big houses,Dubai,0,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+312687,4.0,4.0,5.0,4.0,15.0,2.0,3.0,in rio de janeiro its always a beautiful day,Rio de Janeiro,1,1,0,0,2.0,6.0,5.0,2.0,3.0,3.0
+92814,5.0,5.0,5.0,3.0,-5.000000000000002,15.0,3.0,were gonna be in the hudson,New York City,1,0,0,1,6.0,6.0,6.0,3.0,4.0,6.0
+627699,5.0,3.0,5.0,3.0,3.0,3.0,15.0,city of love,Paris,1,1,1,0,1.0,2.0,6.0,4.0,3.0,3.0
+522961,3.0,2.0,3.0,3.0,28.0,4.0,7.0,its always a beautiful day,Rio de Janeiro,0,0,1,0,1.0,4.0,3.0,4.0,6.0,2.0
+505211,5.0,2.0,4.0,5.0,27.0,1.0,4.0,in rio there are only two seasons carnival and the wait for the next carnival,Rio de Janeiro,1,0,0,0,1.0,6.0,5.0,6.0,4.0,4.0
+516930,5.0,3.0,3.0,4.0,12.0,4.0,7.0,la necessite est la mere de la science,Paris,0,1,0,0,5.0,6.0,6.0,5.0,3.0,2.0
+524485,4.0,3.0,5.0,4.0,25.0,3.0,5.0,tourist center,Dubai,1,1,0,0,5.0,2.0,1.0,4.0,3.0,6.0
+520921,4.0,3.0,5.0,3.0,30.0,2.0,2.0,life is this points lower but i like this points higher,Dubai,0,1,0,0,6.0,3.0,3.0,3.0,4.0,4.0
+519627,5.0,5.0,4.0,5.0,-1.0000000000000018,4.0,6.0,welcome to new york,New York City,0,1,0,0,5.0,1.0,2.0,3.0,4.0,6.0
+498320,5.0,5.0,5.0,5.0,14.262165867032214,1.0,30.0,jai sriram,New York City,0,0,0,1,6.0,5.0,4.0,1.0,3.0,2.0
+496969,5.0,4.0,3.0,4.0,5.0,3.0,3.0,never sleeps,New York City,1,1,1,1,4.0,3.0,3.0,2.0,3.0,1.0
+524843,4.0,4.0,4.0,2.0,5.0,2.0,4.0,idk,Paris,1,1,1,0,4.0,1.0,6.0,3.0,5.0,2.0
+308394,5.0,2.0,4.0,1.0,10.0,2.0,10.0,âœomelette du fromageââ,Paris,1,0,0,0,2.0,3.0,6.0,1.0,5.0,4.0
+396386,4.0,3.0,2.0,5.0,20.0,7.0,6.0,have fun,Rio de Janeiro,1,1,1,0,1.0,5.0,3.0,6.0,4.0,2.0
+312769,5.0,5.0,4.0,1.0,1.9999999999999982,1.0,3.0,big apple,New York City,0,0,1,0,3.0,1.0,2.0,1.0,5.0,5.0
+497304,5.0,2.0,4.0,4.0,5.0,2.0,10.0,city of love,Paris,1,0,0,0,1.0,3.0,6.0,4.0,5.0,2.0
+495724,3.0,2.0,2.0,3.0,30.0,3.0,5.0,enjoy your life to the fullest,Rio de Janeiro,1,1,1,1,4.0,6.0,5.0,4.0,4.0,4.0
+524489,4.0,2.0,4.0,2.0,10.0,3.0,4.0,city of love  miraculous  bed bugs  patisserie,Paris,1,1,1,0,1.0,4.0,5.0,2.0,6.0,3.0
+519777,5.0,4.0,4.0,4.0,25.0,3.0,15.0,the future is now,Dubai,1,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+494871,5.0,3.0,1.0,3.0,-5.000000000000002,10.0,20.0,not affordable to live there,New York City,0,0,1,0,5.0,1.0,2.0,3.0,4.0,6.0
+519481,5.0,5.0,5.0,3.0,0.0,1.0,5.0,no,New York City,1,1,0,0,6.0,1.0,3.0,2.0,5.0,4.0
+496935,5.0,5.0,5.0,5.0,5.0,3.0,10.0,cest la vie,Paris,1,1,0,1,1.0,1.0,5.0,4.0,6.0,4.0
+291267,5.0,5.0,5.0,3.0,14.262165867032214,6.0,30.0,metropolitan,New York City,1,0,0,0,6.0,6.0,6.0,2.0,4.0,6.0
+508362,4.0,3.0,5.0,3.0,15.0,5.0,8.0,stealing,Paris,1,0,0,0,4.0,3.0,6.0,4.0,6.0,3.0
+519568,5.0,3.0,2.0,5.0,30.0,2.0,2.0,very hot and sunny partying and playing soccer,Rio de Janeiro,0,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+400581,5.0,5.0,4.0,4.0,0.0,5.0,5.0,concrete jungle where dreams are made of  theres nothing you canât do,New York City,1,1,0,1,6.0,3.0,5.0,4.0,5.0,1.0
+413395,5.0,5.0,5.0,5.0,10.0,3.0,9.353424657534246,fashion good food romantic,Paris,1,1,1,1,3.0,4.0,6.0,5.0,6.0,4.0
+521117,5.0,5.0,4.0,3.0,3.0,5.0,10.0,no quotes come to mind when thinking about this city,New York City,0,1,0,1,6.0,3.0,2.0,1.0,4.0,5.0
+521117,4.0,3.0,3.0,2.0,20.0,3.0,5.0,nothing in particular i dont know much about dubai,Dubai,0,1,0,1,6.0,2.0,3.0,1.0,4.0,5.0
+498320,5.0,5.0,5.0,5.0,-5.000000000000002,1.0,9.353424657534246,viva la france,Paris,1,1,1,0,1.0,5.0,6.0,3.0,4.0,2.0
+304865,5.0,5.0,5.0,4.0,4.0,5.0,7.0,metropolis,New York City,1,1,1,1,6.0,2.0,4.0,3.0,4.0,6.0
+523486,3.0,3.0,2.0,5.0,20.0,1.0,4.0,raise the roof,Rio de Janeiro,1,1,0,0,6.0,2.0,3.0,1.0,4.0,5.0
+543961,4.0,4.0,4.0,5.0,23.0,2.0,3.0,sports,Rio de Janeiro,0,1,0,0,3.0,5.0,3.0,4.0,2.0,3.0
+394579,4.0,3.0,3.0,3.0,17.0,3.0,4.0,dubai is a parody of the 21st century,Dubai,0,1,0,1,6.0,2.0,3.0,1.0,4.0,5.0
+317214,3.0,4.0,1.0,4.0,8.0,5.0,20.0,cool,Rio de Janeiro,0,1,0,0,1.0,3.0,5.0,4.0,6.0,2.0
+519655,5.0,2.0,3.0,2.0,-5.000000000000002,2.0,5.0,the city of loveâ,Paris,1,0,0,0,2.0,3.0,5.0,1.0,4.0,4.0
+298063,3.0,3.0,2.0,5.0,25.0,2.0,5.0,football is life,Rio de Janeiro,1,1,0,0,3.0,6.0,6.0,6.0,3.0,2.0
+493688,5.0,5.0,5.0,3.0,0.0,5.0,8.0,fashion and culture capital,Paris,1,0,0,0,1.0,3.0,6.0,3.0,6.0,5.0
+504452,5.0,2.0,3.0,4.0,20.0,2.0,10.0,feeling blessed joy the life,Rio de Janeiro,0,0,0,1,1.0,5.0,4.0,6.0,3.0,2.0
+499389,5.0,3.0,4.0,2.0,7.0,2.0,4.0,oui oui baguette,Paris,1,0,0,1,1.0,3.0,6.0,2.0,5.0,4.0
+304865,3.0,3.0,4.0,5.0,30.0,3.0,4.0,jesus,Rio de Janeiro,1,1,0,0,2.0,4.0,5.0,6.0,4.0,2.0
+414142,5.0,2.0,2.0,5.0,30.0,3.0,5.0,colourful exciting and naturalistic,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+494488,5.0,5.0,3.0,3.0,5.0,5.0,9.353424657534246,dream bigâ,New York City,1,1,1,1,6.0,1.0,4.0,2.0,3.0,5.0
+518782,4.0,2.0,4.0,1.0,24.0,5.0,3.0,no income tax ,Dubai,0,0,1,1,6.0,3.0,2.0,1.0,4.0,6.0
+543961,4.0,2.0,4.0,2.0,18.0,2.0,1.0,so many rich people,Dubai,0,0,1,0,4.0,2.0,1.0,2.0,2.0,5.0
+601547,3.0,1.0,3.0,5.0,25.0,2.0,2.0,the blue bird rio,Rio de Janeiro,1,0,0,0,1.0,4.0,6.0,6.0,3.0,4.0
+312266,5.0,4.0,4.0,4.0,4.0,2.0,5.0,a city that never sleeps,New York City,1,1,1,0,1.0,2.0,6.0,3.0,4.0,5.0
+503523,5.0,5.0,4.0,4.0,14.262165867032214,3.0,25.0,new york new york i want to wake up in a city that never sleeps,New York City,1,1,1,1,5.0,3.0,6.0,1.0,2.0,4.0
+525301,5.0,4.0,5.0,2.0,25.0,4.0,20.0,no quote just big buildings,Dubai,0,1,0,0,6.0,1.0,2.0,1.0,2.0,5.0
+522120,2.0,1.0,3.0,4.0,9.0,4.796030116358659,9.353424657534246,e ohâ,Paris,0,1,0,0,2.0,3.0,6.0,2.0,2.0,5.0
+496397,4.0,3.0,4.0,5.0,22.0,3.0,4.0,football is life,Rio de Janeiro,1,1,1,1,2.0,6.0,6.0,6.0,4.0,2.0
+410946,5.0,4.0,4.0,2.0,15.0,2.0,6.0,the city of love,Paris,1,1,0,0,3.0,4.0,6.0,2.0,5.0,1.0
+498206,3.0,4.0,1.0,2.0,6.0,23.0,4.0,fashion,Paris,0,1,0,0,5.0,2.0,3.0,4.0,3.0,3.0
+519760,3.0,2.0,3.0,5.0,30.0,3.0,4.0,samba time,Rio de Janeiro,1,1,1,0,1.0,5.0,4.0,6.0,3.0,2.0
+420339,5.0,3.0,4.0,2.0,5.0,1.0,8.0,city of love,Paris,1,0,0,0,2.0,1.0,6.0,3.0,5.0,4.0
+315892,5.0,5.0,5.0,4.0,1.0,10.0,30.0,city that never sleeps,New York City,1,1,1,1,6.0,2.0,4.0,1.0,3.0,5.0
+408332,4.0,2.0,3.0,2.0,10.0,2.0,10.0,la baguette,Paris,1,0,0,0,1.0,3.0,6.0,4.0,5.0,2.0
+392479,4.0,3.0,2.0,2.0,5.0,9.0,10.0,dark grey rainy and coldâ,New York City,1,0,0,1,5.0,2.0,3.0,1.0,4.0,6.0
+499357,5.0,5.0,4.0,2.0,5.0,4.0,10.0,in new york  concrete jungle where dreams are made of,New York City,0,1,1,1,6.0,2.0,5.0,1.0,4.0,3.0
+498995,4.0,2.0,4.0,1.0,5.0,2.0,3.0,paris city of a million lights,Paris,1,1,0,0,1.0,3.0,5.0,1.0,5.0,3.0
+491645,5.0,3.0,4.0,2.0,0.0,5.0,5.0,today i wanted to eat a croissant,Paris,1,1,1,0,2.0,1.0,5.0,2.0,5.0,3.0
+524818,5.0,4.0,5.0,2.0,1.0,2.0,4.0,bakeries and cigarettes,Paris,1,1,0,0,2.0,2.0,6.0,3.0,6.0,3.0
+413331,3.0,4.0,5.0,5.0,30.0,4.0,4.0,vibrant and full of energy,Rio de Janeiro,1,1,1,0,1.0,5.0,6.0,3.0,4.0,2.0
+522139,3.0,4.0,4.0,5.0,24.0,4.0,10.0,fifa world cup soccer,Rio de Janeiro,1,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+393297,4.0,3.0,4.0,3.0,-8.000000000000002,5.0,10.0,tourist attractionâ,Paris,0,1,0,0,2.0,3.0,6.0,4.0,5.0,1.0
+502644,5.0,4.0,5.0,5.0,25.0,4.0,5.0,where dreams reach new heightsâ,Dubai,1,0,0,0,5.0,6.0,6.0,3.0,5.0,4.0
+414328,5.0,3.0,4.0,3.0,14.0,2.0,4.0,baguette de la oui oui,Paris,1,0,0,0,2.0,5.0,6.0,3.0,6.0,4.0
+526511,5.0,5.0,5.0,4.0,11.0,3.0,4.0,city of fashion,Paris,1,0,0,0,3.0,2.0,6.0,5.0,6.0,6.0
+491031,5.0,4.0,4.0,2.0,0.0,4.0,8.0,i love you,Paris,1,1,0,0,4.0,6.0,4.0,3.0,4.0,4.0
+618161,3.0,2.0,2.0,4.0,31.0,3.0,3.0,maybe we can do summers in rio,Rio de Janeiro,0,1,0,0,3.0,6.0,4.0,2.0,3.0,3.0
+523352,5.0,4.0,2.0,2.0,-3.0000000000000018,8.0,7.0,capitalismâ,New York City,0,0,0,1,6.0,4.0,5.0,1.0,1.0,6.0
+526511,4.0,4.0,5.0,5.0,28.0,4.0,3.0,football,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,6.0,4.0,3.0
+386729,4.0,3.0,3.0,5.0,30.0,3.0,5.0,time to party like theres no tomorrow,Rio de Janeiro,1,1,0,0,1.0,4.0,3.0,6.0,5.0,2.0
+519839,4.0,3.0,3.0,4.0,25.0,3.0,3.0,without,Rio de Janeiro,1,0,0,0,3.0,5.0,6.0,4.0,2.0,1.0
+523647,5.0,3.0,3.0,3.0,-5.000000000000002,5.0,7.0,business hub,New York City,1,1,1,1,6.0,2.0,3.0,1.0,5.0,4.0
+601547,5.0,4.0,4.0,3.0,15.0,4.0,4.0,la vi en rose,Paris,1,0,0,0,2.0,1.0,5.0,4.0,2.0,4.0
+313448,3.0,3.0,3.0,5.0,25.0,3.0,5.0,colourful decorations enthusiastic culture and party lifestyleâ,Rio de Janeiro,0,1,0,0,1.0,3.0,5.0,6.0,4.0,2.0
+516935,5.0,5.0,5.0,5.0,20.0,6.0,9.353424657534246,who was in paris,Paris,1,1,1,1,3.0,3.0,6.0,3.0,6.0,5.0
+525469,4.0,4.0,3.0,5.0,14.262165867032214,5.0,2.0,ammazing spectacular,Dubai,1,1,1,1,1.0,1.0,2.0,3.0,6.0,4.0
+523037,3.0,2.0,3.0,5.0,32.0,2.0,4.0,do not be anxious about tomorrow for tomorrow will be anxious for itself,Rio de Janeiro,1,1,0,0,1.0,4.0,3.0,5.0,3.0,2.0
+522169,3.0,5.0,4.0,3.0,14.262165867032214,13.0,20.0,big rotten apple,New York City,1,1,0,1,6.0,5.0,4.0,1.0,4.0,5.0
+502644,4.0,3.0,3.0,5.0,25.0,3.0,3.0,brazil eats sleeps and drinks football it lives football,Rio de Janeiro,1,1,1,0,2.0,5.0,5.0,6.0,5.0,4.0
+316001,5.0,5.0,4.0,4.0,4.0,7.0,8.0,concrete jungles where dreams are made of,New York City,1,1,1,1,6.0,6.0,6.0,6.0,6.0,6.0
+501455,5.0,5.0,4.0,5.0,14.262165867032214,2.0,13.0,we are not what we know but what we are willing to learn,New York City,1,1,1,1,5.0,3.0,2.0,4.0,1.0,6.0
+413773,4.0,5.0,4.0,4.0,22.0,6.0,5.0,money money money,Dubai,0,1,0,0,6.0,1.0,2.0,3.0,4.0,5.0
+315892,5.0,5.0,5.0,3.0,5.0,8.0,25.0,city of love and light,Paris,1,1,1,1,2.0,4.0,5.0,1.0,6.0,3.0
+385647,5.0,4.0,5.0,3.0,25.0,2.0,6.0,fashion,Paris,1,0,1,0,4.0,1.0,6.0,2.0,3.0,5.0
+612184,5.0,5.0,3.0,4.0,1.9999999999999982,2.0,2.0,concrete jungle where dreams were made of,New York City,1,1,1,0,5.0,1.0,2.0,2.0,2.0,6.0
+386729,5.0,5.0,2.0,3.0,0.0,2.0,10.0,the big apple,New York City,1,1,1,0,4.0,2.0,5.0,4.0,3.0,6.0
+519655,5.0,4.0,5.0,3.0,20.0,3.0,2.0,warm skyscrapers rich sand,Dubai,0,1,0,0,6.0,2.0,3.0,1.0,3.0,6.0
+314487,5.0,5.0,4.0,5.0,1.9999999999999982,2.0,30.0,where dreams are made,New York City,1,1,1,0,6.0,1.0,5.0,2.0,3.0,4.0
+314116,5.0,2.0,4.0,2.0,30.0,2.0,3.0,the land of the rich,Dubai,1,1,0,0,6.0,4.0,1.0,3.0,2.0,5.0
+520921,5.0,3.0,3.0,4.0,20.0,2.0,4.0,people dont take trips trips take people,Rio de Janeiro,0,1,1,0,3.0,6.0,4.0,5.0,4.0,3.0
+630239,3.0,1.0,4.0,4.0,25.0,2.0,5.0,beautiful and colorful and lots of birds,Rio de Janeiro,1,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+311256,4.0,5.0,5.0,5.0,30.0,2.0,3.0,salute mi familia                  ,Rio de Janeiro,0,1,0,0,1.0,6.0,6.0,6.0,3.0,3.0
+524818,4.0,4.0,3.0,5.0,12.0,2.0,6.0,carnival and beaches,Rio de Janeiro,1,1,0,0,3.0,5.0,5.0,6.0,4.0,3.0
+508586,5.0,3.0,2.0,1.0,10.0,2.0,13.0,city of love,Paris,1,0,0,0,1.0,2.0,6.0,1.0,5.0,4.0
+526402,4.0,4.0,3.0,5.0,14.0,2.0,3.0,when you feel the rhythm of your heart you flyâ,Rio de Janeiro,0,0,1,0,1.0,4.0,5.0,6.0,3.0,2.0
+317274,5.0,4.0,4.0,3.0,14.262165867032214,4.796030116358659,9.353424657534246,without,Paris,1,1,0,0,4.0,3.0,4.0,3.0,4.0,4.0
+543739,5.0,4.0,5.0,4.0,10.0,1.0,3.0,without,Paris,1,0,0,0,6.0,2.0,5.0,2.0,4.0,1.0
+523109,5.0,5.0,5.0,3.0,15.0,3.0,4.0,france,Paris,1,0,0,0,3.0,4.0,4.0,4.0,5.0,2.0
+526091,5.0,4.0,2.0,3.0,10.0,5.0,25.0,oui oui,Paris,1,0,0,0,2.0,4.0,6.0,5.0,3.0,1.0
+612184,2.0,2.0,1.0,3.0,20.0,1.0,2.0,neymar jr siuu,Rio de Janeiro,1,0,0,0,1.0,6.0,5.0,5.0,1.0,2.0
+495082,4.0,3.0,4.0,3.0,20.0,3.0,2.0,rich,Dubai,0,1,0,0,6.0,1.0,2.0,4.0,3.0,5.0
+493876,5.0,5.0,5.0,5.0,0.0,3.0,10.0,the city that never sleeps where dreams are made and the skyline tells a story of endless possibilities,New York City,1,1,1,1,6.0,4.0,5.0,6.0,2.0,2.0
+519852,3.0,1.0,3.0,3.0,25.0,2.0,3.0,neymar,Rio de Janeiro,0,1,0,0,6.0,1.0,3.0,4.0,2.0,5.0
+104963,5.0,4.0,5.0,5.0,24.0,2.0,13.0,how do you afford rent in this place,New York City,1,1,1,0,6.0,1.0,4.0,2.0,3.0,5.0
+524843,4.0,3.0,4.0,3.0,5.0,3.0,4.0,idk,New York City,1,1,1,1,5.0,2.0,3.0,1.0,4.0,6.0
+40536,4.0,3.0,4.0,5.0,22.0,4.0,10.0,very lively and vibrant city,Rio de Janeiro,1,1,1,1,1.0,5.0,4.0,6.0,3.0,2.0
+302916,5.0,2.0,3.0,1.0,20.0,4.0,7.0,flashy and lavish,Dubai,0,0,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+24137,5.0,5.0,5.0,2.0,15.0,1.0,1.0,if london is a watercolor new york is an oil painting   peter shaffer,New York City,0,0,0,1,3.0,2.0,2.0,2.0,2.0,6.0
+525327,3.0,2.0,4.0,5.0,33.0,3.0,10.0,carnival time,Rio de Janeiro,0,1,0,0,1.0,5.0,5.0,6.0,2.0,1.0
+410380,4.0,4.0,4.0,5.0,28.0,2.0,5.0,life is a carnival you wait in long lines to enjoy a short ride but its that moment that makes you feel alive,Rio de Janeiro,1,1,0,0,2.0,6.0,4.0,5.0,3.0,1.0
+504927,5.0,3.0,5.0,2.0,25.0,3.0,4.0,habibi come to dubai,Dubai,0,1,0,1,6.0,2.0,1.0,3.0,2.0,3.0
+491645,3.0,4.0,3.0,4.0,25.0,3.0,5.0,rio the movie,Rio de Janeiro,1,1,1,0,1.0,5.0,4.0,5.0,3.0,1.0
+631625,5.0,3.0,5.0,2.0,7.0,3.0,6.0,well always have paris,Paris,1,1,0,0,1.0,3.0,6.0,4.0,5.0,2.0
+523494,4.0,2.0,2.0,2.0,30.0,2.0,2.0,olympics  â,Rio de Janeiro,1,0,1,0,1.0,6.0,5.0,5.0,1.0,2.0
+415092,4.0,3.0,4.0,2.0,10.0,3.0,10.0,romantic  â,Paris,0,1,1,0,4.0,5.0,6.0,5.0,1.0,5.0
+314487,2.0,2.0,2.0,5.0,25.0,3.0,2.0,i think of soccer and carnivals,Rio de Janeiro,1,1,0,0,5.0,6.0,4.0,3.0,1.0,2.0
+311267,4.0,4.0,4.0,5.0,25.0,3.0,2.0,a city full of passion,Rio de Janeiro,1,1,0,0,2.0,6.0,3.0,5.0,1.0,4.0
+618249,3.0,3.0,3.0,5.0,10.0,2.0,3.0,jesus statueâ,Rio de Janeiro,1,1,1,0,1.0,6.0,4.0,5.0,3.0,2.0
+522829,5.0,5.0,2.0,5.0,10.0,1.0,10.0,bright lights loud sounds,New York City,1,1,1,0,5.0,2.0,5.0,2.0,3.0,6.0
+292993,5.0,5.0,4.0,5.0,7.0,3.0,10.0,big city,New York City,1,1,0,1,4.0,3.0,2.0,5.0,1.0,6.0
+501455,5.0,5.0,5.0,5.0,-2.0000000000000018,4.0,10.0,spread love everywhere you go,Paris,1,1,1,0,6.0,1.0,5.0,3.0,4.0,2.0
+505458,3.0,2.0,2.0,1.0,5.0,2.0,2.0,i barely know about this city,Dubai,1,1,0,0,6.0,3.0,1.0,4.0,2.0,5.0
+602496,4.0,4.0,5.0,1.0,10.0,3.0,2.0,skyscrapers,Dubai,1,1,0,1,6.0,3.0,1.0,1.0,2.0,4.0
+518845,5.0,5.0,3.0,3.0,4.0,6.0,6.0,concrete jungle where dreams are made of,New York City,0,1,1,0,6.0,4.0,5.0,4.0,5.0,1.0
+316001,4.0,2.0,3.0,4.0,25.0,5.0,4.0,good weather good people,Rio de Janeiro,1,1,0,0,3.0,4.0,5.0,5.0,5.0,4.0
+412550,5.0,4.0,3.0,2.0,12.0,2.0,4.0, that im most definitely in new york empire state of mind by jay z ft alicia keys,New York City,0,1,1,1,5.0,1.0,4.0,2.0,3.0,6.0
+518612,3.0,2.0,3.0,2.0,10.0,2.0,10.0,lost in the beauty of rio de janeiro,Rio de Janeiro,1,1,0,0,6.0,5.0,1.0,3.0,2.0,4.0
+325166,4.0,2.0,4.0,3.0,5.0,3.0,6.0,fast and furious 5,Rio de Janeiro,0,1,0,0,3.0,5.0,3.0,5.0,3.0,3.0
+492222,2.0,1.0,2.0,3.0,32.0,3.0,5.0,nothing,Rio de Janeiro,0,1,0,0,1.0,4.0,4.0,5.0,4.0,1.0
+522044,5.0,5.0,5.0,5.0,5.0,3.0,3.0,im rich,New York City,1,1,1,1,5.0,4.0,3.0,2.0,1.0,6.0
+413395,3.0,2.0,3.0,5.0,20.0,2.0,3.0,carnival art music and beach also a disney movie,Rio de Janeiro,1,1,0,0,2.0,4.0,6.0,6.0,3.0,3.0
+417461,4.0,4.0,3.0,2.0,37.0,3.0,5.0,dude wheres your suit just once when i say suit up i wish youd put on a suit   barney stinson,Dubai,0,1,0,1,6.0,2.0,3.0,4.0,2.0,6.0
+524804,5.0,1.0,4.0,1.0,25.0,5.0,5.0,âœto infinity and beyondâ,Dubai,1,0,1,0,6.0,2.0,1.0,3.0,4.0,5.0
+496699,4.0,3.0,3.0,3.0,25.0,5.0,5.0,money,Dubai,1,1,1,1,6.0,3.0,3.0,3.0,3.0,6.0
+414451,5.0,5.0,4.0,5.0,10.0,5.0,10.0,feels like a dream or like a movie,New York City,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+524659,5.0,3.0,4.0,5.0,12.0,2.0,3.0,bonjour,Paris,1,1,0,0,4.0,2.0,5.0,1.0,6.0,3.0
+499616,5.0,5.0,5.0,4.0,5.0,3.0,10.0,haute cuisine is an antiquated hierarchy built upon rules written by stupid old men rules designed to make it impossible for womâen to enter this world    sous chef colette from ratatouille,Paris,1,1,0,0,4.0,1.0,6.0,3.0,5.0,2.0
+491182,5.0,5.0,4.0,2.0,-1.0000000000000018,5.0,15.0,concrete jungle where dreams are made of,New York City,1,1,1,1,6.0,4.0,3.0,1.0,2.0,5.0
+317154,5.0,4.0,4.0,4.0,10.0,2.0,10.0,eiffel tower and soccer,Paris,1,0,0,0,3.0,3.0,3.0,3.0,5.0,3.0
+393297,2.0,3.0,3.0,5.0,15.0,2.0,5.0,passionate soccerfootball fansâ,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+518429,5.0,5.0,2.0,2.0,14.262165867032214,2.0,5.0,wall street,New York City,0,0,0,1,5.0,4.0,2.0,1.0,3.0,6.0
+320438,4.0,4.0,4.0,3.0,23.0,2.0,3.0,time to say dubai,Dubai,1,1,0,0,6.0,1.0,2.0,3.0,2.0,6.0
+419249,4.0,3.0,4.0,3.0,10.0,3.0,3.0,no quote comes to mind,Paris,1,1,0,0,1.0,2.0,6.0,2.0,5.0,3.0
+496397,5.0,5.0,5.0,4.0,1.9999999999999982,3.0,10.0,concrete jungle where dreams are made of,New York City,1,1,1,1,6.0,4.0,6.0,2.0,3.0,6.0
+519934,5.0,5.0,4.0,3.0,0.0,1.0,5.0,concrete jungle where dreams are made of,New York City,0,1,0,1,5.0,1.0,2.0,3.0,4.0,6.0
+519839,4.0,3.0,4.0,2.0,10.0,3.0,4.0,without,Paris,1,1,1,0,2.0,3.0,5.0,1.0,6.0,4.0
+526402,5.0,4.0,5.0,2.0,19.0,3.0,3.0,a city built from nothing,Dubai,0,0,1,0,6.0,1.0,2.0,3.0,5.0,4.0
+522150,3.0,2.0,2.0,2.0,15.0,5.0,15.0,live laugh love,Rio de Janeiro,1,0,1,0,3.0,5.0,5.0,4.0,4.0,3.0
+523648,4.0,3.0,3.0,5.0,20.0,2.0,3.0,tiki taka,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+392971,3.0,3.0,2.0,4.0,25.0,3.0,4.0,best footballers and martial artists,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,5.0,5.0,1.0
+520191,5.0,2.0,5.0,3.0,24.0,3.0,4.0,money cannot buy passion,Dubai,1,1,1,0,6.0,3.0,1.0,2.0,4.0,5.0
+519760,5.0,5.0,5.0,4.0,5.0,6.0,10.0,how do you tell how good bread is without tasting it not the smell not the look but the sound of the crust,Paris,1,0,1,0,5.0,2.0,6.0,1.0,4.0,3.0
+495082,4.0,4.0,5.0,5.0,35.0,3.0,5.0,live your passion,Rio de Janeiro,0,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+519934,4.0,4.0,5.0,4.0,20.0,2.0,20.0,never settle for less,Dubai,1,1,1,1,6.0,2.0,1.0,3.0,5.0,4.0
+417461,5.0,5.0,5.0,5.0,15.0,2.0,9.353424657534246,a little bonjour goes a long way   emily,Paris,1,1,0,0,4.0,4.0,6.0,5.0,6.0,4.0
+523710,4.0,3.0,4.0,5.0,14.262165867032214,5.0,15.0,adventure is worthwhile,Rio de Janeiro,1,1,1,0,2.0,4.0,6.0,5.0,3.0,1.0
+520118,5.0,4.0,5.0,2.0,30.0,5.0,10.0,ultramodern architecture and a lively nightlife scene,Dubai,0,1,0,0,6.0,3.0,4.0,1.0,2.0,5.0
+518782,5.0,4.0,4.0,2.0,9.0,2.0,2.0,love,Paris,1,0,0,0,4.0,3.0,6.0,1.0,4.0,5.0
+525137,4.0,4.0,5.0,2.0,24.0,7.0,7.0,money can buy happiness,Dubai,1,0,0,0,6.0,4.0,2.0,2.0,1.0,4.0
+413773,5.0,5.0,4.0,4.0,0.0,10.0,15.0,the city where dreams are made of,New York City,1,0,0,0,5.0,3.0,4.0,1.0,2.0,6.0
+104963,4.0,4.0,2.0,1.0,30.0,2.0,5.0,exploit as much as possible,Dubai,1,1,1,0,6.0,5.0,1.0,3.0,2.0,4.0
+520317,5.0,2.0,2.0,1.0,15.0,2.0,2.0,happy new years,New York City,1,0,0,1,5.0,1.0,3.0,2.0,4.0,6.0
+525023,5.0,4.0,5.0,3.0,9.0,3.0,10.0,the city of love,Paris,1,0,0,0,1.0,3.0,6.0,4.0,5.0,2.0
+302916,5.0,2.0,4.0,2.0,10.0,3.0,6.0,eiffel tower,Paris,1,1,1,0,1.0,3.0,5.0,4.0,6.0,2.0
+519766,2.0,2.0,4.0,3.0,26.0,2.0,2.0,jesus soccerâ,Rio de Janeiro,1,1,0,0,1.0,5.0,6.0,3.0,4.0,2.0
+523726,4.0,2.0,4.0,5.0,20.0,7.0,11.0,fun so much fun,Rio de Janeiro,1,1,1,0,2.0,6.0,5.0,1.0,4.0,3.0
+498917,3.0,2.0,3.0,3.0,30.0,2.0,1.0,jungle,Rio de Janeiro,1,0,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+629160,3.0,1.0,2.0,5.0,20.0,4.0,6.0,brazil is football,Rio de Janeiro,0,1,1,0,1.0,5.0,6.0,4.0,3.0,2.0
+503173,5.0,2.0,4.0,2.0,8.0,2.0,6.0,the city of love,Paris,1,0,0,0,2.0,1.0,4.0,3.0,6.0,5.0
+491645,5.0,4.0,4.0,4.0,10.0,5.0,10.0,i only know its crazy rich,Dubai,1,1,1,0,6.0,1.0,2.0,3.0,3.0,6.0
+313448,5.0,4.0,5.0,2.0,14.262165867032214,1.0,2.0,yellow taxis businessmen businesswomen coffee and news,New York City,1,0,1,1,5.0,2.0,4.0,1.0,3.0,6.0
+309958,5.0,5.0,5.0,3.0,5.0,4.0,13.0,money money money   someone probs,New York City,1,1,1,1,6.0,3.0,2.0,1.0,5.0,4.0
+631625,3.0,3.0,2.0,4.0,24.0,3.0,3.0,viva footbal,Rio de Janeiro,0,1,0,0,3.0,5.0,6.0,4.0,2.0,1.0
+525379,5.0,5.0,2.0,1.0,10.0,5.0,14.0,the city that never sleeps,New York City,1,1,1,1,6.0,2.0,4.0,1.0,3.0,5.0
+605738,3.0,2.0,3.0,5.0,26.0,4.0,4.0,all in one rhythm,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,2.0,3.0
+497304,4.0,4.0,2.0,5.0,30.0,3.0,5.0,paradise found in brazil,Rio de Janeiro,1,1,0,0,1.0,3.0,5.0,6.0,4.0,2.0
+521972,5.0,5.0,5.0,3.0,20.0,3.0,4.0,no word such as impossible exist,Dubai,1,1,1,0,6.0,2.0,2.0,4.0,6.0,6.0
+525327,5.0,5.0,5.0,1.0,30.0,4.796030116358659,9.353424657534246,it was the best of times it was the worst of times,Dubai,1,1,0,0,6.0,2.0,2.0,2.0,3.0,5.0
+521180,3.0,3.0,3.0,5.0,20.0,2.0,4.0,summers beaches parties,Rio de Janeiro,1,0,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+519806,4.0,3.0,5.0,2.0,28.0,7.0,10.0,habibi come to dubai,Dubai,0,1,1,0,1.0,6.0,5.0,3.0,4.0,2.0
+304564,4.0,2.0,1.0,1.0,25.0,4.0,2.0,capitalism,Dubai,0,0,0,1,6.0,3.0,3.0,2.0,4.0,6.0
+493969,3.0,2.0,3.0,4.0,30.0,3.0,5.0,pele,Rio de Janeiro,0,1,0,0,1.0,5.0,3.0,2.0,4.0,1.0
+316478,5.0,2.0,3.0,4.0,20.0,2.0,4.0,rich people,Dubai,0,1,0,0,6.0,1.0,2.0,5.0,4.0,3.0
+523687,4.0,1.0,2.0,1.0,14.262165867032214,2.0,5.0,eiffel tower,Paris,0,1,0,0,6.0,2.0,4.0,1.0,5.0,3.0
+520118,5.0,5.0,5.0,4.0,19.0,2.0,5.0,the big apple,New York City,1,1,1,1,6.0,1.0,5.0,2.0,4.0,3.0
+516887,4.0,2.0,3.0,2.0,0.0,2.0,5.0,the city of lights,Paris,1,0,1,0,1.0,6.0,5.0,2.0,4.0,3.0
+413395,4.0,5.0,3.0,3.0,10.0,3.0,2.0,busy  big city  expensive price for everything,New York City,0,1,0,1,6.0,4.0,2.0,2.0,3.0,6.0
+526039,4.0,2.0,4.0,5.0,20.0,2.0,3.0,luxury,Dubai,0,1,1,0,5.0,4.0,3.0,1.0,2.0,6.0
+519605,5.0,5.0,2.0,3.0,0.0,2.0,30.0,the city that never sleeps,New York City,0,0,1,1,6.0,1.0,5.0,4.0,3.0,2.0
+317266,5.0,3.0,4.0,4.0,18.0,3.0,4.0,city of the future,Dubai,1,1,1,1,6.0,2.0,3.0,4.0,1.0,5.0
+516927,4.0,5.0,3.0,5.0,25.0,1.0,3.0,samba de brasilâ,Rio de Janeiro,0,1,1,0,1.0,5.0,4.0,6.0,3.0,2.0
+508362,5.0,5.0,2.0,3.0,14.0,7.0,15.0,movies,New York City,1,0,0,0,5.0,4.0,4.0,2.0,4.0,6.0
+525137,5.0,3.0,4.0,1.0,-4.000000000000002,2.0,8.0,the city of love,Paris,1,0,0,0,2.0,4.0,6.0,1.0,6.0,2.0
+498481,2.0,2.0,2.0,4.0,30.0,3.0,3.0,olympic place,Rio de Janeiro,1,0,0,1,1.0,5.0,5.0,6.0,3.0,2.0
+308394,4.0,2.0,3.0,5.0,35.0,3.0,2.0,âœainât no party like a pony partyâ,Rio de Janeiro,0,1,1,0,2.0,5.0,4.0,6.0,3.0,1.0
+395709,5.0,5.0,4.0,4.0,14.262165867032214,3.0,3.0,if you can dream it you can do it   walt disney,Dubai,1,0,0,0,5.0,4.0,3.0,3.0,3.0,6.0
+317284,2.0,2.0,2.0,5.0,29.0,1.0,2.0,streets are filled with music and joy,Rio de Janeiro,1,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+517648,5.0,5.0,3.0,1.0,10.0,1.0,6.0,there is something in the new york air that makes sleep useless,New York City,1,1,1,0,5.0,1.0,1.0,1.0,4.0,5.0
+411711,3.0,3.0,5.0,2.0,25.0,4.0,24.0,the bigger they are the harder they fall,Dubai,1,1,0,0,6.0,2.0,3.0,1.0,4.0,5.0
+297125,4.0,2.0,3.0,5.0,27.0,3.0,2.0,the first city that comes to my mind when someone says brazilâ,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+495729,4.0,3.0,4.0,4.0,26.0,5.0,7.0,go confidently in the direction of your dreams live the life youve imagined  henry david thoreau,Dubai,1,1,0,0,6.0,1.0,3.0,2.0,4.0,5.0
+492766,5.0,5.0,5.0,5.0,-3.0000000000000018,10.0,10.0,i want to be a part of it new york new york,New York City,1,1,1,1,6.0,6.0,6.0,2.0,6.0,6.0
+387537,4.0,2.0,3.0,4.0,20.0,3.0,5.0,the home of the games,Rio de Janeiro,0,1,0,0,5.0,6.0,4.0,4.0,4.0,4.0
+508320,5.0,2.0,3.0,4.0,20.0,4.0,1.0,dubai is my dream honeymoon destination,Dubai,0,0,0,1,6.0,2.0,3.0,2.0,4.0,6.0
+193638,5.0,5.0,2.0,5.0,10.0,5.0,10.0,gooooaaaaalll hot women partying and carnivals lots of favelas and crime,Rio de Janeiro,0,0,0,1,2.0,6.0,3.0,6.0,2.0,1.0
+398389,5.0,3.0,4.0,4.0,0.0,2.0,2.0,the city of love,Paris,1,1,0,0,1.0,3.0,5.0,4.0,6.0,2.0
+520058,5.0,5.0,4.0,5.0,-4.000000000000002,7.0,9.353424657534246,in new york concrete jungle where dreams are made,New York City,1,1,1,1,1.0,3.0,2.0,6.0,4.0,5.0
+524890,3.0,1.0,3.0,5.0,28.0,3.0,5.0,enjoying life one carnival at a time,Rio de Janeiro,0,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+5978,4.0,3.0,2.0,1.0,22.0,3.0,3.0,hypermodernized with a worrying underbelly,Dubai,0,1,0,1,6.0,3.0,4.0,1.0,2.0,5.0
+317274,5.0,4.0,4.0,3.0,14.262165867032214,4.796030116358659,9.353424657534246,without,New York City,1,1,0,0,4.0,3.0,4.0,3.0,4.0,4.0
+524883,4.0,5.0,3.0,4.0,5.0,4.0,10.0,big apple,New York City,1,1,1,1,4.0,5.0,3.0,3.0,4.0,5.0
+385944,5.0,5.0,5.0,5.0,28.0,3.0,8.0,rich gets richer,Dubai,0,1,0,0,6.0,3.0,2.0,4.0,1.0,5.0
+317266,5.0,5.0,3.0,4.0,14.262165867032214,4.0,7.0,concrete jungle where dreams are made of,New York City,1,1,1,1,4.0,6.0,5.0,1.0,2.0,3.0
+526497,3.0,2.0,3.0,4.0,20.0,3.0,3.0,put your flags up to the sky,Rio de Janeiro,1,1,1,0,3.0,5.0,5.0,5.0,5.0,3.0
+495729,5.0,4.0,5.0,2.0,5.0,10.0,9.0,be yourself everyone else is already taken  oscar wilde,New York City,1,1,1,1,5.0,4.0,3.0,1.0,2.0,6.0
+525301,5.0,5.0,5.0,5.0,1.9999999999999982,3.0,40.0,idk tbh,Paris,1,0,0,0,6.0,5.0,3.0,1.0,1.0,5.0
+495729,5.0,2.0,3.0,4.0,7.0,4.0,12.0,life is really simple but we insist on making it complicatedâ confucius,Paris,1,1,0,0,1.0,3.0,6.0,2.0,5.0,4.0
+502612,5.0,1.0,3.0,4.0,15.0,2.0,1.0,without,Paris,1,0,0,0,1.0,6.0,6.0,3.0,6.0,5.0
+315702,4.0,1.0,4.0,3.0,15.0,2.0,10.0,city of lights,Paris,1,0,0,0,4.0,1.0,5.0,3.0,6.0,2.0
+522075,3.0,3.0,3.0,5.0,25.0,3.0,5.0,rio,Rio de Janeiro,1,1,0,0,1.0,3.0,5.0,6.0,4.0,2.0
+521042,5.0,3.0,5.0,2.0,7.0,4.0,25.0,dream big work hard,Paris,1,0,0,0,2.0,3.0,5.0,4.0,6.0,1.0
+522829,5.0,4.0,5.0,3.0,15.0,2.0,10.0,love,Paris,1,1,1,0,5.0,1.0,3.0,1.0,6.0,3.0
+411287,1.0,1.0,4.0,1.0,10.0,2.0,5.0,brazil soccer dancing,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+630016,5.0,3.0,5.0,2.0,25.0,4.0,3.0,money makes the world go round,Dubai,0,1,1,0,6.0,2.0,1.0,3.0,5.0,4.0
+497167,3.0,3.0,2.0,4.0,10.0,3.0,10.0,effile tower,Paris,1,1,1,1,5.0,1.0,6.0,3.0,2.0,4.0
+5978,3.0,2.0,2.0,5.0,25.0,2.0,2.0,culturally rich with lots of things going on at once,Rio de Janeiro,1,1,1,0,2.0,6.0,5.0,4.0,3.0,1.0
+519568,5.0,5.0,4.0,4.0,12.0,2.0,2.0,beautiful architecture lots of nature peaceful,Paris,0,0,1,0,1.0,2.0,6.0,4.0,5.0,3.0
+393297,3.0,3.0,3.0,1.0,14.262165867032214,6.0,20.0,stock exchangeâ,New York City,0,1,0,0,5.0,4.0,2.0,1.0,3.0,6.0
+412550,5.0,3.0,3.0,2.0,12.0,2.0,3.0,french baguettes,Paris,1,1,0,0,4.0,1.0,5.0,2.0,6.0,3.0
+517660,5.0,4.0,5.0,4.0,14.0,2.0,5.0,matuidi charo,Paris,1,1,1,0,6.0,3.0,1.0,5.0,2.0,4.0
+526257,4.0,3.0,4.0,4.0,22.0,3.0,2.0,dubai will never settle for anything less than third place,Dubai,0,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+631752,4.0,3.0,3.0,1.0,10.0,6.0,10.0,build a wall,New York City,1,1,1,1,5.0,1.0,3.0,2.0,4.0,6.0
+496699,5.0,5.0,5.0,5.0,20.0,10.0,10.0,freedom,New York City,1,1,1,1,6.0,6.0,6.0,6.0,6.0,6.0
+68949,5.0,5.0,4.0,5.0,3.0,2.0,10.0,if i can make it thereâill make it anywhere âi want to wake up in a city that never sleeps,New York City,0,1,0,1,6.0,2.0,6.0,4.0,5.0,6.0
+390735,3.0,4.0,3.0,5.0,23.0,2.0,2.0,in brazil every kid starts playing street football very early its in our blood as a professional i started at sao cristovao in the city of rio de janeiro of course i also played in the beach soccer league barefoot,Rio de Janeiro,1,0,1,0,1.0,6.0,4.0,5.0,3.0,2.0
+413773,4.0,3.0,2.0,5.0,24.0,3.0,3.0,party time,Rio de Janeiro,0,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+306699,4.0,3.0,4.0,4.0,20.0,3.0,4.0,city of god,Rio de Janeiro,1,1,0,0,2.0,5.0,5.0,5.0,5.0,3.0
+630016,5.0,2.0,2.0,2.0,5.0,6.0,10.0,you havent lived until youve seen new york,New York City,0,0,0,1,6.0,1.0,3.0,2.0,4.0,5.0
+521988,5.0,5.0,3.0,4.0,-1.0000000000000018,8.0,10.0,without,New York City,1,1,1,1,5.0,3.0,6.0,1.0,2.0,4.0
+318437,5.0,2.0,3.0,1.0,14.262165867032214,3.0,10.0,theres nothing we can do,Paris,1,1,1,1,2.0,4.0,6.0,1.0,5.0,3.0
+392971,5.0,3.0,5.0,4.0,5.0,4.0,5.0,city of romance,Paris,1,0,0,0,5.0,4.0,6.0,2.0,4.0,3.0
+520868,5.0,5.0,5.0,5.0,0.0,1.0,5.0,these streets will make you feel brand new,New York City,0,0,0,1,6.0,6.0,6.0,1.0,4.0,6.0
+519835,4.0,1.0,3.0,2.0,24.0,3.0,2.0,power corrupts absolute power corrupts absolutely,Dubai,1,0,0,0,5.0,5.0,1.0,1.0,1.0,5.0
+629160,5.0,1.0,5.0,4.0,25.0,4.0,7.0,dubai will never settle anything for less than the first place,Dubai,0,1,1,0,6.0,1.0,4.0,3.0,2.0,5.0
+398389,4.0,4.0,2.0,5.0,20.0,1.0,2.0,rio a perfect city that is almost impossible to not love,Rio de Janeiro,1,1,1,0,1.0,4.0,5.0,6.0,3.0,2.0
+618161,4.0,2.0,4.0,3.0,21.0,4.0,3.0,what happens in dubai stays in dubai,Dubai,0,1,0,0,6.0,3.0,3.0,4.0,3.0,6.0
+511882,5.0,3.0,5.0,5.0,8.0,5.0,40.0,french revolution,Paris,1,1,1,0,1.0,5.0,6.0,4.0,2.0,3.0
+520926,3.0,2.0,2.0,4.0,28.0,2.0,3.0,life is to be enjoyed while it lasts,Rio de Janeiro,1,1,0,0,2.0,6.0,6.0,6.0,4.0,3.0
+493688,3.0,3.0,3.0,3.0,25.0,2.0,2.0,carnivals,Rio de Janeiro,0,0,0,1,3.0,4.0,4.0,6.0,3.0,3.0
+524489,4.0,3.0,2.0,5.0,30.0,4.0,4.0,redemption  â,Rio de Janeiro,1,1,1,0,2.0,4.0,5.0,6.0,3.0,1.0
+508784,5.0,4.0,3.0,2.0,0.0,3.0,3.0,the big apple,New York City,1,1,0,0,4.0,3.0,5.0,2.0,1.0,6.0
+522961,5.0,5.0,3.0,4.0,5.0,3.0,15.0,concrete jungles where dreams are made of theres nothing you cant do,New York City,1,1,1,1,5.0,4.0,1.0,2.0,3.0,6.0
+523824,4.0,1.0,5.0,1.0,28.0,3.0,4.0,dubai is soulless,Dubai,1,1,0,1,6.0,4.0,3.0,2.0,2.0,6.0
+413882,4.0,4.0,5.0,4.0,35.0,3.0,8.0,where vibrant culture dances with natural beauty,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,2.0,3.0
+411711,5.0,2.0,4.0,2.0,-5.000000000000002,2.0,4.0,que sera sera,Paris,1,0,1,0,6.0,2.0,5.0,1.0,4.0,3.0
+500739,4.0,5.0,4.0,4.0,5.0,4.0,8.0,city that never sleeps,New York City,0,1,1,1,6.0,1.0,4.0,2.0,3.0,5.0
+104963,3.0,5.0,5.0,5.0,26.0,3.0,6.0,sports divide people more than politics,Rio de Janeiro,1,1,1,0,2.0,6.0,5.0,4.0,3.0,1.0
+318703,5.0,5.0,2.0,3.0,5.0,2.0,5.0,gigantic subway rats stealing pizzas,New York City,1,1,1,1,4.0,1.0,3.0,2.0,6.0,5.0
+492858,4.0,5.0,3.0,5.0,28.0,2.0,8.0,land of football,Rio de Janeiro,0,1,0,0,2.0,6.0,5.0,4.0,3.0,1.0
+522075,4.0,3.0,4.0,2.0,15.0,2.0,6.0,baguette,Paris,1,0,0,0,2.0,1.0,5.0,3.0,6.0,4.0
+521165,3.0,2.0,1.0,5.0,33.0,2.0,3.0,city of cats  olympia,Rio de Janeiro,0,1,0,0,1.0,5.0,6.0,3.0,4.0,2.0
+630892,5.0,5.0,4.0,4.0,-5.000000000000002,4.0,6.0,they are in the tunnels,New York City,1,1,0,0,6.0,5.0,2.0,3.0,1.0,4.0
+209691,4.0,3.0,5.0,2.0,5.0,3.0,30.0,without,Paris,1,1,0,0,4.0,3.0,6.0,3.0,6.0,5.0
+316940,3.0,2.0,3.0,3.0,18.0,3.0,4.0,its not the capital city of brazil,Rio de Janeiro,1,1,1,1,1.0,6.0,5.0,2.0,3.0,4.0
+492222,5.0,3.0,4.0,2.0,30.0,2.0,10.0,rich,Dubai,0,1,0,0,6.0,2.0,3.0,4.0,2.0,6.0
+389474,5.0,5.0,5.0,5.0,5.0,8.0,30.0,welcome to new york,New York City,1,1,1,1,6.0,2.0,4.0,1.0,3.0,5.0
+524987,5.0,4.0,5.0,2.0,25.0,5.0,3.0,the city of the richâ,Dubai,0,1,0,0,6.0,1.0,2.0,4.0,3.0,5.0
+398273,4.0,4.0,1.0,5.0,30.0,1.0,2.0,celebrations and the carnival,Rio de Janeiro,0,0,1,0,1.0,5.0,4.0,6.0,3.0,2.0
+634513,5.0,5.0,4.0,1.0,22.0,6.0,3.0,âœdont gain the world  lose your soul wisdom is better than silver or goldâ ââbob marley,Dubai,1,1,1,1,6.0,2.0,3.0,2.0,6.0,6.0
+286825,5.0,5.0,3.0,2.0,1.9999999999999982,10.0,20.0,greatest city on earth,New York City,1,0,0,0,6.0,2.0,4.0,4.0,6.0,6.0
+312382,3.0,4.0,3.0,5.0,15.0,3.0,9.353424657534246,failure is not a setback but a stepping stone to greatness  charles oliveira,Rio de Janeiro,0,1,1,0,3.0,6.0,2.0,6.0,3.0,6.0
+516927,5.0,2.0,5.0,3.0,0.0,1.0,2.0,french the language of love,Paris,1,0,0,0,1.0,4.0,6.0,3.0,5.0,2.0
+385647,5.0,5.0,2.0,4.0,22.0,1.0,3.0,fancy,New York City,1,1,0,1,5.0,3.0,2.0,1.0,4.0,6.0
+498481,4.0,2.0,5.0,5.0,28.0,3.0,3.0,very rich place,Dubai,1,0,1,0,6.0,3.0,2.0,5.0,4.0,6.0
+523628,4.0,4.0,4.0,5.0,25.0,3.0,3.0,aunque digan que soy un bandolero donde voy,Rio de Janeiro,0,1,0,0,3.0,6.0,5.0,6.0,5.0,3.0
+617619,4.0,3.0,5.0,4.0,25.0,2.0,2.0,something about football,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,2.0,3.0
+601730,5.0,4.0,5.0,3.0,5.0,8.0,5.0,not just a city but a whole world,Paris,1,1,1,0,6.0,2.0,6.0,4.0,6.0,5.0
+394579,4.0,2.0,5.0,3.0,5.0,2.0,2.0,the average piece of junk is probably more meaningful than our criticism designating it so,Paris,1,1,1,0,2.0,1.0,4.0,6.0,5.0,3.0
+522169,5.0,4.0,3.0,3.0,20.0,2.0,10.0,a parody of the 21st century,Dubai,1,1,0,0,6.0,2.0,3.0,2.0,6.0,6.0
+520335,5.0,5.0,4.0,2.0,5.0,5.0,3.0,baguettes,Paris,1,0,0,0,3.0,1.0,6.0,2.0,5.0,4.0
+523024,5.0,2.0,4.0,3.0,-5.000000000000002,2.0,4.0,well always have paris,Paris,1,1,0,0,1.0,2.0,6.0,2.0,6.0,2.0
+385647,4.0,4.0,4.0,5.0,25.0,2.0,2.0,soccer,Rio de Janeiro,0,1,0,1,2.0,5.0,4.0,6.0,3.0,1.0
+517048,5.0,5.0,5.0,5.0,20.0,7.0,9.0,most famous city in the world,New York City,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+525290,3.0,2.0,4.0,5.0,30.0,4.0,4.0,jesus died for our sins,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+519839,4.0,3.0,5.0,3.0,15.0,3.0,5.0,without,Dubai,1,1,0,0,6.0,1.0,3.0,4.0,5.0,2.0
+495041,4.0,2.0,1.0,1.0,25.0,4.0,2.0,new rich,Dubai,0,0,0,1,6.0,2.0,2.0,1.0,3.0,5.0
+499616,5.0,5.0,4.0,4.0,7.0,6.0,10.0,my name is jordan belfort im a former member of the middle class raised by two accountants in a tiny apartment in bayside queens the year i turned 26 as the head of my own brokerage firm i made 49 million which really pissed me off because it was three shy of a million a week    the wolf of wall street,New York City,1,1,1,0,5.0,1.0,4.0,2.0,3.0,6.0
+524766,4.0,3.0,4.0,3.0,28.0,4.0,1.0,not much doesnt have much understanding of the city,Dubai,0,1,0,0,5.0,3.0,5.0,2.0,5.0,3.0
+492766,5.0,2.0,4.0,3.0,-2.0000000000000018,2.0,2.0,the city of love,Paris,1,0,1,0,2.0,6.0,6.0,1.0,5.0,6.0
+68949,5.0,4.0,3.0,2.0,11.0,3.0,5.0,in the city of love,Paris,1,0,0,0,2.0,3.0,6.0,1.0,4.0,4.0
+503173,5.0,5.0,3.0,2.0,4.0,3.0,10.0,the city of rats,New York City,0,1,0,0,5.0,1.0,2.0,3.0,6.0,4.0
+618249,4.0,5.0,4.0,5.0,0.0,3.0,10.0,carrie bradshaw,New York City,1,1,1,1,4.0,1.0,5.0,2.0,3.0,6.0
+423637,3.0,2.0,5.0,5.0,30.0,3.0,3.0,without,Rio de Janeiro,1,0,0,0,5.0,2.0,4.0,1.0,3.0,6.0
+520302,5.0,3.0,4.0,2.0,25.0,7.0,5.0,people say im extravagant because i want to be surrounded by beauty but tell me who wants to be surrounded by garbage,Dubai,1,1,1,1,6.0,2.0,5.0,1.0,3.0,4.0
+520868,3.0,5.0,5.0,4.0,25.0,3.0,5.0,the sky is not the limit,Dubai,0,1,0,0,6.0,4.0,4.0,1.0,1.0,6.0
+398389,5.0,4.0,4.0,3.0,-2.0000000000000018,5.0,10.0,concrete jungle where dreams are made of,New York City,1,1,1,0,6.0,1.0,4.0,2.0,3.0,5.0
+601730,5.0,3.0,4.0,5.0,20.0,5.0,10.0,the possibilities of human ambition,Dubai,1,1,1,0,6.0,6.0,3.0,4.0,6.0,6.0
+616834,3.0,3.0,4.0,5.0,25.0,3.0,5.0,they have a joy for life,Rio de Janeiro,1,1,0,0,1.0,6.0,4.0,3.0,5.0,2.0
+523024,4.0,2.0,5.0,3.0,29.0,3.0,5.0,a little slice of heaven,Dubai,0,1,0,0,6.0,1.0,1.0,1.0,1.0,5.0
+313531,5.0,4.0,2.0,5.0,12.0,2.0,5.0,rio digennaro,Rio de Janeiro,1,1,0,0,2.0,4.0,6.0,5.0,3.0,1.0
+622833,5.0,4.0,4.0,3.0,0.0,5.0,20.0,welcome to new york,New York City,1,0,0,0,6.0,2.0,4.0,3.0,3.0,6.0
+400581,5.0,3.0,5.0,5.0,15.0,2.0,7.0,the city of love,Paris,1,0,0,0,5.0,5.0,6.0,5.0,2.0,4.0
+497167,1.0,1.0,1.0,1.0,25.0,3.0,4.0,forest nature angry birds,Rio de Janeiro,0,1,0,0,1.0,2.0,3.0,4.0,5.0,6.0
+521952,5.0,3.0,4.0,5.0,10.0,3.0,6.0,the most economically developed city,New York City,1,1,0,0,3.0,2.0,4.0,5.0,1.0,6.0
+411992,3.0,3.0,3.0,4.0,24.0,2.0,2.0,fun and lively,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,3.0,4.0,2.0
+523028,4.0,4.0,2.0,3.0,4.0,10.0,20.0,dont live in new york its the toronto of us,New York City,1,0,0,0,4.0,5.0,6.0,3.0,2.0,1.0
+523726,5.0,5.0,4.0,3.0,0.0,15.0,14.0,concrete jungle yeah where dreams are made of theres nothin you cant do yeah okay,New York City,1,1,1,1,6.0,3.0,4.0,1.0,2.0,5.0
+505458,4.0,4.0,4.0,5.0,10.0,2.0,3.0,football,Rio de Janeiro,1,1,0,0,1.0,6.0,3.0,4.0,5.0,2.0
+605738,5.0,4.0,5.0,3.0,18.0,3.0,4.0,dubai,Dubai,1,1,0,0,5.0,1.0,4.0,3.0,2.0,6.0
+312382,5.0,5.0,5.0,4.0,20.0,4.0,2.0,âalways remember they want you broke so get money  fyi it cost money to eat   dj khaled on x,Dubai,0,1,0,0,6.0,5.0,5.0,5.0,5.0,6.0
+414328,5.0,3.0,4.0,3.0,30.0,3.0,3.0,money money money money,Dubai,0,1,0,0,6.0,1.0,2.0,1.0,3.0,5.0
+491553,4.0,3.0,5.0,2.0,34.0,5.0,10.0,1 habibi how are you come to dubaiâ  2 visit dubai  3 fly emirates hello tomorrow,Dubai,1,1,1,0,6.0,1.0,2.0,3.0,6.0,6.0
+520249,3.0,3.0,4.0,2.0,5.0,4.0,5.0,croissant baguette,Paris,1,1,0,0,4.0,1.0,5.0,3.0,6.0,2.0
+313186,2.0,5.0,3.0,2.0,4.0,7.0,13.0,the sleepless city the melting pot of dreams,New York City,0,0,0,1,6.0,2.0,2.0,4.0,4.0,6.0
+519481,5.0,5.0,5.0,3.0,0.0,2.0,2.0,emily in paris               ,Paris,1,1,1,1,2.0,1.0,6.0,4.0,5.0,3.0
+415092,5.0,5.0,4.0,3.0,14.262165867032214,5.0,5.0,dirty,New York City,0,1,0,0,6.0,3.0,6.0,3.0,3.0,6.0
+523024,5.0,5.0,2.0,1.0,0.0,2.0,5.0,anyone can do my job but no one can be me,New York City,1,1,1,1,6.0,1.0,1.0,1.0,2.0,6.0
+495041,5.0,3.0,3.0,2.0,4.0,4.0,16.0,the city of love,Paris,0,1,0,0,1.0,2.0,6.0,2.0,5.0,3.0
+409863,4.0,2.0,2.0,3.0,25.0,3.0,3.0,futuristic,Dubai,0,0,0,1,6.0,1.0,2.0,3.0,4.0,5.0
+505387,5.0,5.0,1.0,3.0,-1.0000000000000018,1.0,5.0,welcome to new york,New York City,1,1,1,1,5.0,4.0,2.0,3.0,1.0,6.0
+602670,2.0,2.0,3.0,1.0,30.0,2.0,1.0,nice,Dubai,0,0,1,0,5.0,5.0,2.0,1.0,3.0,3.0
+311267,5.0,5.0,4.0,3.0,3.0,4.0,5.0,a city full of money,New York City,1,1,0,0,5.0,1.0,4.0,2.0,3.0,6.0
+316001,5.0,4.0,4.0,3.0,25.0,5.0,8.0,come to dubai habibi,Dubai,1,1,1,0,6.0,1.0,3.0,3.0,5.0,6.0
+522285,5.0,5.0,4.0,2.0,0.0,2.0,2.0,give me liberty or give me death,New York City,1,1,1,1,6.0,4.0,3.0,2.0,4.0,6.0
+392971,5.0,4.0,5.0,4.0,25.0,5.0,5.0,city of the future,Dubai,1,0,0,0,6.0,2.0,3.0,2.0,5.0,5.0
+415092,4.0,5.0,2.0,3.0,20.0,5.0,5.0,riâch,Dubai,0,1,0,0,5.0,2.0,3.0,4.0,1.0,6.0
+519568,5.0,5.0,4.0,2.0,1.9999999999999982,2.0,5.0,lots of skyscrapers empire state building expensive,New York City,1,1,1,0,5.0,4.0,3.0,1.0,2.0,6.0
+504443,3.0,2.0,4.0,4.0,15.0,2.0,5.0,we dont want a torch we want our homes,Rio de Janeiro,1,0,0,0,6.0,6.0,2.0,6.0,1.0,2.0
+497212,4.0,4.0,2.0,3.0,5.0,10.0,10.0,welcome to newyork its been waiting for you,New York City,0,1,0,0,5.0,2.0,3.0,4.0,1.0,6.0
+414217,3.0,3.0,3.0,4.0,25.0,7.0,5.0,where the sun meets the sand,Rio de Janeiro,0,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+386729,4.0,2.0,4.0,2.0,20.0,2.0,4.0,the future is now,Dubai,0,0,0,1,6.0,3.0,2.0,1.0,5.0,4.0
+317284,3.0,5.0,4.0,2.0,22.0,3.0,1.0,heart of the desert its not just a city its a vision of the future,Dubai,1,1,0,0,6.0,1.0,3.0,2.0,4.0,5.0
+612184,4.0,5.0,5.0,4.0,30.0,2.0,5.0,luxurious,Dubai,1,0,0,0,6.0,2.0,3.0,4.0,5.0,6.0
+508377,5.0,5.0,5.0,2.0,10.0,2.0,10.0,âœi ought to be jealous of the tower she is more famous than i amâ  â gustave eiffel,Paris,1,1,1,1,1.0,4.0,6.0,3.0,5.0,2.0
+494871,4.0,4.0,3.0,3.0,20.0,3.0,10.0,overly extravagant,Dubai,0,0,0,1,6.0,1.0,3.0,2.0,4.0,5.0
+494020,5.0,5.0,5.0,5.0,23.0,4.0,12.0,cest la vie,Paris,1,1,0,0,1.0,4.0,3.0,2.0,6.0,5.0
+633733,4.0,3.0,1.0,1.0,4.0,2.0,3.0,paris is the city of love  â,Paris,0,1,0,0,3.0,2.0,6.0,1.0,5.0,4.0
+513284,5.0,4.0,3.0,3.0,3.0,10.0,3.0,the city of love,Paris,1,1,1,0,1.0,4.0,6.0,2.0,6.0,5.0
+524890,5.0,3.0,4.0,2.0,24.0,4.0,2.0,habibi come to dubai,Dubai,1,1,0,0,5.0,2.0,3.0,1.0,4.0,6.0
+520191,4.0,4.0,4.0,3.0,3.0,4.0,6.0,i want to be apart of it new york new york,New York City,0,1,1,0,6.0,1.0,5.0,2.0,4.0,3.0
+495084,5.0,4.0,3.0,2.0,31.0,1.0,3.0,so nice they named it twice,New York City,0,1,1,1,5.0,1.0,2.0,3.0,4.0,6.0
+525301,5.0,5.0,3.0,5.0,0.0,10.0,30.0,zooyork,New York City,0,1,0,0,5.0,5.0,5.0,2.0,4.0,6.0
+389474,5.0,5.0,5.0,4.0,20.0,8.0,8.0,the city that never sleeps,Dubai,1,1,1,0,5.0,1.0,4.0,3.0,2.0,6.0
+525292,5.0,5.0,3.0,3.0,3.0,5.0,5.0,without,New York City,1,1,0,0,6.0,4.0,3.0,1.0,4.0,5.0
+520249,4.0,3.0,2.0,3.0,10.0,4.0,4.0,tower of liberty,New York City,0,0,0,1,5.0,1.0,3.0,2.0,4.0,6.0
+493688,4.0,4.0,3.0,2.0,30.0,6.0,2.0,beautiful but empty candy wrapper,Dubai,1,1,0,0,6.0,1.0,2.0,1.0,2.0,5.0
+497131,4.0,3.0,3.0,5.0,23.0,4.0,2.0,score and birds,Rio de Janeiro,1,1,0,0,1.0,6.0,4.0,6.0,4.0,3.0
+521952,5.0,3.0,5.0,4.0,26.0,3.0,3.0,this city always has sunshine days and a continuous feeling of vacations floating in the air,Rio de Janeiro,1,1,0,0,2.0,6.0,5.0,4.0,3.0,1.0
+313186,4.0,3.0,4.0,5.0,30.0,7.0,7.0,enthusiasm of sports and life,Rio de Janeiro,1,1,0,0,4.0,6.0,4.0,6.0,5.0,3.0
+520302,3.0,2.0,5.0,5.0,30.0,2.0,3.0,live like tomorrow never comes,Rio de Janeiro,1,1,0,0,2.0,6.0,4.0,5.0,3.0,1.0
+634513,3.0,3.0,2.0,5.0,15.0,1.0,3.0,life is a succession of moments to live each one is to succeed   coreta kent,Rio de Janeiro,0,1,0,0,1.0,6.0,3.0,6.0,2.0,2.0
+42659,5.0,4.0,4.0,3.0,14.262165867032214,4.796030116358659,9.353424657534246,without,Paris,1,1,0,0,4.0,3.0,4.0,3.0,4.0,4.0
+522961,4.0,4.0,2.0,2.0,24.0,2.0,4.0,little slice of heaven,Dubai,0,0,0,1,6.0,3.0,2.0,1.0,4.0,5.0
+497755,4.0,4.0,3.0,5.0,25.0,2.0,5.0,futball,Rio de Janeiro,0,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+291267,5.0,5.0,5.0,5.0,5.0,5.0,20.0,romance,Paris,1,0,0,0,3.0,6.0,4.0,4.0,4.0,5.0
+501513,5.0,4.0,3.0,5.0,27.0,3.0,10.0,samba soul in the heart of rio de janeiro,Rio de Janeiro,1,0,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+494401,5.0,5.0,5.0,3.0,22.0,5.0,5.0,the place that homes the tallest tower,Dubai,1,1,1,0,6.0,3.0,4.0,6.0,6.0,6.0
+501513,5.0,5.0,5.0,5.0,20.0,3.0,20.0,nothing is imposssible,Dubai,0,0,0,1,5.0,1.0,2.0,3.0,4.0,6.0
+321111,5.0,4.0,3.0,2.0,0.0,5.0,4.0,the most successful city in the world,New York City,1,1,1,1,6.0,4.0,6.0,2.0,5.0,6.0
+524883,3.0,3.0,4.0,5.0,20.0,3.0,8.0,soccer and fun,Rio de Janeiro,0,1,0,0,3.0,6.0,4.0,4.0,3.0,6.0
+40536,5.0,3.0,5.0,3.0,0.0,5.0,8.0,extremely iconic and world renowned with a lot of classical variety,Paris,1,1,1,1,4.0,3.0,5.0,1.0,6.0,2.0
+411287,4.0,2.0,5.0,2.0,10.0,3.0,6.0,the city of cheese,Paris,0,1,0,0,1.0,1.0,6.0,3.0,6.0,3.0
+520852,5.0,5.0,1.0,1.0,0.0,30.000000000000004,9.353424657534246,best pizza in the world,New York City,0,0,0,1,6.0,1.0,6.0,5.0,6.0,6.0
+526402,5.0,4.0,4.0,1.0,8.0,2.0,2.0,the city of love,Paris,0,0,1,0,1.0,3.0,6.0,2.0,5.0,4.0
+411773,5.0,5.0,1.0,2.0,5.0,10.0,5.0,the concrete jungle where dreams are made of,New York City,1,1,1,1,1.0,2.0,4.0,6.0,4.0,3.0
+312382,4.0,4.0,4.0,4.0,-8.000000000000002,2.0,9.353424657534246,jay z once reflected on the diversity and unity within new york city saying that despite the city containing a thousand universes that might not always connect its inhabitants share the same streets subways and cityscapeâ,New York City,1,0,0,0,5.0,4.0,5.0,1.0,3.0,6.0
+514152,5.0,4.0,4.0,4.0,4.0,5.0,10.0,it is a great city,New York City,0,1,0,0,6.0,6.0,6.0,5.0,3.0,6.0
+390735,5.0,5.0,3.0,4.0,1.9999999999999982,1.0,5.0,âœmake your mark in new york and you are a made manâ,New York City,1,1,0,0,5.0,1.0,2.0,4.0,3.0,6.0
+318437,3.0,5.0,3.0,1.0,-5.000000000000002,2.0,10.0,happy new year,New York City,1,1,1,1,2.0,4.0,3.0,1.0,6.0,5.0
+398273,5.0,4.0,4.0,2.0,-5.000000000000002,1.0,3.0,crowded concrete jungle constantly active,New York City,0,1,0,0,5.0,2.0,3.0,1.0,4.0,6.0
+520991,4.0,2.0,2.0,4.0,30.0,3.0,4.0,big jesus statue,Rio de Janeiro,1,1,1,0,3.0,6.0,4.0,5.0,2.0,1.0
+521180,5.0,4.0,3.0,2.0,-5.000000000000002,2.0,10.0,big apple where dreams come true,New York City,0,1,0,0,4.0,2.0,5.0,1.0,3.0,6.0
+522480,5.0,5.0,3.0,5.0,5.0,6.0,7.0,new york is a city that never sleep,New York City,1,1,1,1,6.0,3.0,6.0,4.0,6.0,6.0
+496397,5.0,3.0,5.0,3.0,7.0,2.0,5.0,cest la vie,Paris,1,1,1,1,4.0,4.0,6.0,2.0,6.0,4.0
+616470,5.0,5.0,3.0,3.0,7.0,7.0,7.0,i new york you can be a new man,New York City,1,0,1,1,6.0,2.0,3.0,1.0,4.0,5.0
+413882,5.0,4.0,5.0,2.0,10.0,1.0,10.0,city of love,Paris,1,0,0,0,1.0,2.0,5.0,3.0,6.0,4.0
+522139,5.0,5.0,4.0,2.0,1.9999999999999982,5.0,8.0,statue of liberty,New York City,1,1,1,1,5.0,4.0,2.0,1.0,3.0,6.0
+508149,1.0,4.0,3.0,5.0,23.0,2.0,5.0,poverty is the parent of revolution and crime,Rio de Janeiro,0,1,0,0,1.0,6.0,2.0,5.0,4.0,3.0
+519605,4.0,2.0,4.0,4.0,20.0,5.0,10.0,im on top of the world,Dubai,1,1,1,0,6.0,4.0,2.0,1.0,3.0,5.0
+526575,5.0,4.0,5.0,4.0,5.0,2.0,3.0,magnificent buildings art palaces french cuisine illegal immigrants perfume luxury itemsâ,Paris,1,1,0,0,2.0,3.0,5.0,3.0,6.0,5.0
+313531,5.0,3.0,3.0,3.0,-7.000000000000002,1.0,5.0,the big apple,New York City,1,1,0,1,6.0,4.0,3.0,1.0,2.0,5.0
+499616,3.0,3.0,4.0,4.0,15.0,3.0,5.0,breathtaking landscape its laid back beach culture and its annual carnival,Rio de Janeiro,1,1,0,0,3.0,6.0,4.0,5.0,1.0,2.0
+298063,4.0,3.0,4.0,1.0,32.0,5.0,4.0,taxes are bad,Dubai,0,1,0,1,6.0,1.0,3.0,3.0,3.0,3.0
+519835,5.0,3.0,3.0,3.0,1.9999999999999982,4.0,10.0,empty pockets never held anyone back only empty heads and empty hearts can do that,New York City,1,1,1,1,6.0,3.0,5.0,2.0,4.0,6.0
+519722,5.0,4.0,3.0,3.0,1.0,10.0,8.0,the city that never sleeps,New York City,1,1,1,1,6.0,2.0,4.0,1.0,3.0,5.0
+518612,4.0,3.0,5.0,3.0,5.0,2.0,10.0,dubai will never settle for anything less than first place,Dubai,1,1,0,0,6.0,1.0,3.0,2.0,5.0,4.0
+524485,5.0,4.0,5.0,3.0,25.0,2.0,5.0,if you are lucky enough to have lived in paris as a young man then wherever you go for the rest of your life it stays with you for paris is a moveable feast,Paris,1,1,0,0,3.0,1.0,6.0,2.0,4.0,5.0
+494488,3.0,3.0,3.0,5.0,15.0,1.0,6.0,dance the night awayâ,Rio de Janeiro,1,1,1,0,1.0,5.0,4.0,6.0,3.0,2.0
+314487,5.0,3.0,4.0,2.0,5.0,2.0,8.0,paris is a city of romance and artâ,Paris,1,0,0,0,3.0,1.0,6.0,2.0,5.0,4.0
+518612,5.0,4.0,4.0,3.0,5.0,1.0,10.0,its the worlds center for art,Paris,1,1,0,0,2.0,3.0,6.0,5.0,4.0,1.0
+523687,3.0,1.0,3.0,3.0,5.0,3.0,5.0,skyscraper,Dubai,0,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+392479,2.0,3.0,3.0,4.0,25.0,2.0,4.0,a tropical festive place with a lot of community spirit,Rio de Janeiro,0,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+522480,4.0,3.0,5.0,5.0,30.0,2.0,2.0,rio de janeiro is not the capital of brazil but its the heart of the country,Rio de Janeiro,0,1,0,0,1.0,6.0,3.0,1.0,4.0,3.0
+409187,5.0,3.0,3.0,3.0,15.0,3.0,5.0,love is the poetry of the senses,Paris,1,0,0,0,3.0,2.0,4.0,3.0,4.0,4.0
+387537,5.0,3.0,5.0,5.0,1.9999999999999982,3.0,10.0,eiffel tower,Paris,1,0,0,0,5.0,1.0,5.0,2.0,6.0,6.0
+521972,5.0,5.0,5.0,5.0,0.0,10.0,20.0,a day in the life of a movie,New York City,1,1,1,1,6.0,6.0,6.0,6.0,6.0,6.0
+521952,5.0,2.0,5.0,5.0,15.0,2.0,2.0,the most artistic city,Paris,1,1,0,0,3.0,1.0,6.0,4.0,5.0,2.0
+315551,5.0,4.0,5.0,4.0,25.0,10.0,3.0,habibi come to blank,Dubai,1,1,0,0,6.0,1.0,3.0,2.0,4.0,5.0
+602670,2.0,3.0,5.0,3.0,20.0,1.0,1.0,good,Rio de Janeiro,0,1,0,0,4.0,2.0,2.0,2.0,2.0,2.0
+517373,3.0,4.0,2.0,4.0,20.0,3.0,3.0,um mundo novo,Rio de Janeiro,0,1,1,0,3.0,6.0,4.0,5.0,2.0,1.0
+42659,4.0,1.0,2.0,1.0,25.0,7.0,9.353424657534246,slavery,Dubai,0,0,0,1,6.0,4.0,2.0,1.0,3.0,5.0
+522961,4.0,4.0,5.0,4.0,10.0,2.0,3.0,paris was captured and france proceeded to fall,Paris,1,1,1,1,4.0,3.0,2.0,1.0,5.0,6.0
+618077,5.0,3.0,4.0,2.0,3.0,10.0,5.0,city of romanceâ,Paris,1,0,0,0,1.0,3.0,5.0,1.0,6.0,6.0
+523647,5.0,4.0,4.0,3.0,25.0,5.0,10.0,futuristic,Dubai,1,1,0,0,6.0,2.0,3.0,1.0,5.0,4.0
+524766,5.0,5.0,2.0,3.0,10.0,1.0,10.0,rats and strikes  â,Paris,1,1,0,0,3.0,1.0,5.0,5.0,6.0,3.0
+211158,4.0,3.0,3.0,3.0,10.0,2.0,5.0,the love capital of the world,Paris,1,1,0,0,5.0,3.0,4.0,3.0,5.0,3.0
+543739,5.0,5.0,5.0,4.0,14.262165867032214,1.0,3.0,without,New York City,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+320438,5.0,4.0,5.0,3.0,6.0,1.0,4.0,liberty equality fraternity,Paris,1,0,0,0,3.0,5.0,5.0,3.0,5.0,4.0
+491503,5.0,5.0,4.0,4.0,0.0,4.0,10.0,the city of endless opportunities,New York City,1,0,1,0,6.0,4.0,6.0,3.0,2.0,4.0
+523354,5.0,3.0,3.0,1.0,0.0,2.0,10.0,kylian mbappe,Paris,1,1,1,0,3.0,6.0,5.0,4.0,2.0,1.0
+498995,4.0,2.0,2.0,1.0,5.0,3.0,6.0,the streets will make you feel brand new the lights will inspire you in new york new york new york,New York City,0,0,0,1,6.0,2.0,3.0,1.0,1.0,6.0
+613964,5.0,4.0,4.0,5.0,15.0,20.0,40.0,when good americans die they go to paris,Paris,1,1,0,0,3.0,2.0,6.0,3.0,5.0,4.0
+521114,3.0,4.0,4.0,2.0,14.262165867032214,5.0,10.0,city of oil princes and wannabe influencers,Dubai,0,1,0,0,5.0,4.0,3.0,1.0,2.0,6.0
+520220,5.0,3.0,5.0,4.0,5.0,2.0,4.0,its not just a city but an experience,Paris,1,1,1,0,1.0,3.0,6.0,4.0,5.0,2.0
+497755,5.0,2.0,3.0,2.0,5.0,4.0,6.0,the city that never sleeps,New York City,0,0,0,1,5.0,4.0,3.0,2.0,1.0,6.0
+523710,5.0,5.0,3.0,3.0,-8.000000000000002,20.0,9.353424657534246,concrete jungle where dreams are made of,New York City,1,1,1,1,6.0,1.0,5.0,2.0,3.0,4.0
+518809,4.0,3.0,5.0,5.0,10.0,20.0,15.0,usa pizza food hot dog times square new york times,New York City,1,0,0,0,4.0,2.0,1.0,5.0,3.0,6.0
+508784,4.0,3.0,5.0,4.0,10.0,1.0,2.0,the city of lights,Paris,1,1,0,0,1.0,4.0,6.0,3.0,5.0,2.0
+498917,5.0,4.0,5.0,4.0,30.0,2.0,3.0,futuristic,Dubai,0,1,1,0,6.0,1.0,3.0,2.0,5.0,4.0
+501105,5.0,3.0,5.0,3.0,7.0,1.0,3.0,city of love,Paris,1,0,0,0,1.0,2.0,6.0,3.0,5.0,4.0
+602670,1.0,1.0,1.0,3.0,1.0,1.0,1.0,beautiful,Paris,1,0,0,0,1.0,6.0,6.0,6.0,6.0,6.0
+412772,4.0,3.0,5.0,1.0,20.0,4.0,3.0,âœi want you to deal with your problems by becoming richââ,Dubai,1,1,1,0,6.0,3.0,2.0,1.0,4.0,5.0
+212706,3.0,2.0,2.0,5.0,25.0,1.0,1.0,soccer and samba,Rio de Janeiro,1,1,0,0,3.0,6.0,5.0,4.0,2.0,1.0
+523486,5.0,3.0,5.0,2.0,22.0,3.0,5.0,esque je peux aller aux toilettes,Paris,1,1,1,0,2.0,6.0,3.0,4.0,1.0,5.0
+507409,4.0,4.0,4.0,2.0,24.0,3.0,5.0,a city of excessâ  built on a house of cards oil source is finite,Dubai,0,0,0,1,6.0,2.0,3.0,2.0,3.0,5.0
+522829,3.0,2.0,4.0,3.0,30.0,2.0,3.0,lively,Rio de Janeiro,1,1,1,0,2.0,6.0,3.0,3.0,4.0,3.0
+519481,4.0,2.0,2.0,5.0,30.0,2.0,1.0,passionate,Rio de Janeiro,1,1,0,0,1.0,3.0,5.0,6.0,4.0,2.0
+521141,4.0,2.0,2.0,1.0,0.0,2.0,3.0,just you waitâ,New York City,1,1,0,1,6.0,3.0,3.0,1.0,3.0,6.0
+524804,5.0,5.0,2.0,3.0,-5.000000000000002,3.0,3.0,all that glitters is not gold,New York City,0,0,0,1,1.0,3.0,4.0,6.0,5.0,2.0
+395359,3.0,3.0,3.0,3.0,19.0,3.0,3.0,3,Dubai,1,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0
+292993,4.0,4.0,4.0,3.0,20.0,3.0,2.0,rich,Dubai,0,1,0,0,5.0,2.0,1.0,3.0,4.0,6.0
+627699,5.0,5.0,2.0,3.0,14.262165867032214,4.0,15.0,the city that never sleeps,New York City,0,1,0,1,6.0,4.0,6.0,1.0,4.0,6.0
+525292,5.0,3.0,2.0,2.0,5.0,2.0,3.0,without,Paris,1,0,0,0,1.0,1.0,6.0,1.0,2.0,1.0
+520030,5.0,2.0,2.0,5.0,20.0,3.0,5.0,the big statue of jesus christ,Rio de Janeiro,1,1,0,0,6.0,1.0,3.0,2.0,4.0,5.0
+520852,4.0,1.0,4.0,5.0,23.0,3.0,6.0,suiiiiiiiiiiiii ronaldoâ,Rio de Janeiro,0,1,0,0,1.0,6.0,6.0,6.0,5.0,1.0
+525853,1.0,3.0,5.0,5.0,30.0,2.0,3.0,christ the redeemer,Rio de Janeiro,0,1,0,0,3.0,6.0,6.0,6.0,3.0,1.0
+519724,3.0,1.0,1.0,1.0,6.0,1.0,1.0,bon appetit,Paris,1,0,0,1,1.0,4.0,3.0,6.0,5.0,2.0
+517048,5.0,4.0,5.0,3.0,19.0,5.0,6.0,city of futuristic infrastructure,Dubai,1,1,0,0,6.0,4.0,2.0,1.0,3.0,5.0
+291561,3.0,3.0,5.0,1.0,20.0,5.0,7.0,the rich get richer the poor get poorer,Dubai,1,0,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+68949,4.0,4.0,5.0,3.0,24.0,2.0,3.0,presenting the tallest building in the world,Dubai,1,1,1,0,6.0,3.0,4.0,3.0,5.0,6.0
+409863,5.0,5.0,5.0,2.0,1.0,4.0,10.0,city of dreams,New York City,0,1,1,0,6.0,5.0,4.0,1.0,3.0,2.0
+517648,4.0,4.0,5.0,2.0,30.0,2.0,5.0,wealth belongs to the person who enjoys it and not to the one who keeps it,Dubai,1,1,0,0,6.0,1.0,1.0,1.0,4.0,5.0
+520317,3.0,2.0,3.0,3.0,27.0,3.0,4.0,summer olympic games,Rio de Janeiro,1,1,1,0,1.0,3.0,6.0,5.0,4.0,2.0
+408332,5.0,5.0,5.0,5.0,10.0,1.0,15.0,in new york by alicia keys,New York City,1,1,0,1,5.0,2.0,3.0,1.0,4.0,6.0
+304865,5.0,5.0,5.0,4.0,8.0,3.0,7.0,love,Paris,1,0,0,0,4.0,2.0,6.0,3.0,3.0,4.0
+518472,5.0,4.0,4.0,3.0,3.0,3.0,15.0,im the king of new york,New York City,1,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+408528,4.0,3.0,3.0,3.0,20.0,4.0,10.0,rich,Dubai,0,1,0,0,6.0,1.0,1.0,4.0,1.0,1.0
+504927,5.0,3.0,2.0,2.0,12.0,1.0,10.0,oui oui baguette,Paris,1,0,0,0,5.0,1.0,3.0,2.0,5.0,2.0
+507409,3.0,2.0,3.0,5.0,30.0,2.0,8.0,carnival  playing football on the beach  â,Rio de Janeiro,1,1,0,0,2.0,6.0,5.0,6.0,3.0,1.0
+500880,3.0,2.0,4.0,5.0,28.0,2.0,3.0,the greatness of a city is in its culture,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,5.0,3.0,2.0
+501513,5.0,5.0,5.0,5.0,0.0,10.0,20.0,one belongs to new york instantly one belongs to it as much in five minutes as in five years,New York City,0,1,1,0,5.0,2.0,1.0,4.0,3.0,6.0
+392971,5.0,5.0,4.0,4.0,-5.000000000000002,5.0,10.0,busy city,New York City,1,1,1,0,6.0,5.0,5.0,2.0,3.0,4.0
+14231,4.0,2.0,3.0,3.0,10.0,3.0,5.0,the city of love,Paris,1,0,0,0,2.0,1.0,6.0,5.0,3.0,4.0
+508320,5.0,5.0,5.0,5.0,27.0,1.0,1.0,in rio de janeiro every cop has to make a choice he either turns dirty keeps his mouth or goes to war,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,6.0,4.0,4.0
+524987,4.0,1.0,3.0,5.0,27.0,2.0,1.0,letâs go party ,Rio de Janeiro,1,0,0,0,1.0,2.0,6.0,5.0,4.0,3.0
+212706,5.0,5.0,5.0,4.0,5.0,3.0,3.0,romantic and classic,Paris,1,1,1,0,4.0,3.0,6.0,2.0,5.0,1.0
+310448,2.0,3.0,4.0,3.0,24.0,3.0,6.0,romantic city,Paris,1,0,1,0,2.0,1.0,6.0,2.0,4.0,1.0
+631752,3.0,2.0,2.0,5.0,20.0,3.0,5.0,amigo vamos,Rio de Janeiro,1,1,1,0,1.0,4.0,5.0,6.0,3.0,2.0
+526511,5.0,5.0,4.0,4.0,6.0,4.0,4.0,welcome to newyork,New York City,1,1,1,0,6.0,2.0,5.0,4.0,2.0,6.0
+497131,3.0,3.0,4.0,4.0,26.0,3.0,3.0,welcome,Dubai,1,1,0,0,6.0,5.0,2.0,6.0,5.0,6.0
+317895,5.0,4.0,4.0,2.0,20.0,4.0,5.0,the city of the future,Dubai,1,1,1,0,6.0,1.0,2.0,3.0,4.0,5.0
+618077,5.0,3.0,4.0,1.0,10.0,1.0,1.0,skyscrapers in the middle of nowhereâ,Dubai,0,0,0,1,6.0,1.0,1.0,1.0,1.0,6.0
+524485,4.0,5.0,5.0,4.0,10.0,1.0,5.0,to be young and in love in new york city,New York City,1,1,0,0,5.0,1.0,2.0,3.0,4.0,6.0
+528142,3.0,3.0,3.0,5.0,20.0,3.0,10.0,its party time,Rio de Janeiro,0,1,1,0,1.0,5.0,4.0,6.0,3.0,2.0
+522285,3.0,4.0,4.0,2.0,20.0,2.0,4.0,the tallest building in the world,Dubai,0,1,0,1,6.0,3.0,2.0,1.0,4.0,5.0
+521117,5.0,4.0,5.0,3.0,10.0,3.0,11.0,no quote comes into mind,Paris,1,1,0,1,1.0,2.0,5.0,3.0,6.0,4.0
+496969,4.0,4.0,4.0,3.0,25.0,5.0,5.0,safe place,Dubai,1,1,0,0,6.0,2.0,3.0,3.0,4.0,2.0
+414328,4.0,4.0,3.0,5.0,17.0,2.0,4.0,football,Rio de Janeiro,1,1,1,0,2.0,6.0,6.0,6.0,4.0,3.0
+543739,1.0,1.0,1.0,1.0,35.0,1.0,3.0,without,Dubai,0,1,0,0,6.0,5.0,1.0,4.0,3.0,2.0
+634513,5.0,3.0,5.0,2.0,8.0,2.0,5.0,in paris our lives are one masked ball   gaston leroux,Paris,1,0,1,0,4.0,4.0,6.0,2.0,6.0,4.0
+523824,4.0,5.0,3.0,2.0,5.0,2.0,4.0,the city of love,Paris,1,1,0,0,2.0,4.0,5.0,2.0,6.0,4.0
+524987,5.0,5.0,5.0,5.0,15.0,2.0,15.0,a city of love,Paris,1,0,0,0,6.0,1.0,5.0,2.0,3.0,4.0
+521114,5.0,3.0,5.0,5.0,30.0,2.0,10.0,a cultural and geographical,Rio de Janeiro,0,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+522044,5.0,4.0,5.0,4.0,14.262165867032214,4.796030116358659,9.353424657534246,without,Paris,1,1,1,1,6.0,4.0,1.0,2.0,5.0,3.0
+525023,3.0,4.0,3.0,5.0,25.0,3.0,5.0,this is the coolest place ive ever seen you know despite the obvious health code violations quote is from a movie,Rio de Janeiro,0,1,0,1,1.0,5.0,6.0,4.0,3.0,2.0
+389474,5.0,5.0,5.0,5.0,25.0,7.0,4.0,rio de janeiro is not the capital of brazil but its the capital of the land of happiness,Rio de Janeiro,1,1,1,0,1.0,6.0,3.0,5.0,2.0,4.0
+317154,3.0,2.0,4.0,5.0,30.0,4.0,4.0,soccer and olympics,Rio de Janeiro,1,1,0,0,2.0,5.0,6.0,3.0,1.0,4.0
+507409,5.0,3.0,4.0,3.0,5.0,3.0,20.0,bed bugs in paris fashion week,Paris,1,1,0,0,4.0,3.0,5.0,2.0,4.0,4.0
+519462,5.0,4.0,2.0,2.0,0.0,2.0,15.0,the new york stock exchange,New York City,1,1,1,1,5.0,1.0,4.0,2.0,3.0,6.0
+520317,4.0,5.0,4.0,2.0,32.0,3.0,2.0,a very windy tennis court,Dubai,1,0,0,1,6.0,2.0,3.0,4.0,1.0,5.0
+316731,5.0,1.0,2.0,3.0,29.0,2.0,2.0,beaches party,Rio de Janeiro,1,1,0,0,1.0,3.0,4.0,6.0,4.0,2.0
+493969,4.0,4.0,4.0,3.0,-7.000000000000002,25.0,9.0,new york concrete jungle where dreams are made of,New York City,1,1,1,1,6.0,4.0,5.0,5.0,5.0,6.0
+396386,5.0,5.0,4.0,5.0,10.0,10.0,3.0,new york new york,New York City,1,1,0,1,6.0,2.0,4.0,1.0,3.0,5.0
+517648,3.0,2.0,2.0,5.0,30.0,3.0,5.0,sun kissed and carefree in rio de janeiro,Rio de Janeiro,1,1,0,0,1.0,2.0,6.0,5.0,5.0,1.0
+502824,4.0,3.0,4.0,5.0,23.0,4.0,10.0,el carnival â,Rio de Janeiro,1,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+519627,3.0,5.0,3.0,5.0,5.0,3.0,3.0,the city which the god takes care of,Rio de Janeiro,0,0,0,1,1.0,4.0,5.0,6.0,2.0,3.0
+414451,5.0,4.0,5.0,5.0,15.0,5.0,15.0,a place where the air the food the people the culture and everything that exists is filled with love where love is the most abundant element,Paris,1,0,0,0,6.0,3.0,5.0,1.0,4.0,2.0
+410066,4.0,2.0,4.0,1.0,25.0,2.0,10.0,large infrastructure projects,Dubai,0,1,0,1,6.0,3.0,2.0,1.0,3.0,6.0
+520921,5.0,5.0,5.0,5.0,15.0,1.0,3.0,you are the best thing that has ever happened to any of us,Paris,1,0,0,0,6.0,6.0,5.0,4.0,6.0,3.0
+497226,4.0,4.0,4.0,2.0,10.0,6.0,12.0,the eiffel tower,Paris,1,1,0,0,2.0,1.0,6.0,2.0,5.0,4.0
+520118,5.0,3.0,4.0,2.0,17.0,2.0,4.0,the city of love,Paris,1,1,0,0,6.0,5.0,4.0,2.0,3.0,1.0
+518845,5.0,5.0,5.0,5.0,11.0,2.0,4.0,this is brazil,Rio de Janeiro,0,1,1,0,1.0,6.0,6.0,6.0,6.0,1.0
+517764,5.0,5.0,5.0,4.0,20.0,2.0,3.0,habibi come to dubai,Dubai,1,1,1,0,6.0,2.0,3.0,1.0,4.0,5.0
+496969,3.0,3.0,3.0,5.0,25.0,3.0,5.0,futbol,Rio de Janeiro,0,1,0,0,2.0,6.0,6.0,5.0,3.0,4.0
+504452,5.0,5.0,4.0,5.0,15.0,10.0,2.0,summer nights dubai skies,Dubai,0,0,0,1,6.0,1.0,4.0,2.0,3.0,5.0
+521952,4.0,2.0,5.0,3.0,26.0,5.0,7.0,the richest city,Dubai,0,1,0,0,5.0,2.0,3.0,4.0,1.0,6.0
+518941,5.0,3.0,4.0,3.0,0.0,3.0,4.0,the city of love,Paris,1,1,0,0,4.0,2.0,5.0,3.0,6.0,1.0
+505215,5.0,4.0,4.0,2.0,1.9999999999999982,2.0,1.0,paris is a moveable feast,Paris,0,1,0,0,5.0,3.0,5.0,2.0,1.0,4.0
+502824,5.0,4.0,4.0,1.0,23.0,10.0,3.0,the city where anything is possible,Dubai,1,1,0,0,6.0,5.0,1.0,2.0,4.0,3.0
+409187,5.0,3.0,5.0,4.0,30.0,2.0,5.0,dubais skyline is not just a testament to architectural prowess but a symbol of boundless vision and the relentless pursuit of innovation,Dubai,1,1,0,0,6.0,1.0,2.0,3.0,4.0,4.0
+519852,4.0,3.0,4.0,1.0,20.0,2.0,1.0,habibi come to dubai,Dubai,1,0,0,0,1.0,5.0,3.0,6.0,4.0,2.0
+308394,3.0,3.0,5.0,2.0,25.0,3.0,2.0,âœitâs a city of goldâ,Dubai,1,0,1,0,6.0,2.0,4.0,1.0,3.0,5.0
+313562,5.0,3.0,5.0,4.0,0.0,5.0,3.0,city of loveâ,Paris,1,1,1,0,6.0,1.0,5.0,2.0,4.0,3.0
+497226,4.0,4.0,3.0,4.0,25.0,3.0,4.0,cristo redentor,Rio de Janeiro,0,1,0,0,2.0,6.0,5.0,5.0,4.0,3.0
+727099,5.0,4.0,1.0,3.0,7.0,5.0,4.0,to turn 100 into 110 is workâto turn 100 million into 110 million is inevitable,New York City,0,1,0,0,5.0,3.0,4.0,1.0,2.0,6.0
+407792,5.0,4.0,4.0,3.0,15.0,3.0,4.0,âœone cant paint new york as it is but rather as it is feltâ,New York City,1,1,1,1,4.0,3.0,6.0,1.0,2.0,5.0
+521114,5.0,5.0,5.0,2.0,0.0,20.0,30.0,a city of dreams and greed,New York City,0,0,0,1,6.0,2.0,4.0,1.0,3.0,5.0
+524804,4.0,2.0,3.0,4.0,25.0,3.0,3.0,everything happens for a reason,Rio de Janeiro,0,1,0,0,1.0,4.0,6.0,5.0,3.0,2.0
+526575,4.0,4.0,4.0,2.0,12.0,8.0,3.0,skyscrapers oil companies desert people wearing white clothing,Dubai,0,1,0,1,6.0,3.0,3.0,1.0,5.0,6.0
+522075,5.0,4.0,2.0,3.0,5.0,1.0,8.0,with great power comes great responsibility,New York City,1,1,1,0,6.0,2.0,5.0,3.0,4.0,2.0
+523710,5.0,4.0,5.0,2.0,10.0,8.0,30.0,money cant buy happiness,Dubai,1,1,1,1,6.0,3.0,1.0,2.0,4.0,5.0
+519627,5.0,4.0,3.0,4.0,1.9999999999999982,5.0,7.0,paris is the city of art,Paris,0,0,1,0,2.0,3.0,5.0,4.0,6.0,1.0
+501597,5.0,2.0,1.0,2.0,10.0,4.0,12.0,viva la paris,Paris,1,0,0,0,1.0,4.0,6.0,2.0,5.0,3.0
+500880,5.0,3.0,3.0,5.0,20.0,2.0,10.0,dont say you model if you havent been on vogue,Paris,1,1,0,0,2.0,6.0,5.0,4.0,6.0,4.0
+291561,5.0,5.0,5.0,2.0,4.0,10.0,15.0,the city never sleeps,New York City,0,1,0,0,1.0,3.0,4.0,6.0,5.0,2.0
+521165,5.0,5.0,4.0,5.0,-2.0000000000000018,10.0,20.0,city of lights  ill restart in new york  city that never sleeps,New York City,0,1,0,1,5.0,1.0,4.0,2.0,3.0,6.0
+522829,4.0,2.0,5.0,2.0,25.0,2.0,1.0,rich,Dubai,1,1,1,0,6.0,2.0,5.0,2.0,3.0,6.0
+409168,4.0,1.0,4.0,2.0,29.0,3.0,1.0,elderado the lost city of gold,Dubai,1,1,0,1,5.0,3.0,2.0,1.0,4.0,6.0
+498320,5.0,5.0,4.0,3.0,20.0,4.0,20.0,habibi come to dubai,Dubai,1,1,0,0,6.0,2.0,3.0,1.0,4.0,5.0
+306699,4.0,3.0,4.0,4.0,10.0,3.0,5.0,âœwestern countries are dying dubai is growingâ ââandrew tate,Dubai,1,1,0,0,6.0,1.0,2.0,2.0,2.0,3.0
+522730,4.0,4.0,3.0,5.0,27.0,1.0,3.0,the cityâs nocturnal beauty,Rio de Janeiro,1,1,1,0,2.0,5.0,5.0,6.0,5.0,2.0
+523461,4.0,3.0,3.0,2.0,8.0,2.0,4.0,new york is not a city its a world,New York City,1,1,1,0,6.0,1.0,3.0,2.0,4.0,5.0
+519900,4.0,4.0,4.0,5.0,30.0,5.0,20.0,football,Rio de Janeiro,1,1,1,0,1.0,6.0,4.0,5.0,3.0,2.0
+313562,5.0,4.0,5.0,5.0,5.0,6.0,5.0,to be young and be in loveâ,New York City,1,1,1,1,6.0,4.0,2.0,1.0,3.0,5.0
+325166,5.0,4.0,5.0,5.0,14.262165867032214,3.0,7.0,the intouchablesâ,Paris,1,0,0,0,1.0,3.0,6.0,6.0,6.0,3.0
+92814,4.0,4.0,4.0,4.0,5.0,5.0,3.0,i guess when youâre young you just believe thereâll be many people with whom youâll connect with later in life you realize it only happens a few times,Paris,1,1,0,0,2.0,4.0,5.0,2.0,6.0,4.0
+317706,5.0,4.0,4.0,2.0,0.0,5.0,15.0,the city that never sleeps,New York City,0,1,1,0,5.0,1.0,4.0,2.0,3.0,6.0
+314319,3.0,4.0,4.0,1.0,23.0,3.0,3.0,what happens in vegas stays in vegas but the arab version,Dubai,0,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+524936,4.0,4.0,4.0,5.0,15.0,3.0,3.0,football is life,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,2.0,1.0
+519545,5.0,4.0,3.0,4.0,5.0,4.0,5.0,without,Paris,1,0,0,0,1.0,5.0,4.0,2.0,6.0,3.0
+409126,5.0,4.0,4.0,4.0,23.0,2.0,8.0,where dreams come true,New York City,1,1,1,0,5.0,3.0,2.0,1.0,4.0,6.0
+519934,3.0,5.0,2.0,5.0,25.0,3.0,10.0,beautiful sunny days,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+517764,5.0,3.0,3.0,3.0,0.0,1.0,2.0,âœin new york concrete jungle where dreams are made of thereâs nothing you canât doâ,New York City,0,1,0,0,5.0,1.0,3.0,2.0,4.0,6.0
+312687,5.0,5.0,3.0,5.0,3.0,5.0,10.0,the centre of world,New York City,1,1,0,0,6.0,1.0,5.0,6.0,6.0,6.0
+519462,4.0,4.0,5.0,3.0,10.0,4.0,10.0,home of the burj khalifa,Dubai,1,1,0,0,5.0,2.0,4.0,1.0,3.0,6.0
+505458,5.0,5.0,2.0,2.0,0.0,1.0,3.0,money and opportunity,New York City,1,1,0,0,5.0,1.0,2.0,4.0,3.0,6.0
+524987,5.0,5.0,5.0,5.0,1.0,1.0,10.0,make ur dreams come true,New York City,1,1,1,1,5.0,3.0,2.0,1.0,4.0,6.0
+40536,4.0,2.0,1.0,1.0,30.0,7.0,7.0,excellent facade but disgusting under the surface,Dubai,1,1,0,0,5.0,3.0,1.0,2.0,4.0,6.0
+491031,4.0,1.0,2.0,5.0,20.0,2.0,3.0,christ the redeemer,Rio de Janeiro,1,1,0,0,1.0,6.0,6.0,6.0,3.0,3.0
+524883,5.0,3.0,5.0,4.0,15.0,3.0,2.0,wealth exploitation,Dubai,0,0,0,1,6.0,3.0,3.0,2.0,3.0,6.0
+499357,4.0,3.0,3.0,5.0,23.0,3.0,4.0,life is a carnival,Rio de Janeiro,1,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+412560,4.0,2.0,5.0,1.0,3.0,2.0,5.0,the city of love,Paris,1,1,1,1,1.0,2.0,6.0,3.0,5.0,4.0
+414217,4.0,3.0,3.0,4.0,15.0,5.0,3.0,an oasis in the desert,Dubai,0,1,0,0,6.0,4.0,1.0,3.0,2.0,5.0
+518429,4.0,4.0,2.0,2.0,20.0,3.0,5.0,the tallest building in the worldâ,Dubai,0,1,0,0,6.0,2.0,3.0,2.0,2.0,4.0
+412772,3.0,2.0,4.0,4.0,25.0,6.0,8.0,great views are not meant to be captured they are meant to be experienced,Rio de Janeiro,1,1,1,1,1.0,3.0,5.0,6.0,4.0,2.0
+408332,5.0,5.0,5.0,3.0,30.0,3.0,10.0,burj khalifa,Dubai,1,1,0,0,6.0,4.0,1.0,2.0,3.0,5.0
+491031,5.0,2.0,5.0,1.0,35.0,3.0,3.0,habibi come to dubai,Dubai,1,1,0,0,6.0,1.0,2.0,3.0,4.0,6.0
+525327,5.0,4.0,5.0,3.0,-2.0000000000000018,10.0,20.0,oui monsieur une baguette sil vous plait,Paris,1,0,1,0,4.0,3.0,6.0,3.0,6.0,5.0
+413095,5.0,5.0,5.0,3.0,5.0,6.0,20.0,âœwhen you see some sunâparisâis the most beautiful city in the world it brings tears to your eyesâ,Paris,0,1,0,0,3.0,3.0,6.0,3.0,6.0,4.0
+309958,3.0,2.0,3.0,5.0,36.0,3.0,11.0,i love mexicans   someone,Rio de Janeiro,1,1,0,0,1.0,3.0,5.0,4.0,6.0,2.0
+508586,4.0,4.0,2.0,5.0,25.0,3.0,7.0,youre going to brazil,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+504808,5.0,3.0,5.0,2.0,0.0,3.0,8.0,the city of love and romance,Paris,1,0,0,0,5.0,4.0,6.0,5.0,4.0,5.0
+520991,5.0,4.0,5.0,3.0,20.0,2.0,5.0,city of love,Paris,1,0,0,0,4.0,1.0,6.0,2.0,5.0,3.0
+522365,5.0,4.0,5.0,2.0,14.0,3.0,3.0,rich,Dubai,1,1,1,0,6.0,2.0,2.0,2.0,2.0,5.0
+394579,4.0,4.0,4.0,2.0,5.0,2.0,3.0,i want to be a part of it new york new york,New York City,1,1,0,1,6.0,2.0,3.0,1.0,4.0,5.0
+496935,5.0,5.0,5.0,5.0,5.0,5.0,10.0,concrete jungles what dreams are made of,New York City,1,1,0,1,6.0,5.0,5.0,3.0,5.0,5.0
+523028,4.0,3.0,3.0,3.0,20.0,10.0,5.0,if you can think of a high building it probably exists in dubai,Dubai,1,1,1,0,6.0,4.0,1.0,2.0,3.0,5.0
+519782,5.0,5.0,2.0,3.0,7.0,7.0,15.0,i 3 ny,New York City,0,1,0,0,5.0,2.0,5.0,1.0,3.0,4.0
+524804,5.0,3.0,3.0,3.0,0.0,2.0,2.0,anyone can cook but only the fearless can be great,Paris,0,1,0,1,6.0,5.0,1.0,4.0,2.0,3.0
+518809,3.0,2.0,4.0,2.0,5.0,2.0,30.0,breads croissant baguette french oinion soup ratatouille souffle foie gras escargot,Paris,1,0,0,0,2.0,1.0,6.0,3.0,5.0,4.0
+519605,5.0,2.0,2.0,5.0,25.0,3.0,20.0,life is better at the beach,Rio de Janeiro,1,1,1,0,1.0,6.0,4.0,5.0,3.0,2.0
+525327,5.0,5.0,5.0,4.0,-5.000000000000002,4.796030116358659,15.0,concrete jungle wet dreams tomato,New York City,1,1,1,1,6.0,2.0,6.0,2.0,5.0,6.0
+520991,5.0,3.0,4.0,3.0,25.0,6.0,6.0,wrenching life from the dessert,Dubai,1,1,1,1,6.0,4.0,1.0,2.0,3.0,5.0
+14231,5.0,4.0,4.0,5.0,0.0,4.0,8.0,dreams come true here,New York City,1,1,0,0,3.0,2.0,5.0,6.0,4.0,1.0
+525525,5.0,3.0,4.0,4.0,17.0,3.0,8.0,baguette,Paris,1,1,0,0,2.0,1.0,6.0,4.0,5.0,3.0
+521042,4.0,5.0,5.0,2.0,20.0,3.0,40.0,dont count the days make the days count,Dubai,1,1,0,0,6.0,2.0,3.0,1.0,4.0,5.0
+211158,4.0,2.0,4.0,4.0,15.0,3.0,3.0,theres no money like oil moneyâ,Dubai,1,1,0,0,6.0,4.0,2.0,2.0,3.0,6.0
+297125,5.0,4.0,5.0,5.0,1.9999999999999982,2.0,15.0,the city of love and croissant,Paris,1,0,1,0,2.0,3.0,5.0,1.0,6.0,4.0
+500826,5.0,5.0,3.0,4.0,-3.0000000000000018,1.0,5.0,in new york ayy ah ha uh yeah concrete jungle yeah where dreams are made of theres nothin you cant do yeah okay now youre in new york ah ha ah ha ah ha uh yeah these streets will make you feel brand new new big lights will inspire you come on okay lets hear it for new york youre welcome og uh new york yeah new york uhâ,New York City,1,1,0,1,6.0,3.0,5.0,3.0,4.0,6.0
+520058,5.0,5.0,5.0,4.0,-7.000000000000002,1.0,9.353424657534246,ratatouille,Paris,1,0,0,0,6.0,3.0,1.0,5.0,2.0,4.0
+526575,5.0,5.0,3.0,5.0,-3.0000000000000018,6.0,4.0,wall street manhattan banks traffic economy cost of living mafia crime,New York City,0,1,0,1,6.0,3.0,3.0,5.0,1.0,6.0
+523352,4.0,3.0,4.0,2.0,30.0,4.0,5.0,none,Dubai,0,1,1,0,6.0,1.0,1.0,1.0,4.0,5.0
+519806,5.0,5.0,5.0,5.0,6.0,6.0,5.0,paris the city of love,Paris,1,1,1,1,1.0,6.0,2.0,4.0,3.0,5.0
+491553,5.0,5.0,5.0,5.0,0.0,10.0,25.0,concrete jungles where dreams are made of new york new york  happy new year  â  â,New York City,1,1,1,0,6.0,4.0,6.0,6.0,6.0,3.0
+518845,5.0,3.0,3.0,3.0,5.0,3.0,6.0,oui oui oui,Paris,0,1,1,0,3.0,1.0,4.0,3.0,6.0,3.0
+522936,5.0,1.0,4.0,2.0,7.0,3.0,5.0,a nations culture resides in the hearts and in the souls of its people,Paris,0,0,1,0,3.0,1.0,5.0,6.0,4.0,2.0
+516930,4.0,4.0,1.0,2.0,19.0,3.0,4.0,nothing actually comes to mind,Dubai,0,0,1,0,6.0,1.0,1.0,2.0,2.0,3.0
+393297,5.0,4.0,5.0,4.0,15.0,10.0,15.0,rich peopleâ,Dubai,0,1,0,0,6.0,2.0,1.0,4.0,3.0,5.0
+602496,4.0,5.0,5.0,5.0,-5.000000000000002,5.0,20.0,the louvre,Paris,1,1,0,0,3.0,4.0,6.0,3.0,6.0,2.0
+411992,4.0,4.0,5.0,1.0,23.0,6.0,2.0,luxury,Dubai,0,1,0,0,6.0,1.0,2.0,3.0,4.0,5.0
+519777,5.0,5.0,5.0,3.0,10.0,10.0,30.0,concrete jungle where dreams are made of,New York City,1,1,1,1,2.0,6.0,3.0,5.0,4.0,1.0
+412772,5.0,3.0,5.0,2.0,8.0,5.0,5.0,âœnot anyone can become a great artist but a great artist can come from anywhereâ,Paris,1,1,0,0,1.0,4.0,6.0,3.0,5.0,2.0
+629847,5.0,5.0,5.0,2.0,5.0,40.0,9.353424657534246,new york concrete jungle where dreams are made of,New York City,1,1,1,1,6.0,4.0,2.0,1.0,3.0,5.0
+400581,4.0,3.0,3.0,3.0,25.0,2.0,3.0,football is like life   it requires preservences self denial hard work  dedication and respectâ,Rio de Janeiro,1,1,1,0,3.0,6.0,5.0,6.0,4.0,4.0
+520030,5.0,5.0,5.0,4.0,5.0,5.0,10.0,concrete jungle where dreams are made of,New York City,1,1,1,0,2.0,4.0,3.0,5.0,6.0,1.0
+386729,5.0,3.0,5.0,3.0,10.0,3.0,4.0,love is in the air,Paris,1,0,0,0,1.0,3.0,6.0,2.0,5.0,4.0
+313186,4.0,5.0,2.0,4.0,25.0,7.0,8.0,èææ²æ¼ääåºéžååœèãçžäåœçšåÿžåã,Dubai,1,1,0,0,6.0,3.0,4.0,4.0,4.0,5.0
+499389,4.0,4.0,4.0,5.0,25.0,4.0,3.0,without,Rio de Janeiro,1,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+523109,2.0,4.0,4.0,3.0,20.0,4.0,5.0,rio,Rio de Janeiro,1,1,1,0,2.0,3.0,5.0,5.0,5.0,3.0
+325166,3.0,4.0,5.0,2.0,10.0,2.0,5.0,money money money,Dubai,1,0,0,0,6.0,3.0,1.0,3.0,3.0,6.0
+519371,5.0,4.0,4.0,2.0,20.0,8.0,15.0,when it comes to wealth dubai doesnt just talk the talk it builds the skyline,Dubai,0,1,1,0,1.0,1.0,1.0,6.0,6.0,5.0
+493876,4.0,4.0,2.0,2.0,25.0,5.0,3.0,dubai is a city of dreams where the world gathers to marvel at the crossroads of innovation and tradition,Dubai,1,0,0,0,6.0,5.0,2.0,6.0,5.0,1.0
+313448,5.0,4.0,4.0,1.0,20.0,2.0,3.0,modern and inclusive lifestyle,Dubai,0,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+526039,5.0,5.0,3.0,4.0,5.0,2.0,6.0,i 3 ny,New York City,0,0,0,1,6.0,3.0,4.0,1.0,2.0,5.0
+522150,5.0,4.0,2.0,4.0,10.0,2.0,5.0,no day shall erase you from the memory of time,New York City,1,1,1,0,5.0,4.0,4.0,4.0,3.0,4.0
+311267,5.0,4.0,5.0,4.0,10.0,2.0,6.0,an artistic city,Paris,1,1,0,0,2.0,1.0,6.0,3.0,5.0,4.0
+629160,5.0,4.0,3.0,4.0,5.0,2.0,4.0,new york city is actually a world,New York City,0,1,1,0,6.0,2.0,4.0,5.0,3.0,1.0
+394579,3.0,4.0,2.0,5.0,30.0,2.0,3.0,come to brazil,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+42659,5.0,4.0,4.0,3.0,14.262165867032214,4.796030116358659,9.353424657534246,without,New York City,1,1,0,0,4.0,3.0,4.0,3.0,4.0,4.0
+525023,5.0,5.0,1.0,1.0,20.0,4.0,5.0,the city beyond the clouds,Dubai,1,1,1,0,6.0,4.0,3.0,1.0,2.0,5.0
+525457,5.0,4.0,5.0,2.0,5.0,5.0,10.0,city of love,Paris,1,1,1,0,1.0,2.0,6.0,4.0,5.0,3.0
+315998,4.0,3.0,5.0,4.0,28.0,2.0,4.0,the fast and furious movie during the heist,Rio de Janeiro,0,0,1,0,3.0,4.0,5.0,6.0,5.0,3.0
+517373,4.0,3.0,5.0,4.0,5.0,5.0,5.0,secrets travel fast in paris,Paris,1,0,0,0,6.0,5.0,1.0,2.0,4.0,3.0
+525457,3.0,2.0,2.0,3.0,28.0,5.0,10.0,olã,Rio de Janeiro,1,1,1,0,2.0,6.0,4.0,5.0,3.0,1.0
+500826,4.0,2.0,4.0,5.0,4.0,4.0,5.0,rich,Dubai,1,1,0,0,6.0,3.0,3.0,6.0,5.0,6.0
+521988,5.0,5.0,4.0,2.0,25.0,8.0,8.0,without,Dubai,1,1,0,0,4.0,5.0,1.0,3.0,2.0,6.0
+517660,5.0,2.0,4.0,3.0,30.0,4.0,3.0,put yourself in situations where you are not comfortable,Dubai,0,1,1,0,1.0,6.0,4.0,3.0,2.0,5.0
+500826,4.0,4.0,5.0,3.0,-8.000000000000002,4.0,8.0,today i wanted to eat a croissant,Paris,1,1,1,0,4.0,3.0,6.0,3.0,4.0,4.0
+525137,4.0,2.0,2.0,5.0,22.0,3.0,2.0,welcome to brazil,Rio de Janeiro,1,1,1,1,1.0,6.0,3.0,6.0,1.0,1.0
+630218,5.0,5.0,5.0,5.0,22.0,4.0,20.0,we in the uae have no such word as impossible it does not exist in our lexicon such a word is used by the lazy and the weak who fear challenges and progress,Dubai,0,0,0,1,5.0,1.0,2.0,3.0,4.0,6.0
+519371,4.0,5.0,3.0,4.0,0.0,5.0,5.0,welcome to new york,New York City,0,1,1,0,1.0,4.0,4.0,3.0,4.0,6.0
+411773,5.0,5.0,5.0,5.0,20.0,5.0,10.0,the burj khalifa is huge,Dubai,1,1,1,0,1.0,6.0,4.0,5.0,3.0,2.0
+501878,4.0,5.0,4.0,5.0,5.0,2.0,8.0,je pense donc je suis,Paris,1,0,0,1,6.0,5.0,5.0,5.0,6.0,4.0
+302916,4.0,3.0,2.0,3.0,25.0,3.0,5.0,christ the redeemer,Rio de Janeiro,0,1,0,1,1.0,4.0,5.0,6.0,3.0,2.0
+414217,4.0,3.0,5.0,3.0,5.0,2.0,10.0,city of love,Paris,1,0,0,0,2.0,1.0,6.0,4.0,5.0,3.0
+517648,4.0,3.0,3.0,2.0,10.0,2.0,3.0,well always have paris,Paris,1,0,0,0,1.0,1.0,3.0,2.0,3.0,1.0
+387537,5.0,5.0,5.0,5.0,0.0,4.0,7.0,let me hear it for new york,New York City,1,1,0,0,6.0,2.0,6.0,4.0,5.0,6.0
+411711,5.0,5.0,3.0,2.0,14.262165867032214,2.0,8.0,big apple,New York City,1,1,1,1,5.0,3.0,2.0,1.0,4.0,6.0
+498206,2.0,2.0,4.0,4.0,25.0,1.0,1.0,welcome to ny,New York City,0,1,0,0,6.0,1.0,6.0,4.0,5.0,6.0
+522365,5.0,1.0,3.0,4.0,19.0,3.0,3.0,no answer,Rio de Janeiro,1,1,1,0,1.0,6.0,4.0,5.0,3.0,2.0
+508377,4.0,3.0,3.0,5.0,20.0,2.0,3.0,âœeverything here appears calculated to inspire kind and happy feelings for everything is delicate and beautifulâ  â washington irving,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+601562,4.0,4.0,4.0,3.0,30.0,4.0,10.0,the food here is expensive this is where the rich people gather,Dubai,0,0,1,0,6.0,1.0,3.0,2.0,5.0,4.0
+511882,5.0,5.0,5.0,5.0,20.0,3.0,5.0,innovation,Dubai,1,1,1,0,6.0,2.0,4.0,3.0,1.0,5.0
+525457,5.0,3.0,4.0,3.0,20.0,5.0,5.0,the sky is not the limit,Dubai,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+522150,4.0,3.0,5.0,3.0,10.0,3.0,10.0,life is suite,Dubai,1,1,1,0,6.0,4.0,4.0,3.0,4.0,4.0
+24137,5.0,2.0,5.0,5.0,20.0,1.0,1.0,there are only two places in the world where we can live happy at home and in paris,Paris,1,0,0,0,5.0,2.0,6.0,5.0,6.0,5.0
+631752,4.0,2.0,3.0,3.0,15.0,5.0,10.0,oui oui baguette,Paris,1,0,0,0,2.0,3.0,6.0,1.0,5.0,4.0
+522936,3.0,4.0,5.0,3.0,21.0,4.0,3.0,strength lies in differences not similarities,Dubai,0,0,1,0,1.0,6.0,2.0,5.0,4.0,3.0
+24137,3.0,2.0,5.0,5.0,25.0,2.0,1.0,dreams are made of sun and feijoada,Rio de Janeiro,0,1,1,0,2.0,6.0,5.0,6.0,5.0,3.0
+517764,4.0,3.0,3.0,4.0,30.0,2.0,3.0,city of football,Rio de Janeiro,1,0,1,0,1.0,6.0,3.0,5.0,4.0,2.0
+498917,5.0,5.0,4.0,5.0,10.0,5.0,5.0,the city never sleeps,New York City,0,1,1,1,6.0,1.0,4.0,2.0,3.0,5.0
+304564,5.0,5.0,4.0,5.0,35.0,4.0,10.0,culture people love life,Rio de Janeiro,1,1,1,0,2.0,6.0,6.0,6.0,6.0,3.0
+317706,5.0,3.0,4.0,2.0,10.0,2.0,10.0,the city of love,Paris,1,0,0,0,1.0,2.0,6.0,4.0,5.0,2.0
+328874,5.0,4.0,4.0,5.0,30.0,5.0,10.0,a city where the land meets the sea the forest meets the city and the streets sing with rhythm and color,Rio de Janeiro,1,1,1,0,1.0,4.0,5.0,6.0,3.0,2.0
+601562,3.0,3.0,3.0,4.0,28.0,3.0,3.0,look that statue over there where are the football players,Rio de Janeiro,0,0,1,0,3.0,6.0,4.0,5.0,2.0,1.0
+526680,5.0,5.0,5.0,4.0,-5.000000000000002,4.0,7.0,the city that never sleeps,New York City,1,1,1,1,6.0,5.0,3.0,2.0,5.0,6.0
+516930,4.0,2.0,3.0,3.0,15.0,2.0,5.0,nothing,Rio de Janeiro,0,1,0,0,2.0,6.0,3.0,4.0,2.0,1.0
+501597,4.0,2.0,4.0,4.0,35.0,4.0,4.0,burj khalifa,Dubai,0,1,1,0,6.0,1.0,3.0,2.0,5.0,4.0
+500739,5.0,3.0,3.0,2.0,7.0,5.0,7.0,the city of light a haven for love and art,Paris,1,1,1,0,3.0,4.0,6.0,1.0,5.0,2.0
+496969,4.0,3.0,4.0,3.0,10.0,3.0,5.0,city of love,Paris,1,1,1,1,4.0,4.0,4.0,2.0,3.0,2.0
+499672,5.0,4.0,4.0,2.0,5.0,1.0,3.0,kanye west,Paris,1,1,1,0,4.0,1.0,5.0,3.0,6.0,2.0
+518612,5.0,5.0,4.0,5.0,1.0,3.0,20.0,new york is the center of america,New York City,1,1,1,0,2.0,5.0,3.0,1.0,4.0,6.0
+633746,3.0,4.0,3.0,5.0,9.0,2.0,5.0,christ the redeemer,Rio de Janeiro,0,1,0,0,1.0,5.0,3.0,6.0,4.0,2.0
+622833,5.0,5.0,5.0,4.0,5.0,2.0,25.0,we all fear death and question our place in the universe the artists job is not to succumb to despair but to find an antidote for the emptiness of existence,Paris,1,0,0,0,3.0,3.0,6.0,4.0,5.0,3.0
+632485,4.0,3.0,5.0,5.0,24.0,3.0,4.0,jesus,Rio de Janeiro,0,1,0,0,1.0,4.0,6.0,5.0,3.0,2.0
+317214,5.0,2.0,5.0,4.0,-7.000000000000002,4.0,27.0,i love paris,Paris,0,1,0,0,4.0,2.0,6.0,3.0,5.0,1.0
+409168,4.0,3.0,4.0,2.0,14.262165867032214,3.0,5.0,paris the city of love,Paris,1,1,1,0,1.0,3.0,4.0,5.0,6.0,2.0
+519766,5.0,4.0,4.0,4.0,18.0,3.0,4.0,tower french breads,Paris,1,1,0,1,3.0,1.0,6.0,2.0,5.0,4.0
+605738,5.0,5.0,4.0,5.0,4.0,1.0,5.0,new york 1 pizzas,New York City,1,1,1,1,5.0,1.0,4.0,3.0,2.0,6.0
+499778,4.0,2.0,5.0,1.0,20.0,5.0,5.0,here comes the money  naughty by nature here comes the money,Dubai,0,1,1,0,6.0,4.0,3.0,1.0,2.0,5.0
+496935,4.0,3.0,2.0,5.0,28.0,3.0,8.0,living la vida loca,Rio de Janeiro,1,1,0,1,2.0,5.0,5.0,5.0,5.0,3.0
+519568,5.0,4.0,5.0,3.0,25.0,5.0,5.0,tall buildings rich area peaceful warm climate sunny,Dubai,0,1,0,0,6.0,2.0,3.0,1.0,4.0,5.0
+520302,5.0,2.0,4.0,3.0,8.0,3.0,5.0,cest la vie,Paris,0,0,0,1,1.0,5.0,6.0,2.0,4.0,3.0
+321111,5.0,3.0,4.0,2.0,5.0,2.0,10.0,the city of fashion,Paris,1,0,0,1,1.0,5.0,6.0,1.0,5.0,4.0
+308260,5.0,5.0,4.0,5.0,0.0,1.0,5.0,economic capital of the world,New York City,1,1,1,1,5.0,4.0,2.0,1.0,3.0,6.0
+501597,4.0,3.0,2.0,5.0,30.0,6.0,3.0,carnival,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+495792,5.0,5.0,3.0,4.0,28.0,2.0,6.0,without,Dubai,1,1,0,0,6.0,2.0,1.0,1.0,6.0,6.0
+414328,4.0,4.0,4.0,2.0,5.0,2.0,4.0,im walkin here idk,New York City,0,0,0,1,6.0,1.0,3.0,1.0,2.0,6.0
+525290,5.0,5.0,4.0,3.0,5.0,1.0,4.0,concrete jungles where dreams are made of,New York City,1,1,0,1,6.0,3.0,4.0,2.0,1.0,5.0
+203068,5.0,2.0,5.0,2.0,5.0,3.0,4.0,city of love,Paris,1,0,0,0,1.0,5.0,6.0,2.0,4.0,3.0
+413331,4.0,2.0,3.0,2.0,30.0,2.0,1.0,dubai is designed to build a tourism industry in case the oil dries up,Dubai,0,0,0,1,6.0,3.0,2.0,1.0,4.0,5.0
+523497,3.0,3.0,3.0,4.0,20.0,2.0,3.0,one mans trash is another mans treasure,Rio de Janeiro,1,1,1,0,1.0,6.0,5.0,4.0,3.0,2.0
+522480,5.0,5.0,5.0,5.0,8.0,4.0,20.0,paris is always a good idea,Paris,0,1,1,0,4.0,4.0,6.0,3.0,6.0,6.0
+104963,5.0,5.0,5.0,2.0,24.0,3.0,14.0,this isnt the french at homeâ,Paris,1,1,1,0,4.0,3.0,5.0,1.0,6.0,2.0
+493876,5.0,4.0,5.0,4.0,5.0,3.0,5.0,a timeless symphony of culture romance and elegance where every street whispers the stories of history and art,Paris,1,0,0,0,6.0,1.0,6.0,4.0,6.0,2.0
+502644,5.0,4.0,4.0,4.0,10.0,6.0,10.0,the city of love,Paris,1,0,0,0,5.0,4.0,5.0,2.0,5.0,5.0
+313448,4.0,4.0,5.0,3.0,8.0,3.0,4.0,fashionable historic and fancy lifestyle,Paris,1,1,0,0,1.0,5.0,6.0,3.0,4.0,2.0
+622833,4.0,2.0,4.0,3.0,15.0,3.0,10.0,richï¼,Dubai,0,1,0,0,6.0,2.0,3.0,2.0,4.0,6.0
+522044,4.0,3.0,4.0,5.0,25.0,3.0,5.0,its a beautiful day,Rio de Janeiro,0,1,0,0,1.0,2.0,6.0,5.0,4.0,3.0
+520030,5.0,2.0,4.0,2.0,0.0,3.0,5.0,love and romance,Paris,1,0,0,0,6.0,2.0,1.0,5.0,3.0,4.0
+523726,3.0,2.0,3.0,4.0,10.0,3.0,14.0,paris is always a good idea,Paris,1,0,0,0,1.0,4.0,6.0,2.0,5.0,3.0
+317895,5.0,4.0,4.0,3.0,5.0,2.0,4.0,the city of dreams,New York City,1,0,0,1,6.0,1.0,2.0,3.0,4.0,5.0
+409126,5.0,5.0,5.0,3.0,32.0,5.0,3.0,living the dream,Dubai,1,0,0,0,6.0,2.0,1.0,4.0,3.0,5.0
+519627,4.0,4.0,3.0,4.0,4.0,4.0,5.0,the great seen of burj khalifa deserves to take a look,Dubai,1,0,0,0,3.0,2.0,5.0,1.0,4.0,6.0
+315998,5.0,5.0,3.0,2.0,23.0,3.0,6.0,im walking here,New York City,0,0,1,0,6.0,1.0,4.0,1.0,4.0,3.0
+523497,4.0,5.0,5.0,4.0,0.0,3.0,10.0,new york city rats,New York City,1,1,1,1,6.0,5.0,3.0,1.0,2.0,4.0
+315551,3.0,3.0,4.0,5.0,25.0,1.0,2.0,this is brazil,Rio de Janeiro,0,1,0,0,3.0,6.0,4.0,5.0,2.0,1.0
+92814,4.0,3.0,5.0,3.0,27.0,5.0,3.0,your line is not long enough,Dubai,0,1,0,0,6.0,2.0,2.0,3.0,3.0,5.0
+727099,3.0,3.0,5.0,2.0,20.0,4.0,2.0,fly better,Dubai,0,0,0,1,6.0,5.0,1.0,3.0,2.0,4.0
+525021,4.0,3.0,2.0,5.0,15.0,1.0,5.0,in rio de janeiro its always a beautiful day,Rio de Janeiro,0,0,1,0,3.0,3.0,6.0,6.0,6.0,4.0
+193638,5.0,5.0,5.0,1.0,14.262165867032214,15.0,30.0,in new york there is nothing you canât do these streets will inspire you,New York City,1,1,1,1,6.0,5.0,3.0,1.0,4.0,6.0
+318703,4.0,2.0,3.0,4.0,15.0,3.0,5.0,never goodbye in dubai,Dubai,0,1,1,0,4.0,2.0,1.0,5.0,3.0,6.0
+525290,5.0,3.0,4.0,4.0,22.0,3.0,3.0,the rich get richer,Dubai,1,1,0,0,5.0,2.0,3.0,1.0,4.0,6.0
+518848,5.0,5.0,5.0,4.0,15.0,8.0,20.0,welcome to newyork,New York City,1,1,0,0,5.0,1.0,4.0,4.0,4.0,6.0
+522139,5.0,3.0,5.0,3.0,7.0,3.0,15.0,eiffel tower,Paris,1,1,1,1,1.0,4.0,6.0,3.0,5.0,2.0
+193638,5.0,5.0,5.0,1.0,-7.000000000000002,10.0,9.353424657534246,hon hon hon baguette croissant perfume eiffel tower psg mon amie,Paris,1,1,1,1,1.0,6.0,6.0,1.0,6.0,6.0
+499672,4.0,4.0,3.0,2.0,18.0,2.0,2.0,early bird gets the worm,Dubai,0,1,1,0,6.0,2.0,1.0,3.0,4.0,5.0
+528142,5.0,5.0,2.0,2.0,1.0,1.0,15.0,the vein of the us,New York City,1,0,0,1,6.0,3.0,4.0,2.0,1.0,5.0
+315998,5.0,4.0,5.0,4.0,25.0,3.0,5.0,rich get richer,Dubai,1,0,0,0,6.0,2.0,3.0,3.0,4.0,6.0
+601730,5.0,5.0,4.0,5.0,5.0,5.0,15.0,a place where dreams come true,New York City,1,1,1,0,6.0,2.0,4.0,4.0,3.0,5.0
+519724,2.0,2.0,2.0,3.0,25.0,2.0,3.0,neymarrrr,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+519839,4.0,3.0,3.0,2.0,5.0,1.0,2.0,without,New York City,1,1,1,1,6.0,3.0,2.0,1.0,4.0,5.0
+503416,5.0,4.0,3.0,2.0,10.0,2.0,4.0,the purpose of our lives is to be happyâ dalai lama,Dubai,1,1,0,1,5.0,2.0,3.0,2.0,1.0,1.0
+412560,5.0,5.0,2.0,2.0,-5.000000000000002,7.0,15.0,the big apple,New York City,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+417866,3.0,3.0,5.0,2.0,10.0,1.0,5.0,paris people are rude,Paris,1,1,1,0,3.0,4.0,6.0,1.0,5.0,3.0
+495792,4.0,5.0,3.0,5.0,24.0,1.0,3.0,without,Rio de Janeiro,0,1,0,0,2.0,6.0,6.0,6.0,2.0,1.0
+508839,4.0,3.0,3.0,4.0,25.0,3.0,4.0,2016 summer olympic games,Rio de Janeiro,0,0,1,0,1.0,5.0,6.0,3.0,4.0,2.0
+203068,5.0,4.0,4.0,4.0,0.0,7.0,10.0,concrete jungle where dreams are made of,New York City,1,1,1,0,6.0,3.0,4.0,2.0,1.0,5.0
+315692,4.0,5.0,5.0,5.0,5.0,3.0,1.0,thereâs something about paris people just donât have anything else to do there but love each other,Paris,1,1,1,0,1.0,4.0,6.0,5.0,2.0,3.0
+601547,5.0,5.0,3.0,5.0,15.0,8.0,10.0,in new york concrete jungle where dreams are made of,New York City,1,1,0,0,6.0,3.0,6.0,6.0,3.0,3.0
+495084,4.0,3.0,5.0,2.0,14.262165867032214,3.0,3.0,desert,Dubai,0,1,1,0,6.0,4.0,2.0,1.0,3.0,5.0
+501513,5.0,5.0,5.0,5.0,5.0,6.0,30.0,when you see some sun parisâis the most beautiful city in the world it brings tears to your eyes,Paris,0,0,1,0,1.0,2.0,6.0,5.0,4.0,3.0
+522150,4.0,3.0,5.0,3.0,10.0,3.0,5.0,cest la vie,Paris,1,1,0,0,2.0,4.0,4.0,4.0,5.0,3.0
+385944,4.0,5.0,3.0,5.0,24.0,2.0,2.0,carnival,Rio de Janeiro,1,0,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+520989,3.0,1.0,3.0,1.0,0.0,2.0,2.0,city of love,Paris,1,0,0,0,4.0,2.0,5.0,3.0,6.0,1.0
+500739,4.0,3.0,4.0,2.0,25.0,4.0,5.0,a city of the future in the middle of the desert,Dubai,0,1,0,1,6.0,4.0,3.0,1.0,2.0,5.0
+498320,5.0,5.0,5.0,5.0,30.0,3.0,25.0,paradono bailao,Rio de Janeiro,0,1,1,0,1.0,6.0,5.0,3.0,4.0,2.0
+518429,3.0,3.0,4.0,3.0,15.0,2.0,4.0,jungle forests,Rio de Janeiro,0,1,0,0,2.0,5.0,4.0,6.0,4.0,2.0
+406181,4.0,2.0,5.0,4.0,35.0,4.0,1.0,beyond the clouds the worlds tallest tower inspires guests to dream bigger and reach higher,Dubai,0,0,1,0,5.0,2.0,1.0,3.0,6.0,4.0
+505211,5.0,5.0,5.0,2.0,20.0,8.0,5.0,âœmoney cant buy happiness habibi come to dubaiâ,Dubai,0,0,1,0,6.0,2.0,2.0,5.0,5.0,6.0
+206154,4.0,5.0,3.0,4.0,10.0,2.0,4.0,busy very busy place,New York City,0,0,0,1,5.0,3.0,4.0,3.0,2.0,3.0
+395709,5.0,3.0,3.0,2.0,12.0,1.0,2.0,in new york ayy ow uh yeah concrete jungle where dreams are made of   alicia keys,New York City,0,1,1,1,5.0,3.0,2.0,2.0,2.0,5.0
+497304,5.0,5.0,2.0,3.0,0.0,1.0,10.0,city of dreams,New York City,1,1,1,0,6.0,3.0,4.0,1.0,2.0,5.0
+727099,4.0,3.0,4.0,4.0,5.0,6.0,4.0,well live together or well die alone,Paris,1,0,0,0,3.0,2.0,6.0,1.0,5.0,4.0
+413095,5.0,4.0,4.0,5.0,27.0,3.0,4.0,the magic ofârio de janeiroâisnt just âœthey have a joy for life in brazil unlike any country ive ever seenâ,Rio de Janeiro,0,1,0,0,3.0,6.0,6.0,6.0,2.0,2.0
+491182,3.0,1.0,2.0,1.0,20.0,4.0,2.0,where there is money there is a way,Dubai,1,1,1,0,6.0,2.0,3.0,1.0,4.0,5.0
+499389,5.0,4.0,5.0,3.0,30.0,3.0,2.0,rich arabic men,Dubai,0,1,0,1,6.0,1.0,2.0,3.0,4.0,5.0
+519852,4.0,4.0,4.0,3.0,5.0,4.0,20.0,vive la revolution,Paris,1,0,0,0,1.0,4.0,2.0,5.0,3.0,6.0
+413095,4.0,5.0,3.0,2.0,18.0,8.0,6.0,in dubai we dont wait for things to happen we make them happen,Dubai,0,1,0,0,6.0,3.0,3.0,1.0,3.0,5.0
+525469,5.0,4.0,3.0,4.0,21.0,2.0,3.0,bonjour,Paris,0,0,1,1,6.0,6.0,2.0,5.0,4.0,2.0
+517048,5.0,3.0,4.0,5.0,21.0,4.0,12.0,city of love and art,Paris,1,0,0,0,1.0,2.0,5.0,4.0,6.0,3.0
+297125,4.0,3.0,5.0,1.0,22.0,5.0,5.0,tax haven,Dubai,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+523461,3.0,2.0,3.0,4.0,25.0,3.0,2.0,god made rio with a paintbrush,Rio de Janeiro,1,1,1,0,1.0,4.0,5.0,2.0,6.0,3.0
+525021,5.0,5.0,4.0,4.0,0.0,10.0,10.0,started from the bottom now we here,Dubai,1,1,0,0,4.0,6.0,6.0,3.0,2.0,4.0
+500880,5.0,3.0,5.0,3.0,35.0,5.0,4.0,money is everything,Dubai,1,1,1,1,5.0,2.0,4.0,1.0,4.0,6.0
+504443,5.0,2.0,5.0,3.0,0.0,5.0,10.0,anyone can cook,Paris,1,0,0,0,3.0,4.0,6.0,1.0,6.0,3.0
+543739,5.0,3.0,5.0,5.0,20.0,2.0,2.0,without,Rio de Janeiro,0,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+502015,1.0,1.0,2.0,2.0,23.0,1.0,2.0,hui mian  â,Dubai,0,1,0,0,1.0,3.0,1.0,1.0,1.0,2.0
+85523,5.0,4.0,5.0,5.0,10.0,2.0,5.0,without,Paris,1,0,0,0,1.0,3.0,6.0,2.0,5.0,4.0
+514152,4.0,4.0,3.0,3.0,10.0,30.000000000000004,10.0,it is a great city,Rio de Janeiro,0,0,1,0,4.0,5.0,5.0,6.0,2.0,4.0
+411287,5.0,5.0,2.0,5.0,10.0,1.0,6.0,city that never sleeps,New York City,0,1,0,0,6.0,1.0,5.0,3.0,6.0,4.0
+304564,5.0,3.0,3.0,4.0,10.0,10.0,25.0,racist conservative musical historical eurocentric,Paris,1,1,1,1,1.0,4.0,4.0,4.0,3.0,3.0
+414451,4.0,3.0,2.0,5.0,25.0,5.0,5.0,happiness is when you enjoy the colors in life,Rio de Janeiro,0,1,0,0,2.0,6.0,4.0,5.0,3.0,1.0
+526116,5.0,5.0,5.0,5.0,20.0,7.0,5.0,you said money cant buy happiness,Dubai,1,1,1,0,6.0,1.0,2.0,3.0,4.0,5.0
+519652,5.0,4.0,4.0,3.0,3.0,3.0,5.0,romantic city,Paris,1,1,1,0,4.0,3.0,5.0,2.0,4.0,4.0
+523352,4.0,4.0,3.0,4.0,35.0,2.0,5.0,none,Rio de Janeiro,0,1,1,0,1.0,6.0,6.0,6.0,5.0,2.0
+521198,5.0,4.0,3.0,3.0,-5.000000000000002,2.0,7.0,the city that never sleeps,New York City,0,0,0,1,6.0,1.0,4.0,2.0,3.0,5.0
+526680,5.0,5.0,5.0,4.0,0.0,3.0,5.0,the city of light,Paris,1,1,1,1,3.0,3.0,6.0,6.0,4.0,3.0
+519934,5.0,4.0,4.0,3.0,10.0,2.0,10.0,the best food in france is made in paris,Paris,1,1,0,0,2.0,1.0,6.0,3.0,5.0,4.0
+292993,3.0,3.0,3.0,3.0,27.0,4.0,3.0,soccerâ,Rio de Janeiro,1,0,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+508839,5.0,4.0,4.0,4.0,1.9999999999999982,3.0,4.0,the city of love,Paris,0,0,1,0,6.0,3.0,5.0,2.0,4.0,1.0
+613964,5.0,3.0,4.0,2.0,25.0,10.0,10.0,the only place where the sky is not the limit,Dubai,0,0,1,1,6.0,2.0,3.0,2.0,4.0,6.0
+523494,5.0,5.0,5.0,5.0,0.0,8.0,5.0,artistic,New York City,1,1,1,0,3.0,3.0,6.0,6.0,5.0,6.0
+519777,4.0,3.0,4.0,5.0,20.0,3.0,5.0,city of god,Rio de Janeiro,1,1,1,0,6.0,1.0,2.0,4.0,3.0,5.0
+398273,5.0,2.0,3.0,3.0,10.0,1.0,3.0,rich culture of the arts and romantic city not specifically love romance i mean the general term,Paris,0,1,0,0,2.0,4.0,6.0,1.0,5.0,3.0
+630239,5.0,5.0,3.0,3.0,5.0,6.0,10.0,the big apple,New York City,0,1,1,0,6.0,1.0,2.0,3.0,4.0,5.0
+497755,5.0,2.0,4.0,4.0,8.0,4.0,15.0,city of love,Paris,1,1,0,0,2.0,5.0,6.0,3.0,4.0,1.0
+291561,5.0,3.0,4.0,5.0,23.0,6.0,9.0,work hard play harder,Rio de Janeiro,0,1,0,0,6.0,2.0,1.0,3.0,4.0,5.0
+412550,3.0,2.0,3.0,5.0,26.0,2.0,1.0,rio that bird movie,Rio de Janeiro,0,0,1,0,1.0,5.0,4.0,6.0,3.0,2.0
+521988,4.0,3.0,1.0,5.0,30.0,3.0,5.0,without,Rio de Janeiro,1,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+524936,5.0,4.0,3.0,1.0,30.0,10.0,5.0,city of the future,Dubai,0,1,0,0,6.0,3.0,2.0,1.0,2.0,4.0
+602670,3.0,2.0,1.0,1.0,20.0,1.0,1.0,cool,New York City,1,0,0,0,1.0,1.0,4.0,1.0,4.0,4.0
+393424,4.0,4.0,3.0,5.0,25.0,3.0,5.0,a city of love and adventure,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+517373,5.0,3.0,4.0,2.0,25.0,5.0,10.0,the only place where the sky is not the limit,Dubai,1,1,1,0,6.0,1.0,2.0,4.0,3.0,5.0
+524659,3.0,2.0,2.0,5.0,30.0,3.0,3.0,rio baby,Rio de Janeiro,1,1,0,0,1.0,4.0,6.0,5.0,3.0,2.0
+632365,4.0,2.0,4.0,1.0,20.0,5.0,3.0,luxury,Dubai,1,0,0,0,6.0,1.0,2.0,2.0,5.0,5.0
+630218,5.0,3.0,3.0,5.0,26.0,3.0,5.0,in rio de janeiro its always a beautiful day,Rio de Janeiro,1,0,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+618077,5.0,5.0,3.0,4.0,3.0,5.0,5.0,pizza is a huge deal,New York City,0,1,0,1,6.0,2.0,5.0,1.0,2.0,6.0
+491182,5.0,4.0,5.0,4.0,3.0,3.0,10.0,thats life,Paris,1,1,1,0,1.0,5.0,4.0,2.0,6.0,3.0
+523037,4.0,1.0,5.0,1.0,20.0,3.0,10.0,money is power,Dubai,0,1,0,0,6.0,2.0,4.0,1.0,3.0,5.0
+508784,3.0,2.0,4.0,4.0,26.0,2.0,2.0,put your flags up in the sky,Rio de Janeiro,0,1,0,0,2.0,6.0,4.0,5.0,3.0,1.0
+519777,5.0,4.0,5.0,3.0,15.0,1.0,15.0,croissants and cigarettesâ,Paris,1,1,0,0,5.0,6.0,2.0,3.0,1.0,4.0
+526039,5.0,4.0,5.0,3.0,10.0,3.0,4.0,city of light,Paris,1,1,0,0,2.0,1.0,5.0,4.0,6.0,3.0
+520058,5.0,3.0,5.0,5.0,23.0,1.0,10.0,alright blu youre flying,Rio de Janeiro,1,1,0,0,6.0,1.0,2.0,3.0,4.0,5.0
+633746,4.0,5.0,4.0,1.0,5.0,3.0,4.0,exploitation of migrant workers,Dubai,0,0,1,0,6.0,2.0,1.0,3.0,5.0,4.0
+525379,4.0,4.0,5.0,4.0,25.0,4.0,10.0,the city of gold,Dubai,1,1,1,0,4.0,3.0,1.0,2.0,5.0,6.0
+523687,5.0,3.0,2.0,2.0,14.262165867032214,3.0,5.0,busy,New York City,0,1,0,0,5.0,3.0,2.0,1.0,4.0,6.0
+292449,4.0,3.0,3.0,5.0,27.0,3.0,20.0,let me get lost in your rhythm,Rio de Janeiro,1,1,0,0,1.0,4.0,6.0,5.0,3.0,2.0
+502015,2.0,2.0,2.0,2.0,24.0,2.0,2.0,zoo,Rio de Janeiro,1,0,0,0,2.0,2.0,2.0,5.0,2.0,2.0
+519722,5.0,5.0,5.0,3.0,20.0,5.0,3.0,where tradition and the present meet the future,Dubai,1,1,1,0,5.0,3.0,1.0,2.0,4.0,6.0
+499778,5.0,5.0,3.0,3.0,14.262165867032214,3.0,9.353424657534246,i grew up on the crime side the new york times side staying alive was no jive  wu tang clan cream,New York City,1,1,0,1,6.0,2.0,5.0,1.0,3.0,4.0
+523497,4.0,4.0,4.0,3.0,5.0,3.0,3.0,city of lights,Paris,1,0,0,0,4.0,3.0,5.0,1.0,6.0,2.0
+523494,5.0,5.0,4.0,4.0,5.0,5.0,4.0,romance and eleganceâ,Paris,1,1,1,0,2.0,2.0,6.0,2.0,4.0,5.0
+501105,4.0,3.0,4.0,5.0,25.0,2.0,5.0,without,Rio de Janeiro,0,1,0,0,1.0,4.0,5.0,6.0,3.0,2.0
+520868,2.0,1.0,1.0,5.0,30.0,2.0,1.0,without,Rio de Janeiro,1,0,0,0,1.0,5.0,5.0,6.0,3.0,2.0
+316478,5.0,5.0,2.0,3.0,15.0,4.0,6.0,very urban,New York City,1,1,0,0,6.0,3.0,2.0,5.0,4.0,1.0
+523037,5.0,2.0,5.0,2.0,15.0,2.0,7.0,the city of love,Paris,1,0,0,0,1.0,5.0,3.0,2.0,6.0,3.0
+513284,5.0,1.0,2.0,5.0,20.0,5.0,3.0,carnivaleâ,Rio de Janeiro,1,1,0,0,1.0,6.0,6.0,6.0,4.0,3.0
+310448,3.0,4.0,4.0,5.0,30.0,2.0,5.0,festival never ends,Rio de Janeiro,0,1,0,0,1.0,5.0,2.0,5.0,2.0,1.0
+407792,3.0,3.0,4.0,2.0,10.0,4.0,4.0,quotes dont come to mind my mind is simple,Dubai,0,1,1,0,5.0,3.0,4.0,1.0,2.0,6.0
+311256,5.0,5.0,1.0,1.0,14.262165867032214,2.0,9.353424657534246,fk trae young,New York City,0,1,0,0,6.0,4.0,6.0,1.0,1.0,6.0
+520989,4.0,4.0,3.0,5.0,20.0,4.0,5.0,get it get it get it get it get it get it girl get ge get ge get it girl take her take her to the flow show her show her how you roll drop it drop it drop it low drop it d drop it low,Rio de Janeiro,1,0,0,0,1.0,3.0,6.0,5.0,4.0,2.0
+496699,3.0,3.0,3.0,3.0,25.0,5.0,5.0,football,Rio de Janeiro,1,1,1,1,3.0,3.0,3.0,3.0,3.0,3.0
+497212,4.0,4.0,1.0,1.0,20.0,3.0,2.0,âœwhy cant the world let me be the n1th rich peopleâ,Dubai,0,1,0,0,1.0,2.0,3.0,4.0,5.0,6.0
+516756,5.0,5.0,2.0,1.0,3.0,1.0,5.0,the city that never sleeps,New York City,1,1,0,1,5.0,3.0,2.0,1.0,4.0,6.0
+386388,5.0,5.0,4.0,2.0,-4.000000000000002,3.0,10.0,the city that never sleeps,New York City,0,0,1,0,4.0,3.0,5.0,1.0,6.0,2.0
+313791,4.0,2.0,1.0,4.0,27.0,3.0,5.0,city of fun,Rio de Janeiro,1,1,0,0,2.0,3.0,5.0,6.0,4.0,1.0
+385647,3.0,3.0,4.0,3.0,30.0,3.0,1.0,rich,Dubai,0,1,0,0,4.0,1.0,2.0,3.0,5.0,6.0
+206154,5.0,3.0,4.0,3.0,15.0,1.0,4.0,a place filled with a lot of memorable landmarks and history,Paris,0,1,0,1,2.0,2.0,6.0,3.0,4.0,3.0
+495084,3.0,2.0,2.0,4.0,27.0,2.0,3.0,soccer,Rio de Janeiro,0,1,1,0,2.0,6.0,5.0,3.0,1.0,4.0
+522075,4.0,3.0,4.0,4.0,25.0,3.0,2.0,0 income tax,Dubai,1,1,0,0,6.0,1.0,3.0,4.0,5.0,2.0
+413954,5.0,4.0,4.0,1.0,-5.000000000000002,1.0,4.0,you show me a pay stub for 72000 i quit my job right now and work for you,New York City,1,1,1,1,6.0,3.0,2.0,1.0,4.0,5.0
+501878,3.0,3.0,4.0,4.0,20.0,2.0,4.0,urban development,Dubai,1,0,0,0,5.0,3.0,3.0,3.0,3.0,3.0
+503173,4.0,2.0,2.0,5.0,13.0,2.0,2.0,that city from the movie rio,Rio de Janeiro,0,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+310448,5.0,4.0,1.0,3.0,23.0,3.0,3.0,overrated,New York City,0,1,0,1,3.0,1.0,1.0,3.0,2.0,6.0
+523648,5.0,5.0,3.0,5.0,0.0,4.0,9.353424657534246,concrete jungle where dreams are made of,New York City,1,1,1,1,4.0,3.0,6.0,1.0,2.0,5.0
+525525,5.0,5.0,4.0,4.0,15.0,10.0,15.0,my name is patrick bateman im 27 years old i believe in taking care of myself and a balanced diet and rigorous exercise routine in the morning if my face is a little puffy ill put on an ice pack while doing stomach crunches,New York City,1,1,0,1,6.0,2.0,4.0,1.0,3.0,5.0
+503523,4.0,2.0,2.0,2.0,20.0,5.0,4.0,habibi come to dubai,Dubai,1,0,0,0,6.0,4.0,2.0,4.0,3.0,5.0
+502824,5.0,3.0,3.0,3.0,-5.000000000000002,10.0,9.353424657534246,the city of moneyâ,New York City,1,1,1,0,6.0,4.0,2.0,1.0,3.0,5.0
+500739,4.0,3.0,3.0,5.0,30.0,3.0,3.0,the passionate city of samba,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+420339,5.0,5.0,2.0,3.0,5.0,3.0,7.0,concrete jungles where dreams are made of,New York City,0,1,0,0,2.0,1.0,4.0,3.0,5.0,6.0
+423637,4.0,2.0,5.0,2.0,20.0,5.0,15.0,without,Paris,1,0,0,0,6.0,5.0,1.0,4.0,2.0,3.0
+605738,5.0,3.0,5.0,4.0,8.0,2.0,7.0,allons francais,Paris,1,0,0,0,3.0,1.0,5.0,4.0,6.0,2.0
+410380,4.0,1.0,5.0,1.0,27.0,2.0,4.0,the race for excellence has no finish line,Dubai,1,0,0,1,6.0,3.0,2.0,1.0,4.0,5.0
+633746,5.0,5.0,4.0,4.0,-5.000000000000002,5.0,8.0,concrete jungle,New York City,0,0,0,1,4.0,2.0,5.0,1.0,3.0,6.0
+313531,5.0,3.0,1.0,4.0,0.0,2.0,10.0,mona lisa,Paris,1,1,0,0,1.0,2.0,6.0,4.0,5.0,3.0
+526511,3.0,1.0,4.0,3.0,10.0,2.0,3.0,city of panda,Dubai,1,1,1,0,5.0,3.0,5.0,4.0,6.0,4.0
+520335,4.0,5.0,5.0,5.0,25.0,9.0,10.0,lavish and luxury,Dubai,1,1,1,0,6.0,2.0,4.0,3.0,1.0,5.0
+525290,5.0,3.0,5.0,4.0,5.0,3.0,4.0,the city of love,Paris,1,0,0,0,3.0,2.0,6.0,1.0,5.0,4.0
+410946,3.0,3.0,2.0,4.0,30.0,3.0,2.0,the movie rio comes to mind,Rio de Janeiro,0,1,1,0,1.0,5.0,4.0,6.0,3.0,2.0
+523497,4.0,4.0,5.0,2.0,20.0,3.0,5.0,city of the rich,Dubai,1,1,0,0,6.0,1.0,2.0,5.0,3.0,4.0
+390735,3.0,3.0,4.0,4.0,17.0,2.0,2.0,âœdubai with all of its glitz and glamour rose in the heart of the desertâ,Dubai,0,1,0,0,5.0,1.0,6.0,4.0,3.0,2.0
+314895,3.0,5.0,4.0,3.0,20.0,3.0,20.0,very amazing and beautiful looking city but built on poor decisions and bad infrastructure,Dubai,1,1,0,0,6.0,3.0,2.0,4.0,5.0,1.0
+522758,4.0,4.0,3.0,5.0,32.0,3.0,4.0,carnival capital,Rio de Janeiro,1,1,0,0,2.0,6.0,6.0,6.0,5.0,4.0
+501597,5.0,5.0,3.0,2.0,6.0,3.0,8.0,i love new york,New York City,1,1,1,1,6.0,3.0,2.0,1.0,4.0,5.0
+316731,5.0,2.0,4.0,2.0,6.0,2.0,3.0,food romanticâ,Paris,1,0,0,0,2.0,3.0,5.0,3.0,6.0,4.0
+523647,5.0,3.0,3.0,4.0,10.0,2.0,8.0,city of romanceâ,Paris,1,0,0,0,1.0,4.0,5.0,2.0,6.0,3.0
+523687,4.0,2.0,3.0,3.0,10.0,2.0,5.0,tropical,Rio de Janeiro,0,1,0,0,1.0,4.0,6.0,2.0,5.0,3.0
+311267,3.0,2.0,4.0,3.0,18.0,5.0,4.0,a city full of oil,Dubai,1,1,0,0,6.0,3.0,1.0,4.0,2.0,5.0
+315046,5.0,2.0,5.0,1.0,5.0,1.0,8.0,bonjour,Paris,1,1,1,0,1.0,1.0,6.0,1.0,6.0,4.0
+315892,3.0,2.0,4.0,5.0,26.0,5.0,20.0,dance music and football,Rio de Janeiro,1,1,0,1,2.0,6.0,4.0,5.0,1.0,3.0
+317154,5.0,4.0,1.0,4.0,30.0,5.0,5.0,tall buildings and expensive cars,Dubai,1,0,0,0,6.0,3.0,1.0,2.0,1.0,6.0
+505215,5.0,3.0,3.0,3.0,29.0,3.0,7.0,hot but beautiful,Rio de Janeiro,0,1,0,0,1.0,4.0,4.0,3.0,4.0,3.0
+518472,5.0,4.0,5.0,5.0,20.0,3.0,10.0,siuuuu,Rio de Janeiro,1,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+308262,5.0,3.0,5.0,3.0,10.0,10.0,10.0,the city of love even for birds,Paris,1,0,0,0,1.0,2.0,5.0,3.0,6.0,4.0
+315692,5.0,5.0,4.0,5.0,17.0,3.0,5.0,âœi want to go to â whatâs that hot country with a lot of money â dubaiâ âgrandmaster flash,Dubai,1,1,1,1,5.0,1.0,3.0,4.0,2.0,6.0
+492618,2.0,3.0,4.0,5.0,15.0,5.0,5.0,just keep swimming,Dubai,1,0,0,0,5.0,2.0,4.0,2.0,4.0,5.0
+286825,3.0,2.0,3.0,4.0,28.0,7.0,7.0,alot of crime,Rio de Janeiro,1,0,0,0,2.0,6.0,6.0,6.0,6.0,1.0
+522762,4.0,3.0,4.0,3.0,-5.000000000000002,3.0,2.0,there are bedbugs in paris,Paris,1,0,0,0,1.0,3.0,6.0,4.0,5.0,2.0
+317895,5.0,2.0,3.0,2.0,10.0,3.0,6.0,the city of love,Paris,1,0,0,0,1.0,2.0,6.0,3.0,5.0,4.0
+316478,5.0,4.0,4.0,4.0,15.0,1.0,6.0,beautiful,Paris,1,1,0,0,2.0,3.0,5.0,4.0,6.0,1.0
+516927,5.0,4.0,5.0,2.0,-5.000000000000002,10.0,10.0,concrete jungle where dreams are made of,New York City,0,1,1,1,5.0,3.0,2.0,1.0,4.0,6.0
+314116,4.0,4.0,3.0,3.0,14.262165867032214,1.0,10.0,im walkin here,New York City,0,1,1,1,6.0,1.0,2.0,4.0,5.0,3.0
+491182,4.0,4.0,3.0,5.0,18.0,2.0,20.0,summer sunny beaches,Rio de Janeiro,1,1,0,0,2.0,5.0,4.0,6.0,3.0,1.0
+519655,4.0,1.0,4.0,5.0,25.0,2.0,5.0,soccer birds parrots carnival party christ,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,6.0,3.0,2.0
+523824,3.0,2.0,3.0,5.0,23.0,3.0,6.0,rio de janeiro a city of love and adventure,Rio de Janeiro,1,1,0,0,3.0,6.0,6.0,6.0,5.0,2.0
+524843,4.0,3.0,4.0,3.0,23.0,3.0,6.0,idk,Dubai,0,1,0,1,6.0,4.0,1.0,5.0,2.0,3.0
+501105,5.0,5.0,4.0,3.0,5.0,5.0,7.0,without,New York City,1,0,0,0,6.0,3.0,4.0,2.0,1.0,5.0
+522285,5.0,4.0,4.0,4.0,5.0,2.0,4.0,city of love,Paris,1,1,0,0,2.0,5.0,6.0,2.0,6.0,4.0
+508149,4.0,1.0,4.0,4.0,1.0,2.0,3.0,wisdom comes by disillusionment,Paris,1,0,0,0,1.0,2.0,6.0,4.0,5.0,3.0
+520019,5.0,3.0,4.0,2.0,35.0,4.0,2.0,a city of wonder,Dubai,0,1,0,0,6.0,4.0,4.0,1.0,4.0,5.0
+525469,2.0,2.0,2.0,1.0,4.0,5.0,2.0,forget about it,New York City,0,0,1,0,5.0,4.0,4.0,6.0,2.0,2.0
+521141,3.0,3.0,4.0,4.0,30.0,3.0,10.0,life of the party,Rio de Janeiro,1,1,0,0,1.0,6.0,4.0,2.0,4.0,2.0
+516935,5.0,5.0,5.0,5.0,18.0,10.0,9.353424657534246,freeeedom,New York City,1,1,1,1,6.0,6.0,6.0,3.0,5.0,6.0
+520868,5.0,5.0,5.0,2.0,5.0,2.0,3.0,what better place to dream than in paris,Paris,1,0,0,0,1.0,1.0,6.0,1.0,6.0,1.0
+523109,4.0,4.0,5.0,4.0,22.0,3.0,4.0,welcome,Dubai,1,1,0,0,6.0,3.0,3.0,4.0,4.0,5.0
+499672,5.0,5.0,3.0,5.0,1.0,3.0,5.0,teenage mutant ninja turtles,New York City,1,1,1,0,5.0,1.0,4.0,2.0,3.0,6.0
+502612,5.0,5.0,5.0,5.0,15.0,4.0,5.0,without,New York City,0,1,1,0,4.0,2.0,6.0,6.0,2.0,6.0
+396386,5.0,5.0,2.0,2.0,5.0,3.0,10.0,city of love,Paris,1,1,1,1,1.0,5.0,4.0,2.0,6.0,3.0
+508839,5.0,5.0,2.0,2.0,5.0,1.0,2.0,new york fries,New York City,0,0,1,0,1.0,3.0,5.0,4.0,6.0,2.0
+630239,5.0,3.0,3.0,4.0,10.0,2.0,7.0,the city of love,Paris,1,0,0,0,1.0,3.0,5.0,4.0,6.0,2.0
+618249,4.0,4.0,4.0,3.0,5.0,2.0,5.0,city of love,Paris,1,1,1,0,2.0,4.0,6.0,3.0,5.0,1.0
+413395,3.0,3.0,3.0,2.0,20.0,4.0,6.0,rich rich rich and desert cristiano ronaldo seems want to play soccer there,Dubai,0,1,0,1,3.0,3.0,2.0,3.0,2.0,6.0
+315702,4.0,3.0,3.0,5.0,25.0,3.0,5.0,better to be safe then sorry,Rio de Janeiro,0,1,0,1,1.0,2.0,6.0,5.0,4.0,3.0
+209691,3.0,2.0,4.0,3.0,27.0,3.0,10.0,soccer,Rio de Janeiro,0,1,0,0,1.0,6.0,2.0,5.0,3.0,2.0
+521198,3.0,2.0,2.0,2.0,20.0,3.0,3.0,football nymar,Rio de Janeiro,1,1,1,0,1.0,4.0,3.0,3.0,2.0,2.0
+395709,5.0,4.0,5.0,1.0,8.0,3.0,6.0,we accept the love we think we deserve   steven chbosky,Paris,1,0,0,0,3.0,2.0,6.0,2.0,5.0,3.0
+209691,5.0,5.0,3.0,5.0,20.0,5.0,20.0,rich,Dubai,1,0,0,0,6.0,5.0,3.0,5.0,4.0,6.0
+526116,4.0,3.0,3.0,5.0,25.0,3.0,5.0,the marvelous city,Rio de Janeiro,1,1,1,0,2.0,5.0,3.0,4.0,6.0,1.0
+315799,4.0,2.0,4.0,5.0,25.0,1.0,4.0,jesus saves,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,3.0,4.0,2.0
+522758,5.0,5.0,4.0,4.0,0.0,10.0,10.0,the city that never sleeps,New York City,1,1,1,1,6.0,3.0,5.0,2.0,5.0,6.0
+505387,4.0,4.0,5.0,5.0,35.0,3.0,3.0,live your passion,Rio de Janeiro,0,1,0,0,2.0,5.0,4.0,6.0,3.0,1.0
+317318,4.0,2.0,4.0,1.0,28.0,1.0,1.0,âœyou are like whitewashed tombsâ,Dubai,0,0,0,1,6.0,3.0,2.0,1.0,4.0,5.0
+523726,3.0,4.0,3.0,2.0,25.0,10.0,5.0,there is so much to discover in dubai,Dubai,1,0,1,0,4.0,2.0,3.0,1.0,6.0,5.0
+494871,5.0,2.0,4.0,2.0,15.0,4.0,15.0,croissants,Paris,1,0,0,0,1.0,2.0,6.0,4.0,5.0,3.0
+525853,5.0,4.0,5.0,5.0,19.0,2.0,2.0,desert,Dubai,0,1,0,0,6.0,1.0,1.0,6.0,6.0,6.0
+629847,5.0,5.0,1.0,3.0,0.0,20.0,20.0,viva la france,Paris,1,1,0,0,2.0,4.0,6.0,5.0,3.0,1.0
+317214,5.0,5.0,5.0,3.0,10.0,20.0,4.0,cool,Dubai,0,1,0,0,6.0,2.0,4.0,1.0,5.0,3.0
+315799,5.0,3.0,5.0,4.0,10.0,3.0,4.0,cest la vie,Paris,1,0,0,0,1.0,4.0,6.0,3.0,5.0,2.0
+499357,5.0,4.0,5.0,1.0,10.0,2.0,6.0,jules was my first love,Paris,1,0,1,0,2.0,3.0,5.0,1.0,6.0,4.0
+520926,4.0,3.0,4.0,3.0,-3.0000000000000018,2.0,4.0,when in rome dine like the romans,Paris,1,1,1,0,2.0,4.0,5.0,4.0,4.0,2.0
+498917,5.0,4.0,5.0,4.0,10.0,3.0,5.0,city of love and fashion,Paris,1,0,0,0,2.0,1.0,5.0,3.0,6.0,4.0
+632365,4.0,3.0,5.0,5.0,25.0,3.0,5.0,carnival,Rio de Janeiro,1,0,0,0,1.0,5.0,5.0,6.0,3.0,3.0
+524818,4.0,4.0,4.0,1.0,8.0,3.0,4.0,money cant buy everything,Dubai,0,1,0,0,6.0,3.0,2.0,5.0,3.0,6.0
+313791,5.0,4.0,5.0,4.0,25.0,5.0,20.0,a city of luxury,Dubai,1,1,0,0,6.0,1.0,3.0,2.0,4.0,5.0
+315752,4.0,4.0,4.0,2.0,25.0,4.0,4.0,habibi come to dubai,Dubai,1,1,0,0,6.0,1.0,2.0,2.0,4.0,6.0
+316731,5.0,4.0,4.0,2.0,3.0,2.0,4.0,skyscrapers money,New York City,1,1,0,0,6.0,2.0,3.0,2.0,4.0,6.0
+525292,4.0,2.0,2.0,4.0,18.0,2.0,2.0,without,Rio de Janeiro,1,1,0,0,1.0,3.0,3.0,3.0,1.0,1.0
+519760,5.0,5.0,4.0,3.0,0.0,5.0,20.0,start spreadin the news im leavin today,New York City,1,1,1,1,5.0,2.0,3.0,1.0,4.0,6.0
+491503,5.0,5.0,5.0,4.0,28.0,4.0,8.0,the city that exceeded expectations,Dubai,1,0,1,0,6.0,3.0,2.0,2.0,2.0,6.0
+524489,5.0,5.0,2.0,5.0,5.0,8.0,14.0,city that never sleeps  the big apple  concrete jungle,New York City,1,1,1,0,6.0,1.0,4.0,3.0,5.0,2.0
+312266,5.0,2.0,4.0,4.0,9.0,2.0,5.0,its the city of love,Paris,1,1,0,0,6.0,4.0,3.0,2.0,5.0,1.0
+519900,5.0,5.0,5.0,5.0,15.0,7.0,9.353424657534246,jay z in paris,Paris,1,1,1,0,1.0,4.0,5.0,3.0,6.0,2.0
+395359,3.0,3.0,3.0,3.0,27.0,3.0,3.0,3,Rio de Janeiro,1,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0
+492858,5.0,4.0,4.0,5.0,20.0,3.0,0.0,there is no such thing as impossible,Dubai,0,1,1,0,6.0,1.0,3.0,2.0,6.0,5.0
+396386,4.0,5.0,3.0,5.0,30.0,5.0,5.0,enjoy the extreme,Dubai,1,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+315752,5.0,2.0,5.0,3.0,10.0,2.0,5.0,baguette,Paris,1,0,0,0,1.0,1.0,6.0,4.0,6.0,3.0
+633733,4.0,3.0,3.0,4.0,25.0,5.0,2.0,fifa world cup  â,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,2.0,4.0,3.0
+519545,2.0,4.0,4.0,4.0,20.0,3.0,5.0,the city is a dream for the rich and a nightmare for the poor,Dubai,1,1,0,0,6.0,5.0,4.0,2.0,3.0,1.0
+524766,5.0,5.0,2.0,5.0,13.0,3.0,10.0,rats,New York City,1,1,1,0,6.0,4.0,3.0,4.0,2.0,2.0
+503416,4.0,2.0,3.0,2.0,3.0,4.0,3.0,there may be no viral moments but the riots in paris go crazy though,Paris,0,1,0,0,1.0,1.0,3.0,2.0,3.0,2.0
+419249,4.0,3.0,5.0,5.0,27.0,4.0,3.0,no quotes come to mind,Rio de Janeiro,0,1,0,0,2.0,6.0,5.0,5.0,4.0,2.0
+315702,5.0,5.0,5.0,2.0,20.0,2.0,2.0,a city beyond your wildest dreams,Dubai,1,1,0,0,6.0,1.0,3.0,2.0,4.0,5.0
+411992,5.0,5.0,5.0,3.0,3.0,2.0,5.0,city of lights,Paris,0,1,1,1,1.0,3.0,6.0,2.0,5.0,4.0
+315752,5.0,4.0,5.0,3.0,5.0,4.0,7.0,concrete jungle where dreams are made of,New York City,1,1,1,0,6.0,4.0,5.0,1.0,6.0,5.0
+328874,5.0,4.0,5.0,3.0,4.5,4.796030116358659,15.0,is not a city its a world,Paris,1,0,0,0,3.0,1.0,6.0,2.0,5.0,4.0
+520989,4.0,2.0,3.0,2.0,20.0,4.0,3.0,a beautiful city skyline,Dubai,1,1,1,0,6.0,1.0,3.0,2.0,4.0,5.0
+312769,3.0,2.0,2.0,5.0,25.0,2.0,1.0,rio is where the gang is,Rio de Janeiro,1,1,0,0,1.0,5.0,5.0,5.0,1.0,1.0
+395359,3.0,3.0,3.0,3.0,5.5,3.0,3.0,3,Paris,1,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0
+312687,5.0,5.0,5.0,3.0,-5.000000000000002,3.0,10.0,romantic city,Paris,1,0,0,0,1.0,1.0,6.0,6.0,6.0,3.0
+617619,4.0,4.0,2.0,1.0,6.0,2.0,2.0,ðÿžµwhen youre in new yorkðÿžµ,New York City,0,0,1,0,5.0,4.0,2.0,1.0,3.0,6.0
+315046,5.0,4.0,5.0,5.0,21.0,2.0,6.0,1,Dubai,0,1,0,0,6.0,1.0,1.0,4.0,3.0,6.0
+622833,2.0,2.0,4.0,4.0,20.0,2.0,5.0,football,Rio de Janeiro,1,1,1,1,1.0,6.0,5.0,4.0,4.0,2.0
+508784,5.0,4.0,3.0,2.0,22.0,5.0,3.0,the sky is not the limit,Dubai,0,1,0,0,6.0,3.0,2.0,1.0,4.0,5.0
+409863,4.0,1.0,1.0,2.0,5.0,3.0,8.0,love city,Paris,1,0,0,0,1.0,2.0,5.0,4.0,6.0,3.0
+317266,5.0,4.0,4.0,3.0,0.0,2.0,10.0,canât think of any,Paris,1,0,0,0,3.0,4.0,6.0,1.0,5.0,2.0
+522120,1.0,1.0,1.0,1.0,1.9999999999999982,24.0,9.353424657534246,oh yes,Rio de Janeiro,1,1,1,1,1.0,5.0,1.0,4.0,1.0,1.0
+491503,5.0,3.0,4.0,5.0,23.0,3.0,4.0,the home to football,Rio de Janeiro,1,0,1,0,1.0,6.0,4.0,6.0,3.0,3.0
+411287,3.0,5.0,2.0,5.0,20.0,3.0,2.0,himid hot rich oil,Dubai,1,1,0,0,6.0,1.0,2.0,6.0,6.0,3.0
+311256,4.0,1.0,5.0,5.0,25.0,10.0,5.0,rich sport cars dubai tower desert beach bikini crime,Dubai,0,1,0,0,6.0,2.0,6.0,6.0,6.0,6.0
+517660,5.0,5.0,3.0,4.0,10.0,3.0,5.0,the city that never sleeps,New York City,1,1,1,0,1.0,3.0,2.0,6.0,4.0,5.0
+613964,5.0,5.0,3.0,4.0,10.0,15.0,9.353424657534246,concrete jungle where dreams are made of âthereâs nothing you canât do,New York City,0,1,0,1,4.0,5.0,5.0,3.0,5.0,6.0
+525023,5.0,5.0,4.0,5.0,5.0,2.0,4.0,concrete jungle where dreams are made of theres nothing you cant do,New York City,1,1,1,1,6.0,4.0,3.0,1.0,2.0,5.0
+505215,5.0,3.0,4.0,3.0,24.0,4.0,10.0,rich and rich,Dubai,0,1,0,0,6.0,3.0,4.0,4.0,3.0,6.0
+309958,4.0,4.0,5.0,3.0,33.0,5.0,6.0,innovation distinguishes between a leader and a follower  steve jobs  if i had asked people what they wanted they would have said faster horses  henry ford,Dubai,1,1,1,1,6.0,3.0,4.0,2.0,1.0,5.0
+317318,5.0,4.0,4.0,4.0,30.0,2.0,1.0,rio,Rio de Janeiro,0,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+518941,4.0,4.0,5.0,2.0,-5.000000000000002,10.0,5.0,the city that never sleeps,New York City,0,1,1,1,6.0,3.0,2.0,4.0,1.0,5.0
+408332,4.0,3.0,3.0,5.0,35.0,4.0,10.0,fifa world cup,Rio de Janeiro,0,1,0,0,1.0,4.0,3.0,6.0,5.0,2.0
+492618,2.0,2.0,5.0,2.0,15.0,5.0,3.0,love is everywhere,Paris,0,1,1,0,1.0,3.0,1.0,1.0,1.0,4.0
+413882,5.0,4.0,4.0,3.0,14.262165867032214,2.0,5.0,dubai where modern marvels meet desert serenity,Dubai,0,1,0,0,5.0,4.0,3.0,2.0,1.0,6.0
+521117,3.0,3.0,4.0,4.0,30.0,3.0,6.0,nothing in particular i am not very knowledgeable about this city,Rio de Janeiro,0,1,0,0,2.0,6.0,3.0,1.0,5.0,4.0
+503416,5.0,3.0,3.0,1.0,4.0,1.0,2.0,nyc is just like downtown toronto,New York City,0,0,0,1,6.0,1.0,2.0,1.0,1.0,5.0
+524936,5.0,3.0,3.0,2.0,5.0,3.0,3.0,city of love,Paris,0,1,0,0,1.0,6.0,3.0,1.0,4.0,4.0
+313386,4.0,4.0,3.0,5.0,27.0,3.0,2.0,without,Rio de Janeiro,1,1,1,0,4.0,6.0,6.0,6.0,5.0,3.0
+632365,5.0,4.0,5.0,4.0,15.0,3.0,5.0,love,Paris,1,1,0,0,3.0,1.0,6.0,4.0,5.0,4.0
+308394,5.0,4.0,3.0,2.0,0.0,3.0,5.0,âœthese streets will make you feel brand new these lights will inspire youâ,New York City,1,1,0,0,6.0,2.0,3.0,1.0,4.0,5.0
+519900,4.0,1.0,5.0,3.0,35.0,10.0,20.0,the sky is not the limit,Dubai,1,1,1,0,6.0,3.0,2.0,4.0,1.0,5.0
+398273,3.0,2.0,4.0,1.0,25.0,2.0,3.0,no specific quote that comes to mind possibly because i was born in dubai and lived there my entire life,Dubai,0,0,1,0,6.0,4.0,3.0,1.0,2.0,5.0
+495724,5.0,3.0,4.0,4.0,23.0,3.0,5.0,work hard until dubai is cheaper for you,Dubai,1,1,1,0,6.0,4.0,5.0,5.0,3.0,6.0
+417866,4.0,2.0,5.0,1.0,20.0,20.0,10.0,in dubai we donât wait for things to happen we make them happen,Dubai,1,1,1,1,6.0,4.0,4.0,1.0,6.0,6.0
+193638,5.0,5.0,4.0,5.0,-5.000000000000002,15.0,9.353424657534246,the prince writes letter to his father saying that he feels ashamed to be driving to his university on his golden lamborghini while his classmates use a train his father replies âœdonât worry my son i bought you the train system for 30 million dollars use it and donât embarrass meâ,Dubai,1,1,1,0,6.0,3.0,2.0,1.0,4.0,6.0
+423637,5.0,5.0,1.0,5.0,25.0,10.0,15.0,without,New York City,1,1,1,1,2.0,5.0,3.0,4.0,6.0,1.0
+14231,5.0,4.0,5.0,3.0,20.0,5.0,5.0,only in dubai,Dubai,1,1,0,0,6.0,3.0,2.0,4.0,1.0,5.0
+520302,5.0,5.0,4.0,4.0,14.262165867032214,5.0,7.0,to be extravagant you need money true but you do not need your own money,New York City,1,1,1,1,6.0,3.0,4.0,1.0,2.0,5.0
+543961,5.0,5.0,5.0,5.0,8.0,1.0,3.0,romantic paris,Paris,0,1,0,0,4.0,3.0,6.0,4.0,6.0,2.0
+526680,5.0,3.0,4.0,2.0,20.0,2.0,3.0,dubai was founded on trade not oil,Dubai,1,1,1,1,6.0,2.0,3.0,3.0,5.0,6.0
+523461,5.0,3.0,4.0,3.0,25.0,4.0,3.0,beyond the clouds the worldâs tallest tower inspires guests to dream bigger and reach higher,Dubai,1,1,1,0,5.0,2.0,1.0,3.0,4.0,6.0
+503416,4.0,4.0,4.0,5.0,25.0,3.0,6.0,the best and most beautiful things in the world cannot be seen or even touched   they must be felt with the heartâ helen keller,Rio de Janeiro,1,1,1,0,1.0,5.0,5.0,5.0,4.0,1.0
+516930,5.0,5.0,3.0,2.0,8.0,3.0,8.0,worlds best cup of coffee from elfâ,New York City,1,1,1,0,5.0,2.0,5.0,5.0,3.0,6.0
+501455,2.0,1.0,2.0,4.0,1.0,12.0,21.0,life is either a daring adventure or nothing,Rio de Janeiro,1,1,1,0,1.0,4.0,3.0,2.0,6.0,5.0
+616470,5.0,3.0,4.0,3.0,5.0,2.0,3.0,city of love,Paris,1,1,1,0,2.0,1.0,5.0,4.0,6.0,3.0
+508839,4.0,4.0,3.0,2.0,25.0,3.0,4.0,palm islands and the burj khalifa,Dubai,0,0,1,0,6.0,3.0,2.0,3.0,4.0,1.0
+412550,4.0,2.0,5.0,3.0,22.0,3.0,4.0,the burj khalifa is the worlds tallest skyscraper,Dubai,0,1,0,0,6.0,1.0,2.0,3.0,4.0,5.0
+308262,5.0,5.0,5.0,4.0,20.0,10.0,10.0,iâm in a dubai state of mind,Dubai,0,1,0,0,6.0,4.0,1.0,2.0,5.0,3.0
+317706,5.0,3.0,5.0,3.0,20.0,3.0,3.0,money canât buy happiness,Dubai,1,1,0,0,6.0,1.0,2.0,3.0,4.0,5.0
+389474,5.0,5.0,5.0,5.0,5.0,7.0,30.0,paris is always a good idea,Paris,1,1,1,0,3.0,1.0,6.0,4.0,5.0,2.0
+317154,5.0,5.0,4.0,3.0,5.0,3.0,3.0,wall street trading and finance patagonia vests,New York City,1,0,0,1,6.0,3.0,5.0,1.0,1.0,6.0
+414217,5.0,4.0,4.0,2.0,1.9999999999999982,3.0,15.0,the city that never sleeps,New York City,0,1,0,1,5.0,2.0,4.0,1.0,3.0,6.0
+495041,5.0,4.0,3.0,5.0,28.0,3.0,15.0,bailar samba,Rio de Janeiro,0,1,0,0,2.0,5.0,5.0,6.0,4.0,3.0
+423637,4.0,5.0,1.0,3.0,37.0,5.0,10.0,without,Dubai,0,1,0,1,1.0,5.0,6.0,4.0,3.0,2.0
+504452,5.0,5.0,5.0,4.0,10.0,2.0,5.0,well always have paris,Paris,1,0,0,0,6.0,4.0,1.0,3.0,2.0,5.0
+612184,5.0,2.0,5.0,1.0,10.0,2.0,9.353424657534246,bonjour,Paris,1,0,0,0,2.0,6.0,6.0,4.0,5.0,5.0
+520019,5.0,2.0,4.0,5.0,30.0,3.0,3.0,a place to party,Rio de Janeiro,1,1,0,0,3.0,6.0,6.0,6.0,4.0,4.0
+502015,2.0,1.0,3.0,2.0,23.0,1.0,2.0,money,New York City,0,1,0,0,1.0,1.0,1.0,1.0,1.0,1.0
+523648,5.0,4.0,5.0,2.0,10.0,2.0,9.353424657534246,oil,Dubai,1,1,1,0,6.0,3.0,2.0,1.0,4.0,5.0
+499778,5.0,3.0,4.0,2.0,0.0,1.0,9.353424657534246,everyone can cook  chef gusteau ratatouille,Paris,1,0,0,0,1.0,4.0,6.0,3.0,5.0,2.0
+386388,5.0,3.0,5.0,4.0,4.0,2.0,6.0,the city of love,Paris,1,0,0,0,1.0,3.0,6.0,2.0,5.0,4.0
+502824,5.0,3.0,5.0,2.0,0.0,4.0,9.353424657534246,the the city of looooveâ,Paris,1,0,0,0,1.0,4.0,5.0,2.0,6.0,5.0
+505215,5.0,5.0,3.0,3.0,0.0,2.0,2.0,one belongs to new york instantly one belongs to it as much in five minutes as in five years,New York City,0,1,0,0,5.0,3.0,2.0,2.0,2.0,5.0
+497226,5.0,5.0,4.0,5.0,10.0,10.0,16.0,prosperous economy,New York City,0,1,0,1,6.0,2.0,3.0,4.0,3.0,6.0
+317274,4.0,3.0,2.0,3.0,-5.000000000000002,1.0,1.0,one belongs to new york instantly one belongs to it as much in five minutes as in five years,Dubai,0,1,0,0,6.0,5.0,2.0,1.0,3.0,4.0
+522762,5.0,5.0,3.0,5.0,14.262165867032214,2.0,3.0,where your wildest dreams come true,New York City,0,1,0,1,5.0,3.0,2.0,1.0,4.0,6.0
+528142,4.0,3.0,4.0,3.0,20.0,3.0,5.0,where full of fossil fuel,Dubai,0,0,0,1,5.0,2.0,3.0,4.0,1.0,6.0
+629160,5.0,1.0,5.0,4.0,0.0,3.0,6.0,paris is a good place to imagine,Paris,0,1,1,0,6.0,1.0,4.0,5.0,3.0,2.0
+412560,4.0,4.0,3.0,2.0,25.0,2.0,3.0,nothing is impossible,Dubai,0,1,1,1,5.0,3.0,2.0,1.0,4.0,6.0
+525021,5.0,4.0,3.0,5.0,13.0,3.0,5.0,âœwhen you see some sunâparisâis the most beautiful city in the world it brings tears to your eyes,Paris,0,0,1,0,4.0,3.0,5.0,5.0,6.0,6.0
+520249,2.0,1.0,3.0,2.0,15.0,7.0,3.0,never rains in dubai,Dubai,0,0,1,0,6.0,1.0,2.0,3.0,4.0,5.0
+414142,5.0,3.0,4.0,4.0,25.0,3.0,4.0,vivid rich and authentic,Dubai,1,1,0,0,5.0,1.0,2.0,3.0,4.0,6.0
+5978,5.0,3.0,5.0,2.0,1.9999999999999982,3.0,3.0,lots of history and tourism and great architecture,Paris,1,0,0,0,4.0,5.0,3.0,1.0,6.0,2.0
+522762,2.0,5.0,2.0,5.0,33.0,3.0,7.0,not all birds fly there are ostriches,Rio de Janeiro,0,1,0,0,1.0,5.0,3.0,6.0,4.0,2.0
+523028,5.0,3.0,4.0,5.0,9.0,20.0,8.0,the only reason you go to paris is for the eiffel tower,Paris,1,1,1,0,2.0,3.0,6.0,4.0,5.0,1.0
+420339,4.0,2.0,4.0,1.0,20.0,1.0,2.0,burj khalifa,Dubai,0,0,0,1,5.0,2.0,3.0,1.0,4.0,6.0
+525379,5.0,3.0,4.0,2.0,15.0,2.0,5.0,the city of love,Paris,1,0,1,0,3.0,2.0,6.0,1.0,5.0,4.0
+494401,5.0,5.0,5.0,5.0,-5.000000000000002,20.0,20.0,newyorkkkk thats what dreams are made of,New York City,1,1,1,1,6.0,4.0,6.0,6.0,6.0,6.0
+526116,5.0,4.0,4.0,3.0,-1.0000000000000018,3.0,4.0,concrete jungle where dreams are made ofâ,New York City,1,1,1,0,6.0,3.0,4.0,1.0,2.0,5.0
+521198,5.0,4.0,4.0,3.0,10.0,3.0,4.0,city of love,Paris,1,0,0,0,1.0,4.0,3.0,3.0,4.0,4.0
+522730,5.0,5.0,5.0,3.0,5.0,2.0,5.0,every girl needs paris,Paris,1,0,0,0,1.0,3.0,5.0,2.0,6.0,5.0
+522285,3.0,3.0,2.0,5.0,32.0,1.0,5.0,life of the party,Rio de Janeiro,1,1,0,0,2.0,6.0,5.0,6.0,4.0,2.0
+630239,4.0,2.0,4.0,3.0,35.0,5.0,4.0,grand and sandy,Dubai,1,0,0,0,6.0,2.0,3.0,1.0,4.0,5.0
+511882,4.0,3.0,3.0,4.0,30.0,3.0,10.0,statue of jesus,Rio de Janeiro,1,1,1,0,1.0,6.0,2.0,5.0,4.0,3.0
+413954,5.0,2.0,5.0,3.0,10.0,2.0,4.0,let them eat cake,Paris,1,1,1,0,2.0,4.0,6.0,1.0,5.0,3.0
+633733,5.0,3.0,5.0,4.0,25.0,2.0,1.0,the burj khalifa is the tallest building in the world,Dubai,0,1,0,0,6.0,1.0,4.0,2.0,3.0,5.0
+523354,5.0,5.0,5.0,4.0,0.0,4.0,20.0,hey im walking over here,New York City,0,1,1,0,6.0,1.0,5.0,4.0,3.0,2.0
+385944,5.0,4.0,4.0,2.0,0.0,3.0,3.0,city of love,Paris,1,1,0,0,2.0,5.0,6.0,1.0,4.0,3.0
+525137,5.0,4.0,5.0,2.0,-8.000000000000002,4.0,9.0,a place of wonder,New York City,1,1,0,0,6.0,1.0,6.0,2.0,3.0,6.0
+85523,4.0,3.0,3.0,4.0,30.0,3.0,5.0,without,Rio de Janeiro,0,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+315692,3.0,5.0,5.0,4.0,0.0,3.0,4.0,âœnew york is made up of millions of different people and they all come here looking for somethingââ lindsey kelk,New York City,1,1,1,0,5.0,1.0,2.0,4.0,3.0,6.0
+413954,5.0,4.0,4.0,1.0,20.0,2.0,4.0,pretty but shallow,Dubai,0,0,1,0,6.0,2.0,1.0,3.0,4.0,5.0
+519605,5.0,2.0,4.0,3.0,5.0,2.0,30.0,the city of love,Paris,1,0,0,0,3.0,2.0,6.0,4.0,5.0,1.0
+632365,4.0,5.0,3.0,3.0,15.0,3.0,7.0,trade,New York City,0,1,0,1,6.0,5.0,3.0,2.0,5.0,6.0
+504808,4.0,3.0,4.0,3.0,20.0,4.0,2.0,dubai is a little slice of heaven,Dubai,0,1,0,0,3.0,3.0,2.0,2.0,3.0,5.0
+315998,5.0,4.0,4.0,2.0,20.0,3.0,4.0,the city of love,Paris,1,0,0,0,5.0,1.0,5.0,1.0,6.0,4.0
+520852,5.0,3.0,5.0,5.0,5.0,3.0,18.0,anyone can cook but only the fearless can be great,Paris,1,0,0,0,1.0,1.0,6.0,1.0,1.0,5.0
+632485,5.0,2.0,2.0,2.0,3.0,2.0,3.0,eiffel tower,Paris,1,0,0,0,1.0,2.0,5.0,4.0,6.0,3.0
+517373,5.0,4.0,4.0,5.0,-5.000000000000002,3.0,10.0,a city that never sleeps,New York City,1,1,1,1,6.0,1.0,2.0,4.0,3.0,5.0
+316940,5.0,3.0,5.0,3.0,15.0,4.0,6.0,the burj khalifa is tall,Dubai,1,1,1,0,5.0,2.0,3.0,1.0,4.0,6.0
+212706,5.0,5.0,5.0,1.0,-1.0000000000000018,6.0,5.0,american dream,New York City,1,0,0,1,5.0,3.0,4.0,1.0,2.0,6.0
+291561,5.0,3.0,5.0,4.0,5.0,4.0,10.0,the most romantic city,Paris,1,0,0,0,4.0,6.0,2.0,3.0,1.0,5.0
+523354,3.0,2.0,2.0,5.0,30.0,3.0,10.0,parado no bailão,Rio de Janeiro,0,1,1,1,1.0,6.0,5.0,4.0,3.0,2.0
+516756,5.0,2.0,5.0,2.0,25.0,2.0,2.0,worlds tallest building,Dubai,1,1,0,0,5.0,1.0,4.0,3.0,2.0,6.0
+209691,5.0,5.0,3.0,5.0,0.0,4.0,9.353424657534246,without,New York City,1,1,1,1,6.0,4.0,4.0,5.0,6.0,6.0
+313186,4.0,4.0,5.0,3.0,5.0,7.0,8.0,the intersection of love and art,Paris,1,0,0,0,5.0,3.0,6.0,4.0,4.0,4.0
+312769,5.0,3.0,5.0,1.0,20.0,3.0,2.0,dubai is where the oil is,Dubai,1,0,0,0,6.0,5.0,2.0,2.0,3.0,6.0
+318703,4.0,4.0,2.0,3.0,24.0,2.0,2.0,in rio its real,Rio de Janeiro,1,1,1,0,1.0,6.0,5.0,2.0,4.0,3.0
+522758,5.0,2.0,1.0,2.0,25.0,4.0,3.0,a playground for the rich,Dubai,1,1,1,0,6.0,5.0,2.0,1.0,3.0,5.0
+413773,5.0,4.0,5.0,1.0,5.0,2.0,10.0,the city of love,Paris,1,0,0,0,2.0,4.0,6.0,1.0,5.0,3.0
+203068,4.0,4.0,3.0,5.0,24.0,2.0,1.0,world cup,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+417866,5.0,5.0,1.0,5.0,15.0,7.0,20.0,new york the big apple,New York City,1,1,1,1,6.0,2.0,5.0,1.0,4.0,5.0
+629847,5.0,5.0,5.0,1.0,15.0,30.000000000000004,40.0,we shape our buildings thereafter they shape us,Dubai,0,1,1,1,6.0,3.0,2.0,1.0,4.0,5.0
+312687,5.0,4.0,5.0,5.0,15.0,4.0,10.0,money money and money,Dubai,1,0,0,0,6.0,2.0,1.0,2.0,3.0,6.0
+316478,3.0,4.0,3.0,5.0,15.0,2.0,3.0,good night life,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+328874,5.0,5.0,5.0,3.0,3.0,4.796030116358659,20.0,a place where one can find anything and everything where dreams are made and ambitions are fulfilled,New York City,1,1,1,1,6.0,5.0,4.0,3.0,2.0,1.0
+523461,4.0,4.0,5.0,3.0,10.0,2.0,4.0,cest la vie,Paris,1,1,1,0,4.0,2.0,5.0,1.0,6.0,3.0
+519760,4.0,5.0,5.0,4.0,20.0,7.0,10.0,the sky is the limit,Dubai,1,1,0,0,6.0,1.0,3.0,4.0,2.0,5.0
+406181,5.0,5.0,5.0,4.0,20.0,5.0,5.0,paris is not just a city for lovers but a city to fall in love with,Paris,1,1,1,1,2.0,1.0,4.0,3.0,6.0,5.0
+492766,4.0,3.0,5.0,5.0,22.0,4.0,3.0,thus the sculpture serves to give people one thought   everything is in gods hands,Rio de Janeiro,1,1,1,0,4.0,6.0,6.0,6.0,6.0,4.0
+504927,5.0,4.0,4.0,5.0,3.0,1.0,6.0,new yorrrkk,New York City,1,1,1,1,6.0,6.0,6.0,4.0,2.0,6.0
+497167,5.0,4.0,5.0,5.0,20.0,4.0,5.0,habibi welcome to dubai,Dubai,1,1,1,1,6.0,2.0,3.0,4.0,1.0,5.0
+524890,4.0,5.0,3.0,4.0,8.0,1.0,3.0,home of the new york style pizza,New York City,1,1,1,1,5.0,1.0,2.0,3.0,6.0,4.0
+212706,5.0,3.0,3.0,2.0,27.0,1.0,2.0,wealth and prosperityâ,Dubai,1,1,1,0,6.0,1.0,2.0,3.0,4.0,5.0
+519852,5.0,5.0,3.0,5.0,5.0,10.0,15.0,there is something in the new york air that makes sleep useless,New York City,0,1,0,0,2.0,4.0,3.0,5.0,6.0,1.0
+520019,5.0,4.0,5.0,3.0,3.0,3.0,7.0,the most romantic city in the world,Paris,1,0,0,0,6.0,2.0,6.0,4.0,6.0,6.0
+315551,5.0,5.0,4.0,3.0,0.0,3.0,10.0,im walkin over here,New York City,0,0,1,1,4.0,2.0,4.0,3.0,5.0,6.0
+528142,4.0,3.0,3.0,4.0,5.0,3.0,20.0,a city of fashion,Paris,0,1,1,0,3.0,1.0,6.0,4.0,5.0,2.0
+492618,4.0,3.0,3.0,5.0,20.0,7.0,7.0,life is colorful,Rio de Janeiro,0,1,0,0,4.0,6.0,5.0,4.0,4.0,4.0
+492618,5.0,2.0,5.0,2.0,15.0,5.0,5.0,whatâ dreams are made of,New York City,0,0,1,0,3.0,2.0,4.0,3.0,2.0,3.0
+496935,5.0,4.0,5.0,1.0,32.0,5.0,4.0,futuristic land,Dubai,1,1,0,0,6.0,2.0,3.0,3.0,4.0,5.0
+292993,5.0,4.0,3.0,3.0,5.0,3.0,12.0,city of romanceâ,Paris,1,1,0,0,3.0,2.0,6.0,4.0,5.0,1.0
+516935,3.0,3.0,3.0,2.0,20.0,10.0,3.0,money is king,Dubai,0,0,0,1,6.0,1.0,1.0,1.0,2.0,6.0
+519652,5.0,4.0,3.0,3.0,20.0,3.0,4.0,a rich city,Dubai,1,1,0,0,5.0,2.0,2.0,3.0,3.0,6.0
+497131,5.0,5.0,4.0,4.0,5.0,3.0,3.0,we shall not surrender,Paris,1,1,0,0,5.0,4.0,6.0,5.0,5.0,5.0
+211158,5.0,4.0,3.0,3.0,3.0,5.0,5.0,the city that never sleeps,New York City,1,1,0,0,1.0,5.0,5.0,2.0,4.0,5.0
+631625,5.0,5.0,3.0,5.0,3.0,3.0,10.0,new york is the only real city city,New York City,1,1,0,1,6.0,1.0,4.0,2.0,3.0,5.0
+526257,5.0,4.0,1.0,3.0,1.0,5.0,7.0,one belongs to new york instantly one belongs to it as much in five minutes as in five years,New York City,0,1,0,0,2.0,5.0,3.0,1.0,4.0,6.0
+520191,3.0,1.0,3.0,2.0,4.0,1.0,4.0,the city of romance,Paris,1,0,0,0,2.0,3.0,6.0,1.0,5.0,4.0
+602496,3.0,4.0,3.0,5.0,10.0,3.0,7.0,football  statue,Rio de Janeiro,1,1,0,0,2.0,6.0,4.0,6.0,5.0,3.0
+310448,3.0,4.0,5.0,5.0,24.0,5.0,6.0,money make the world go round,Dubai,1,1,0,0,6.0,1.0,2.0,5.0,1.0,4.0
+514152,5.0,5.0,5.0,5.0,8.0,3.0,5.0,it is a great city,Paris,0,1,0,0,2.0,1.0,6.0,5.0,6.0,2.0
+497755,5.0,4.0,5.0,3.0,25.0,3.0,10.0,a place that you will never forget probably,Dubai,1,1,1,0,6.0,2.0,4.0,1.0,3.0,5.0
+495082,5.0,4.0,5.0,3.0,5.0,2.0,3.0,paris is a city of love,Paris,0,1,1,0,2.0,1.0,6.0,4.0,5.0,3.0
+85523,5.0,5.0,5.0,5.0,0.0,2.0,10.0,without,New York City,0,1,0,0,6.0,4.0,2.0,1.0,3.0,5.0
+520220,5.0,5.0,5.0,4.0,-5.000000000000002,4.0,5.0,not just a city but an experience,New York City,1,1,1,1,5.0,1.0,4.0,2.0,3.0,6.0
+508149,4.0,3.0,5.0,2.0,20.0,3.0,4.0,wherever there is great property there is great inequality,Dubai,0,0,0,1,6.0,1.0,2.0,3.0,4.0,5.0
+286825,4.0,5.0,5.0,4.0,14.262165867032214,3.0,4.0,modern day slavery,Dubai,0,1,0,0,6.0,1.0,1.0,2.0,5.0,5.0
+516927,5.0,4.0,3.0,1.0,25.0,3.0,4.0,the tallest tower in the world is the burj khalifa,Dubai,1,1,0,0,6.0,2.0,3.0,4.0,1.0,4.0
+507409,5.0,4.0,4.0,3.0,1.9999999999999982,10.0,30.0,a second plane has hit the building  big apple  â,New York City,1,1,1,1,6.0,4.0,5.0,3.0,6.0,6.0
+511882,5.0,5.0,5.0,2.0,4.0,10.0,20.0,sky is the limit,New York City,1,1,1,0,6.0,1.0,3.0,2.0,4.0,5.0
+519782,4.0,2.0,4.0,5.0,24.0,7.0,20.0,âœin rio de janeiro the soul of brazil singsâ,Rio de Janeiro,1,1,1,0,1.0,6.0,6.0,6.0,6.0,3.0
+497226,4.0,4.0,4.0,3.0,20.0,4.0,6.0,hot weather,Dubai,1,1,0,0,6.0,3.0,2.0,3.0,2.0,5.0
+520019,5.0,5.0,3.0,5.0,-5.000000000000002,10.0,12.0,chaotic but it somehow works,New York City,1,1,0,1,6.0,5.0,5.0,3.0,3.0,6.0
+411773,4.0,3.0,2.0,5.0,25.0,3.0,2.0,the heart of football,Rio de Janeiro,1,1,1,0,6.0,1.0,2.0,3.0,4.0,5.0
+526091,5.0,3.0,5.0,2.0,25.0,3.0,5.0,habibi yallah,Dubai,1,0,0,0,6.0,2.0,3.0,1.0,4.0,6.0
+316001,5.0,4.0,4.0,4.0,7.0,4.0,6.0,brothas in paris,Paris,1,0,0,0,4.0,5.0,6.0,5.0,6.0,5.0
+410066,3.0,1.0,3.0,5.0,30.0,3.0,9.353424657534246,coastal city and vacation destination,Rio de Janeiro,0,1,0,0,4.0,6.0,4.0,2.0,3.0,2.0
+318703,5.0,3.0,5.0,3.0,10.0,5.0,5.0,eiffel tower is cool,Paris,1,1,1,0,6.0,1.0,2.0,3.0,5.0,4.0
+315046,3.0,2.0,2.0,4.0,21.0,1.0,23.0,no,Rio de Janeiro,0,0,0,1,1.0,6.0,6.0,5.0,5.0,4.0
+413954,5.0,3.0,3.0,5.0,22.0,1.0,1.0,01 jul,Rio de Janeiro,1,1,0,0,1.0,6.0,4.0,5.0,3.0,2.0
+518848,5.0,3.0,3.0,4.0,25.0,3.0,6.0,good in soccer,Rio de Janeiro,1,1,0,0,2.0,5.0,4.0,4.0,3.0,3.0
+508586,5.0,5.0,3.0,2.0,10.0,3.0,8.0,in new york ayy ah ha uh yeah concrete jungle yeah where dreams are made of,New York City,0,1,1,0,5.0,4.0,2.0,3.0,1.0,6.0
+314319,4.0,2.0,3.0,1.0,-2.0000000000000018,2.0,3.0,i hope theyll understand the fact ive chosen toâstayâin my country the reality is im french as a frenchman i want toâstayâhere,Paris,1,0,0,0,2.0,3.0,6.0,1.0,5.0,4.0
+525469,1.0,2.0,1.0,3.0,14.262165867032214,2.0,3.0,lets party,Rio de Janeiro,1,0,0,1,6.0,2.0,5.0,1.0,1.0,1.0
+523628,5.0,5.0,4.0,3.0,3.0,1.0,8.0,with great power comes great responsibility,New York City,0,1,0,0,6.0,5.0,6.0,4.0,5.0,5.0
+519652,4.0,3.0,4.0,5.0,28.0,3.0,4.0,city of carnivals,Rio de Janeiro,1,1,1,0,2.0,4.0,4.0,6.0,3.0,3.0
+520058,5.0,5.0,5.0,4.0,20.0,4.0,9.353424657534246,reach for infinity,Dubai,1,1,0,0,1.0,5.0,6.0,3.0,2.0,4.0
+499520,5.0,2.0,4.0,3.0,22.0,3.0,10.0,the city that never sleeps,New York City,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+522762,4.0,4.0,5.0,2.0,30.0,10.0,15.0,dubai will never settle for any less than first place,Dubai,1,1,0,0,2.0,4.0,5.0,6.0,3.0,1.0
+617619,3.0,2.0,5.0,2.0,12.0,3.0,2.0,ratatouille,Paris,0,0,1,0,4.0,2.0,6.0,1.0,5.0,3.0
+505211,5.0,5.0,4.0,4.0,-1.0000000000000018,5.0,10.0,the city that never sleeps,New York City,1,0,1,0,6.0,2.0,5.0,1.0,3.0,6.0
+524818,5.0,4.0,5.0,2.0,-6.000000000000002,7.0,8.0,welcome to the big apple,New York City,1,1,1,1,6.0,5.0,4.0,3.0,4.0,6.0
+420339,3.0,2.0,3.0,5.0,25.0,2.0,5.0,jesus christ,Rio de Janeiro,0,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+314895,5.0,2.0,1.0,2.0,0.0,3.0,10.0,a very popular location with very many activities for tourists to do the location of times square and wall street,New York City,1,1,1,1,4.0,3.0,1.0,2.0,5.0,6.0
+40536,5.0,5.0,3.0,5.0,-5.000000000000002,10.0,10.0,somewhat outdated but still very influential and classic,New York City,1,1,1,1,6.0,1.0,3.0,2.0,4.0,5.0
+297125,5.0,5.0,5.0,4.0,-3.0000000000000018,6.0,15.0,the big apple,New York City,1,1,1,1,5.0,4.0,3.0,1.0,2.0,6.0
+292449,4.0,2.0,4.0,2.0,0.0,2.0,10.0,city of love,Paris,1,1,0,0,1.0,2.0,5.0,4.0,6.0,3.0
+409168,4.0,1.0,4.0,4.0,28.0,2.0,2.0,alright blu youre flying,Rio de Janeiro,1,1,1,0,1.0,3.0,6.0,5.0,4.0,2.0
+313791,5.0,4.0,5.0,3.0,-8.000000000000002,5.0,20.0,city of art,Paris,1,1,0,0,4.0,2.0,6.0,1.0,5.0,3.0
+393424,5.0,3.0,4.0,1.0,17.0,5.0,4.0,where dreams reach new heights,Dubai,1,1,0,0,5.0,2.0,3.0,1.0,4.0,6.0
+521165,5.0,4.0,5.0,3.0,21.0,6.0,7.0,no taxes  wealthy  â,Dubai,0,1,0,1,5.0,2.0,3.0,1.0,4.0,6.0
+504443,5.0,5.0,5.0,5.0,20.0,3.0,7.0,dont judge a book by its cover,Dubai,0,1,0,0,6.0,6.0,3.0,3.0,4.0,4.0
+308262,4.0,3.0,4.0,5.0,20.0,3.0,3.0,people dont take trips trips take people,Rio de Janeiro,1,0,0,0,1.0,5.0,3.0,6.0,4.0,2.0
+504452,5.0,2.0,5.0,3.0,5.0,1.0,2.0,empire state of mind,New York City,0,1,0,0,2.0,6.0,3.0,5.0,4.0,1.0
+317318,5.0,4.0,5.0,2.0,0.0,6.0,10.0,these streets will make you feel brand new,New York City,0,1,0,0,6.0,4.0,3.0,1.0,2.0,5.0
+520926,4.0,3.0,3.0,2.0,29.0,4.0,3.0,money cant buy happiness,Dubai,0,0,0,1,6.0,2.0,3.0,4.0,1.0,5.0
+630892,3.0,4.0,2.0,5.0,25.0,1.0,10.0,worst world cup loss of all time,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+618161,5.0,2.0,4.0,3.0,17.0,3.0,4.0,anyone can cook,Paris,1,0,0,0,2.0,3.0,5.0,4.0,4.0,2.0
+616834,4.0,3.0,4.0,1.0,15.0,2.0,10.0,the city of love,Paris,1,0,0,0,2.0,1.0,5.0,6.0,4.0,3.0
+492858,5.0,5.0,5.0,4.0,6.0,2.0,9.353424657534246,ratatouille,Paris,1,0,0,0,1.0,5.0,6.0,3.0,4.0,2.0
+318437,4.0,3.0,5.0,2.0,20.0,4.0,20.0,work smart not hard,Dubai,0,1,0,1,6.0,1.0,3.0,2.0,4.0,5.0
+314487,4.0,3.0,5.0,2.0,25.0,3.0,8.0,a city with a lot of cultures and great architecture with the worlds tallest skyscraperâ,Dubai,1,1,1,0,6.0,2.0,1.0,4.0,5.0,3.0
+291267,3.0,2.0,5.0,5.0,15.0,3.0,20.0,culture,Rio de Janeiro,0,1,0,0,1.0,6.0,6.0,6.0,4.0,2.0
+518429,4.0,4.0,3.0,2.0,14.262165867032214,3.0,10.0,mona lisa,Paris,1,0,0,0,5.0,4.0,6.0,2.0,4.0,3.0
+521114,5.0,3.0,5.0,3.0,0.0,1.0,5.0,city of love,Paris,1,0,0,0,4.0,3.0,5.0,1.0,6.0,2.0
+494488,5.0,3.0,4.0,4.0,10.0,2.0,9.353424657534246,all you need is loveâ,Paris,1,0,0,0,1.0,3.0,6.0,2.0,5.0,4.0
+491553,3.0,4.0,4.0,5.0,25.0,2.0,2.0,viva la brazilâ  lets football,Rio de Janeiro,1,1,0,0,3.0,6.0,6.0,6.0,2.0,1.0
+520191,5.0,4.0,3.0,5.0,18.0,2.0,2.0,carnival is the greatest party in the world,Rio de Janeiro,1,1,1,0,1.0,6.0,4.0,5.0,3.0,2.0
+292449,5.0,5.0,2.0,2.0,-2.0000000000000018,6.0,15.0,where dreams are made of,New York City,1,1,1,1,4.0,1.0,5.0,2.0,3.0,6.0
+411011,5.0,3.0,4.0,3.0,10.0,1.0,4.0,baguetteâ,Paris,0,1,0,0,3.0,1.0,5.0,4.0,6.0,2.0
+499778,5.0,4.0,3.0,5.0,20.0,3.0,30.0,oh lets break it down  lãºcio from overwatch,Rio de Janeiro,1,1,0,0,2.0,6.0,5.0,4.0,3.0,1.0
+502015,2.0,2.0,2.0,2.0,22.0,1.0,1.0,tower,Paris,0,1,0,0,1.0,3.0,1.0,1.0,1.0,1.0
+521988,5.0,1.0,5.0,2.0,10.0,3.0,7.0,without,Paris,1,0,0,0,2.0,4.0,1.0,6.0,3.0,5.0
+494020,3.0,3.0,2.0,4.0,25.0,2.0,4.0,party hard,Rio de Janeiro,0,1,0,0,1.0,2.0,4.0,6.0,5.0,3.0
+493688,5.0,4.0,2.0,3.0,-5.000000000000002,1.0,3.0,wall street,New York City,0,0,0,1,6.0,1.0,4.0,1.0,2.0,6.0
+516935,4.0,2.0,3.0,5.0,27.0,3.0,5.0,play or die,Rio de Janeiro,0,1,0,0,2.0,6.0,4.0,6.0,2.0,1.0
+526680,5.0,3.0,3.0,5.0,25.0,3.0,4.0,in rio de janeiro its always a beautiful day,Rio de Janeiro,1,1,1,0,2.0,6.0,4.0,6.0,3.0,2.0
+387537,5.0,2.0,3.0,3.0,16.0,3.0,3.0,dubai is a dream city,Dubai,0,1,0,0,6.0,3.0,4.0,2.0,4.0,6.0
+317266,3.0,1.0,2.0,5.0,15.0,2.0,2.0,the beautiful game,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+618077,5.0,4.0,1.0,5.0,5.0,1.0,4.0,carnivals and football,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,6.0,1.0,2.0
+317274,5.0,4.0,4.0,3.0,14.262165867032214,4.796030116358659,9.353424657534246,without,Rio de Janeiro,1,1,0,0,4.0,3.0,4.0,3.0,4.0,4.0
+306699,5.0,5.0,4.0,4.0,0.0,3.0,5.0,new york concrete jungle where dreams are made of thereâs nothing you cant do,New York City,1,1,0,0,6.0,3.0,6.0,4.0,4.0,6.0
+314895,3.0,3.0,3.0,4.0,25.0,2.0,4.0,a hot area but with many beaches and people on the streets playing sports and tourists,Rio de Janeiro,1,1,1,0,1.0,6.0,4.0,3.0,5.0,2.0
+496699,5.0,4.0,4.0,4.0,22.0,8.0,8.0,luxury,Paris,1,1,1,1,5.0,5.0,5.0,5.0,5.0,5.0
+495792,5.0,2.0,5.0,1.0,5.0,5.0,6.0,without,Paris,1,1,1,0,1.0,1.0,6.0,1.0,6.0,1.0
+417866,3.0,3.0,4.0,5.0,35.0,1.0,4.0,samba,Rio de Janeiro,0,0,0,1,1.0,6.0,4.0,6.0,3.0,6.0
+409168,5.0,5.0,3.0,1.0,14.262165867032214,6.0,9.0,in new york ayy uh yeah aha concrete jungle yeah where dreams are made of,New York City,1,1,1,1,6.0,2.0,4.0,1.0,3.0,5.0
+313562,4.0,4.0,5.0,3.0,5.0,4.0,3.0,we are so different but yet the same insideâ,Rio de Janeiro,1,1,1,0,3.0,2.0,4.0,1.0,6.0,5.0
+519545,4.0,2.0,3.0,5.0,20.0,4.0,5.0,without,Rio de Janeiro,1,1,1,1,1.0,6.0,5.0,2.0,4.0,3.0
+519900,5.0,5.0,5.0,5.0,25.0,20.0,9.353424657534246,underground tunnels,New York City,1,1,1,0,6.0,1.0,2.0,3.0,5.0,4.0
+520220,5.0,3.0,5.0,2.0,20.0,3.0,5.0,money brings life to the desert,Dubai,1,1,0,0,6.0,2.0,4.0,1.0,3.0,5.0
+314116,4.0,5.0,2.0,4.0,5.0,2.0,9.0,without,Paris,1,0,0,0,1.0,2.0,4.0,3.0,6.0,5.0
+601562,5.0,3.0,5.0,4.0,6.0,3.0,4.0,lets go on to the eiffel tower and eat baguettes,Paris,0,1,1,0,2.0,1.0,6.0,4.0,5.0,3.0
+314319,5.0,4.0,2.0,1.0,-5.000000000000002,2.0,5.0,well good luck in theâbig city if you canâmakeâit here you canâmakeâit anywhere and if you cantâmakeâit here welcome to the club,New York City,1,1,0,0,6.0,4.0,2.0,1.0,3.0,5.0
+524766,3.0,2.0,2.0,4.0,25.0,4.0,3.0,doesnt really know this city,Rio de Janeiro,0,1,0,0,2.0,3.0,3.0,4.0,6.0,3.0
+392479,5.0,4.0,4.0,2.0,5.0,1.0,5.0,romantic cultural and whimsicalâ,Paris,1,0,0,0,2.0,4.0,5.0,1.0,6.0,3.0
+520030,5.0,3.0,5.0,4.0,15.0,4.0,8.0,fast and furious,Dubai,1,1,0,0,1.0,4.0,6.0,3.0,5.0,2.0
+516887,4.0,2.0,3.0,2.0,25.0,3.0,4.0,tallest building in the world,Dubai,1,1,1,0,5.0,1.0,3.0,2.0,4.0,6.0
+508149,5.0,4.0,4.0,3.0,3.0,1.0,5.0,the city that never sleeps,New York City,0,0,1,0,5.0,2.0,4.0,1.0,3.0,6.0
+613964,4.0,2.0,1.0,5.0,30.0,5.0,15.0,where the party never stops,Rio de Janeiro,1,1,0,0,1.0,1.0,5.0,6.0,4.0,1.0
+525457,5.0,5.0,1.0,1.0,0.0,5.0,10.0,concrete jungle where dreams are made of,New York City,1,1,1,1,5.0,2.0,3.0,1.0,4.0,6.0
+415092,4.0,2.0,3.0,2.0,15.0,2.0,3.0,chaois,Rio de Janeiro,0,1,0,0,2.0,6.0,4.0,2.0,2.0,3.0
+306699,5.0,5.0,4.0,3.0,0.0,3.0,6.0,psycho im liable to go michael take your pick jackson tyson jordan game 6,Paris,1,1,0,1,4.0,4.0,4.0,4.0,5.0,5.0
+412560,5.0,2.0,5.0,5.0,30.0,3.0,8.0,a city of love and friendship,Rio de Janeiro,1,1,1,0,2.0,3.0,6.0,5.0,4.0,1.0
+525021,5.0,5.0,5.0,4.0,10.0,3.0,10.0,when im in new york i just want to walk down the street and feel this thing like im in a movie,New York City,1,1,1,0,6.0,4.0,5.0,3.0,4.0,6.0
+524485,3.0,2.0,3.0,5.0,30.0,2.0,2.0,sports  football,Rio de Janeiro,1,1,0,0,2.0,5.0,1.0,6.0,4.0,3.0
+414142,5.0,5.0,5.0,5.0,-5.000000000000002,5.0,4.0,cold and noisy but multicultural,New York City,1,1,1,0,6.0,4.0,2.0,1.0,3.0,5.0
+493969,5.0,5.0,4.0,4.0,25.0,30.000000000000004,10.0,habibi come to dubai,Dubai,1,1,1,0,5.0,1.0,3.0,2.0,6.0,6.0
+526116,5.0,3.0,3.0,3.0,5.0,2.0,3.0,liberty equality fraternity,Paris,0,0,0,1,2.0,4.0,5.0,3.0,6.0,1.0
+407792,3.0,3.0,3.0,3.0,30.0,2.0,2.0,fun place idk,Rio de Janeiro,0,0,1,0,6.0,3.0,5.0,2.0,1.0,4.0
+494401,2.0,2.0,3.0,2.0,26.0,2.0,2.0,sunny and seasideâ,Rio de Janeiro,1,1,1,0,1.0,6.0,4.0,3.0,3.0,4.0
+85523,4.0,4.0,5.0,4.0,20.0,10.0,10.0,without,Dubai,1,0,0,0,6.0,1.0,2.0,3.0,4.0,5.0
+523494,5.0,4.0,2.0,2.0,20.0,4.0,2.0,rich,Dubai,1,0,1,0,6.0,1.0,1.0,2.0,1.0,5.0
+314895,5.0,3.0,4.0,3.0,0.0,1.0,5.0,the eiffel tower and wine,Paris,1,1,1,0,1.0,2.0,4.0,3.0,6.0,5.0
+521042,5.0,5.0,3.0,3.0,11.0,2.0,35.0,where dreams come true,New York City,0,1,0,1,1.0,6.0,5.0,4.0,2.0,3.0
+317895,4.0,3.0,3.0,5.0,20.0,3.0,3.0,the city of parties,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,4.0,3.0,2.0
+496245,3.0,1.0,1.0,3.0,30.0,4.0,5.0,beautiful beach and mountain,Rio de Janeiro,0,0,1,0,2.0,2.0,2.0,2.0,2.0,2.0
+501455,5.0,3.0,5.0,5.0,18.0,4.0,9.353424657534246,money cant buy you happiness,Dubai,0,1,1,1,5.0,1.0,2.0,3.0,4.0,6.0
+520921,5.0,5.0,4.0,5.0,3.0,2.0,5.0,live like theres no tomorrow,New York City,1,1,0,0,6.0,6.0,4.0,5.0,5.0,1.0
+516756,5.0,2.0,3.0,5.0,20.0,3.0,4.0,this is brazil,Rio de Janeiro,0,1,0,0,4.0,6.0,3.0,5.0,1.0,2.0
+522936,3.0,4.0,2.0,4.0,20.0,2.0,1.0,silence is argument carried out by other means,Rio de Janeiro,0,1,0,0,1.0,6.0,5.0,3.0,4.0,2.0
+523486,5.0,4.0,3.0,2.0,18.0,1.0,2.0,now your in new york   empire state of mind,New York City,1,1,1,1,2.0,6.0,5.0,4.0,3.0,1.0
+496245,5.0,5.0,4.0,4.0,5.0,3.0,10.0,dreams works many skyscrapers but also dirty,New York City,1,0,0,0,6.0,2.0,6.0,1.0,4.0,6.0
+494020,5.0,3.0,5.0,2.0,37.0,3.0,4.0,inspire innovation,Dubai,0,1,0,0,6.0,1.0,2.0,3.0,5.0,4.0
+630892,4.0,5.0,3.0,2.0,25.0,6.0,10.0,this license plate is really expensive,Dubai,0,0,1,0,6.0,1.0,2.0,3.0,4.0,5.0
+503523,3.0,3.0,3.0,5.0,25.0,3.0,10.0,i love rio de janeiro,Rio de Janeiro,1,1,0,0,1.0,5.0,4.0,6.0,3.0,2.0
+518782,5.0,3.0,4.0,5.0,30.0,2.0,5.0,we love partying,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,6.0,3.0,2.0
+508377,5.0,4.0,5.0,5.0,22.0,5.0,10.0,âœwhat i like about cities is that everything is king size the beauty and the uglinessâ  â joseph brodsky,Dubai,1,1,0,0,6.0,1.0,4.0,2.0,3.0,5.0
+521042,4.0,3.0,5.0,4.0,25.0,2.0,25.0,live in the moment,Rio de Janeiro,1,0,0,0,6.0,5.0,1.0,4.0,2.0,3.0
+633733,5.0,4.0,3.0,3.0,4.0,1.0,5.0,i love ny  â,New York City,0,1,0,0,5.0,1.0,3.0,2.0,4.0,6.0
+491503,5.0,5.0,5.0,4.0,4.0,3.0,5.0,the city of love,Paris,1,0,1,0,5.0,3.0,6.0,5.0,4.0,4.0
+601562,5.0,5.0,3.0,4.0,5.0,7.0,10.0,there are rats everywhere its riding the subway,New York City,0,1,1,0,5.0,1.0,2.0,4.0,3.0,6.0
+524489,4.0,3.0,4.0,5.0,25.0,6.0,8.0,fancy  rich  traffic,Dubai,1,1,1,0,6.0,1.0,5.0,3.0,4.0,2.0
+413331,5.0,2.0,4.0,2.0,12.0,2.0,3.0,the city of love and baguettes,Paris,1,0,0,0,2.0,1.0,6.0,4.0,5.0,3.0
+311256,5.0,5.0,5.0,3.0,0.0,1.0,9.353424657534246,eiffel tower             ,Paris,0,1,0,0,2.0,1.0,6.0,4.0,6.0,5.0
+630016,5.0,2.0,5.0,2.0,15.0,4.0,4.0,oui oui baguette,Paris,1,0,0,0,6.0,3.0,4.0,1.0,5.0,2.0
+499891,3.0,2.0,4.0,4.0,18.0,1.0,3.0,the night is alive with the vibrant energy of the city,Rio de Janeiro,1,1,0,0,1.0,6.0,5.0,4.0,4.0,2.0
