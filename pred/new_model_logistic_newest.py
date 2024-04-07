@@ -49,7 +49,7 @@ def softmax(z):
     return exp_z / exp_z.sum(axis=0)
 
 
-model = LogisticRegression(max_iter=1000, solver='lbfgs')
+model = LogisticRegression(max_iter=60, solver='lbfgs')
 multi_target_logreg = MultiOutputClassifier(model, n_jobs=-1)
 multi_target_logreg.fit(X_train, dc.t_train)
 

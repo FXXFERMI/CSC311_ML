@@ -231,8 +231,8 @@ def predict_all(filename):
     for index, test_example in X_test_df.iterrows():
         #print("Shape of test_example:", test_example.values.shape)
         # obtain a prediction for this test example
-        pred = predict(test_example.values)
-        predictions.append(pred)
+        pred_res = predict(test_example.values)
+        predictions.append(pred_res)
 
     return predictions
 
