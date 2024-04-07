@@ -1,7 +1,7 @@
 #### Preamble ####
 # Introduction: build logistic regression model, k-fold cross validation
 # Author: Siqi Fei, Runshi Zhang, Mark A Stevens, Adelina Patlatii
-# Date: 21 March 2024
+# Date: 6 April 2024
 # Contact: fermi.fei@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: install pip pandas, numpy, random and sklearn
@@ -11,10 +11,8 @@ import csv
 import random
 import numpy as np
 from sklearn.model_selection import cross_val_score, KFold
-from sklearn.metrics import accuracy_score, precision_score
 import pandas as pd
 import data_cleaning as dc
-from sklearn.datasets import make_multilabel_classification
 from sklearn.linear_model import LogisticRegression
 from sklearn.multioutput import MultiOutputClassifier
 
@@ -51,9 +49,10 @@ def softmax(z):
     return exp_z / exp_z.sum(axis=0)
 
 
-model = LogisticRegression(max_iter=2000, solver='lbfgs')
+model = LogisticRegression(max_iter=1000, solver='lbfgs')
 multi_target_logreg = MultiOutputClassifier(model, n_jobs=-1)
 multi_target_logreg.fit(X_train, dc.t_train)
+
 
 ###### Prediction ####
 train_pre = multi_target_logreg.predict(X_train)
@@ -70,6 +69,7 @@ test_pre = multi_target_logreg.predict(X_test)
 correct_predictions = np.all(test_pre == dc.t_test, axis=1)
 test_acc = np.mean(correct_predictions)
 print("LR test Acc:", test_acc)
+
 
 ##### Store estimator for this model #####
 estimators = []
