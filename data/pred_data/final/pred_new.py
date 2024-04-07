@@ -15,22 +15,11 @@ import random
 import numpy as np
 import pandas as pd
 
-intercept_path = 'final_intercept.txt'
-coefficients_path = 'coefficients.csv'
-# train_path = 'final_train_dataset.csv'
-# train_data = pd.read_csv(train_path)
+estimator_path = 'estimators.csv'
 
-## Read the intercept value from the file
-#with open(intercept_path, 'r') as file:
-#    line = file.readline()
-#    intercept_str = line.strip().split(": ")[1]
-#    # print(intercept_str)
-#    numbers_str = intercept_str.strip('[]').split()
-#    model_intercept = [float(num) for num in numbers_str]
-#
-## Read the coefficients into a DataFrame and then extract the coefficients column
-model_coefs_df = pd.read_csv(coefficients_path, header=None)
-model_coefs = model_coefs_df.values
+## Read the estimator
+model_estimator_df = pd.read_csv(estimator_path, header=None)
+model_est = model_estimator_df.values
 
 
 def predict(x):
@@ -43,14 +32,14 @@ def predict(x):
     y = ['Dubai', 'Rio de Janeiro', 'New York City', 'Paris']
 
     # Calculate the probability for each city
-    probabilities = pred(model_coefs,b,x)
+    probabilities = pred(x, model_est)
 
-    print("Shape of probabilities:", probabilities)
+    #print("Shape of probabilities:", probabilities)
     # Get the index of the maximum probability
     max_index = np.argmax(probabilities)
     # Predict the city with the highest probability
     prediction = y[max_index]
-    print("Predicted:", prediction)
+    #print("Predicted:", prediction)
     return prediction
 
 
@@ -129,7 +118,7 @@ def predict_all(filename):
         clean_data[option] = 0
 
     for i, options_lst in clean_data_Q5.items():
-        print(i, options_lst)
+        #print(i, options_lst)
         if options_lst is not np.nan:
             for lst in options_lst:
                 options = lst.split(',')
@@ -226,7 +215,7 @@ def predict_all(filename):
     vocab_path = 'final_vocab.csv'
     vocab_df = pd.read_csv(vocab_path)
     vocab = vocab_df['word'].tolist()
-    print("Vocabulary Size: ", len(vocab))
+    #print("Vocabulary Size: ", len(vocab))
     #print(vocab)
 
     # create X_test_Q10 here
@@ -240,7 +229,7 @@ def predict_all(filename):
     # print(X_test_df.head())
     predictions = []
     for index, test_example in X_test_df.iterrows():
-        print("Shape of test_example:", test_example.values.shape)
+        #print("Shape of test_example:", test_example.values.shape)
         # obtain a prediction for this test example
         pred = predict(test_example.values)
         predictions.append(pred)
@@ -305,10 +294,8 @@ def softmax(z):
     exp_z = np.exp(z - np.max(z))
     return exp_z / exp_z.sum(axis=0)
 
-
-def pred(w, b, x):
-    return softmax(np.dot(x, w) + b)
-
+def pred(x, w):
+    return softmax(np.dot(x, w))
 
 if __name__ == '__main__':
     res = predict_all('final_test_dataset_2.csv')

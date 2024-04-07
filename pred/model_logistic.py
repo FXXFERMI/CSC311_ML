@@ -104,12 +104,12 @@ def train_and_evaluate_k_fold(folds, model_init_func):
 # References: CSC311 Winter2023-2024 lab9
 # Logistic Regression Model
 model = LogisticRegression(max_iter=2000)
-model.fit(X_train, dc.t_t)
+model.fit(X_train, dc.t_train)
 train_pre = model.predict(X_train)
 val_pre = model.predict(X_valid)
-train_corr = train_pre[train_pre == dc.t_t]
+train_corr = train_pre[train_pre == dc.t_train]
 val_corr = val_pre[val_pre == dc.t_valid]
-train_acc = len(train_corr) / len(dc.t_t)
+train_acc = len(train_corr) / len(dc.t_train)
 val_acc = len(val_corr) / len(dc.t_valid)
 
 print("LR Train Acc:", train_acc)
@@ -148,7 +148,7 @@ with open(intercept_path, 'w') as file:
 coefficients = []
 #print("Model coefficients:")
 for feature, cof in zip(X_train_df.columns, model.coef_[0]):
-    #print(f"{feature}: {cof}")
+    print(f"{feature}: {cof}")
     coefficients.append(cof)
 
 features = X_train_df.columns

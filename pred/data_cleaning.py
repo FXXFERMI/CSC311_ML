@@ -11,31 +11,36 @@ import csv
 import random
 import numpy as np
 import pandas as pd
-
+import pickle as pk
 #### Import Data ####
 # Load the dataset
-data_path = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/raw_data/clean_dataset.csv'
+data_path = '../data/raw_data/clean_dataset.csv'
 clean_data = pd.read_csv(data_path)
-clean_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/analysis_dataset.csv'
+clean_data_filename = '../data/pred_data/analysis_dataset.csv'
 
-train_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/train_dataset.csv'
-valid_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/valid_dataset.csv'
-test_data_filename = '/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/test_dataset.csv'
+train_data_filename = '../data/pred_data/train_dataset.csv'
+valid_data_filename = '../data/pred_data/valid_dataset.csv'
+test_data_filename = '../data/pred_data/test_dataset.csv'
 
-final_train_data_filename = '/Users/fermis/Desktop//CSC311/CSC311_ML/data/pred_data/final/final_train_dataset.csv'
-final_test_data_filename_1 = '/Users/fermis/Desktop//CSC311/CSC311_ML/data/pred_data/final/final_test_dataset_1.csv'
-final_test_data_filename_2 = '/Users/fermis/Desktop//CSC311/CSC311_ML/data/pred_data/final/final_test_dataset_2.csv'
-
+final_train_data_filename = '../data/pred_data/final/final_train_dataset.csv'
+final_test_data_filename_1 = '../data/pred_data/final/final_test_dataset_1.csv'
+final_test_data_filename_2 = '../data/pred_data/final/final_test_dataset_2.csv'
+final_test_data_filename_2_a = '../data/pred_data/final/final_test_dataset_2_a.csv'
 
 # DO NOT touch!!!
-#final_test_dddddata = pd.read_csv(data_path)
-#seed = 42
-#shuffled_final_test_data = final_test_dddddata.sample(frac=1, random_state=seed).reset_index(drop=True)
-#final_test_set_1 = shuffled_final_test_data.iloc[-500:]
-#final_test_set_1 = final_test_set_1.drop(['Label'], axis=1)
-#final_test_set_1.to_csv(final_test_data_filename_1, index=False)
+final_test_dddddata = pd.read_csv(data_path)
+np.random.seed(18)
+shuffled_final_test_data = final_test_dddddata.sample(frac=1).reset_index(drop=True)
+final_test_set_1 = shuffled_final_test_data.iloc[-500:]
+final_test_set_1 = final_test_set_1.drop(['Label'], axis=1)
+final_test_set_1.to_csv(final_test_data_filename_1, index=False)
+
+final_test_set_2 = shuffled_final_test_data.iloc[-10:]
+final_test_set_2.to_csv(final_test_data_filename_2_a, index=False)
+final_test_set_2 = final_test_set_2.drop(['Label'], axis=1)
+final_test_set_2.to_csv(final_test_data_filename_2, index=False)
 #####################################################################################################################
-#### Clean Data - EACH Question ####
+ #### Clean Data - EACH Question ####
 """
 - We don't have to reformat Q1-4 since they are numerical value
 - We have to fill the missing values with median
@@ -268,8 +273,8 @@ clean_data['Q10'] = clean_data['Q10'].apply(lambda x: 'without' if x == '' else 
 clean_data.to_csv(clean_data_filename, index=False)
 
 # Shuffle the dataset
-shuffled_indices = np.random.permutation(clean_data.index)
-shuffled_data = clean_data.loc[shuffled_indices]
+shuffled_indices = np.random.choice(len(clean_data), size=len(clean_data), replace=False)
+shuffled_data = clean_data.iloc[shuffled_indices]
 
 # Calculate the indices for splitting
 total_rows = len(shuffled_data)
@@ -293,26 +298,26 @@ pred_training.to_csv(final_train_data_filename, index=False)
 # all the code below References: CSC311 Winter2023-2024 lab9
 
 
+#vocab = list()
+#
+#for row in train_set['Q10']:
+#    a = row.lower().split()
+#    for word in a:
+#        if word not in vocab:
+#            vocab.append(word)
+# DO NOT TOUCH!!!
 vocab = list()
-
-for row in train_set['Q10']:
+for row in clean_data['Q10']:
     a = row.lower().split()
     for word in a:
         if word not in vocab:
             vocab.append(word)
-# DO NOT TOUCH!!!
-#vocab_2 = list()
-#for row in clean_data['Q10']:
-#    a = row.lower().split()
-#    for word in a:
-#        if word not in vocab_2:
-#            vocab_2.append(word)
 
 # DO NOT TOUCH!!!
 #save vocab
-#vocab_df = pd.DataFrame(vocab_2, columns=['word'])
+vocab_df = pd.DataFrame(vocab, columns=['word'])
 ## Save the DataFrame to a CSV file
-#vocab_df.to_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_vocab.csv', index=False)
+vocab_df.to_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_vocab.csv', index=False)
 #
 #print("Vocabulary Size: ", len(vocab_2))
 #print(vocab_2)
@@ -337,7 +342,7 @@ def make_bow(data, vocab):
              `data[i]` is a positive review, and `t[i] == 0` otherwise.
     """
     X = np.zeros([len(data), len(vocab)])
-    t = np.zeros([len(data)])
+    t = np.zeros([len(data), 4])
     for i, (review, label) in enumerate(data):
         words = review.split()
         for w in words:
@@ -345,15 +350,15 @@ def make_bow(data, vocab):
                 j = vocab.index(w)
                 X[i, j] = 1
 
-        label = label.lower().strip()  # Convert to lowercase and strip whitespace
-        if label == "dubai":
-            t[i] = 1
-        elif label == "rio de janeiro":
-            t[i] = 2
-        elif label == "new york city":
-            t[i] = 3
-        elif label == "paris":
-            t[i] = 4
+        label = label.strip()  # Convert to lowercase and strip whitespace
+        if label == 'Dubai':
+            t[i, 0] = 1
+        if label == 'Rio de Janeiro':
+            t[i, 1] = 1
+        if label == 'New York City':
+            t[i, 2] = 1
+        if label == 'Paris':
+            t[i, 3] = 1
 
     return X, t
 
@@ -366,20 +371,22 @@ X_t, t_t = make_bow(data_1, vocab)
 X_train_bow, t_train = make_bow(data_2, vocab)
 X_valid_bow, t_valid = make_bow(data_3, vocab)
 X_test_bow, t_test = make_bow(data_4, vocab)
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_train_bow.csv", X_train_bow,
+
+np.savetxt("../data/pred_data/matrix/X_train_bow.csv", X_train_bow,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_train.csv", t_train,
+np.savetxt("../data/pred_data/matrix/t_train.csv", t_train,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_valid_bow.csv", X_train_bow,
+np.savetxt("../data/pred_data/matrix/X_valid_bow.csv", X_valid_bow,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_valid.csv", t_train,
+np.savetxt("../data/pred_data/matrix/t_valid.csv", t_valid,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/X_test_bow.csv", X_train_bow,
+np.savetxt("../data/pred_data/matrix/X_test_bow.csv", X_test_bow,
            delimiter=",", fmt='%i')
-np.savetxt("/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/matrix/t_test.csv", t_train,
+np.savetxt("../data/pred_data/matrix/t_test.csv", t_test,
            delimiter=",", fmt='%i')
 
-# produce the mapping of words to count - whole dataset
+
+## produce the mapping of words to count - whole dataset
 vocab_count_mapping = list(zip(vocab, np.sum(X_t, axis=0)))
 vocab_count_mapping = sorted(vocab_count_mapping, key=lambda e: e[1], reverse=True)
 # for word, cnt in vocab_count_mapping:
