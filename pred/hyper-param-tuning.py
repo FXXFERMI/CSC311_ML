@@ -69,10 +69,6 @@ if __name__ == '__main__':
     ax.legend(ncol=2, loc="lower right", frameon=True)
     ax.set(ylabel="Accuracy")
 
-
-    print(f'accuracy: {dtree.score(X_train, t_train)}')
-    print(f'validation: {dtree.score(X_valid, t_valid)}')
-
     #---------------------------------------------
 
     accuracies = []
@@ -98,34 +94,32 @@ if __name__ == '__main__':
                     v = mlp.score(X_valid, t_valid)
                     # accuracies.append([i, a, "training", f"{n}x{s}"])
                     # accuracies.append([i, v, "validation", f"{n}x{s}"])
-                    accuracies.append([i, a, "training", s])
-                    accuracies.append([i, v, "validation", s])
-                    # accuracies.append([i, a, "training", n])
-                    # accuracies.append([i, v, "validation", n])
+                    # accuracies.append([i, a, "training", s])
+                    # accuracies.append([i, v, "validation", s])
+                    accuracies.append([i, a, "training", n])
+                    accuracies.append([i, v, "validation", n])
 
 
-    # ideal is 1x7
-    # n-iter is 200
+    # ideal is 2x7
+    # n-iter is 100
 
-    acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
-    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
+    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
+    acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
 
     sns.set_style("darkgrid")
     palette = sns.cubehelix_palette(light=.8, n_colors=4)
     # flare is red & orange, crest is green & blue
-    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
-    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
-    print(f'accuracy: {mlp.score(X_train, t_train)}')
-    print(f'validation: {mlp.score(X_valid, t_valid)}')
-
+    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
+    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
 
 
 
 
     accuracies = []
-    strenghts = [1]
+    strenghts = [1, 2, 3]
     # also tried 10, 50, low accuracy so not worth showing
-    for i in range(100, 200, 100):
+    for i in range(5, 100, 5):
+        print(i)
         for s in strenghts:
             lr = LogisticRegression(max_iter=i, C=s)
             lr.fit(X_train, t_train)
@@ -136,13 +130,38 @@ if __name__ == '__main__':
             accuracies.append([lr.n_iter_[0], v, "validation", s])
 
     # n-iter = 100
-    # s = 1
+    # s = 2
 
     acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "strength"])
     sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="flare", linewidth=2)
-    print(f'lr')
-    print(f'accuracy: {lr.score(X_train, t_train)}')
-    print(f'validation: {lr.score(X_valid, t_valid)}')
+    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="Set2", linewidth=2)
+
+
+    # -- Best Validation Models! --
+
+    dtree = DecisionTreeClassifier(max_depth=3)
+    dtree.fit(X_train, t_train)
+
+    mlp = MLPClassifier(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
+    mlp.fit(X_train, t_train)
+
+    lr = LogisticRegression(max_iter=100, C=2)
+    lr.fit(X_train, t_train)
+
+
+    print(f'-- Decision Tree --')
+    print(f'accuracy: {round(dtree.score(X_train, t_train), 4)}')
+    print(f'validation: {round(dtree.score(X_valid, t_valid), 4)}')
+
+    print()
+    print(f'-- MLP --')
+    print(f'accuracy: {round(mlp.score(X_train, t_train), 4)}')
+    print(f'validation: {round(mlp.score(X_valid, t_valid), 4)}')
+
+    print()
+    print(f'-- Linear Regression --')
+    print(f'accuracy: {round(lr.score(X_train, t_train), 4)}')
+    print(f'validation: {round(lr.score(X_valid, t_valid), 4)}')
 
 
 
