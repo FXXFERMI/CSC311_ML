@@ -16,11 +16,14 @@ import data_cleaning as dc
 from sklearn.linear_model import LogisticRegression
 from sklearn.multioutput import MultiOutputClassifier
 
+seed = 42
+np.random.seed(seed)
+
 # load dataset
-clean_data = pd.read_csv('../data/pred_data/analysis_dataset.csv')
-train_data = pd.read_csv('../data/pred_data/train_dataset.csv')
-valid_data = pd.read_csv('../data/pred_data/valid_dataset.csv')
-test_data = pd.read_csv('../data/pred_data/test_dataset.csv')
+clean_data = pd.read_csv('data/pred_data/analysis_dataset.csv')
+train_data = pd.read_csv('data/pred_data/train_dataset.csv')
+valid_data = pd.read_csv('data/pred_data/valid_dataset.csv')
+test_data = pd.read_csv('data/pred_data/test_dataset.csv')
 
 # X_train
 features_train_df = train_data.drop(['id', 'Label', 'Q10'], axis=1)

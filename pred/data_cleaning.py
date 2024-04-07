@@ -14,18 +14,18 @@ import pandas as pd
 import pickle as pk
 #### Import Data ####
 # Load the dataset
-data_path = '../data/raw_data/clean_dataset.csv'
+data_path = 'data/raw_data/clean_dataset.csv'
 clean_data = pd.read_csv(data_path)
-clean_data_filename = '../data/pred_data/analysis_dataset.csv'
+clean_data_filename = 'data/pred_data/analysis_dataset.csv'
 
-train_data_filename = '../data/pred_data/train_dataset.csv'
-valid_data_filename = '../data/pred_data/valid_dataset.csv'
-test_data_filename = '../data/pred_data/test_dataset.csv'
+train_data_filename = 'data/pred_data/train_dataset.csv'
+valid_data_filename = 'data/pred_data/valid_dataset.csv'
+test_data_filename = 'data/pred_data/test_dataset.csv'
 
-final_train_data_filename = '../data/pred_data/final/final_train_dataset.csv'
-final_test_data_filename_1 = '../data/pred_data/final/final_test_dataset_1.csv'
-final_test_data_filename_2 = '../data/pred_data/final/final_test_dataset_2.csv'
-final_test_data_filename_2_a = '../data/pred_data/final/final_test_dataset_2_a.csv'
+final_train_data_filename = 'data/pred_data/final/final_train_dataset.csv'
+final_test_data_filename_1 = 'data/pred_data/final/final_test_dataset_1.csv'
+final_test_data_filename_2 = 'data/pred_data/final/final_test_dataset_2.csv'
+final_test_data_filename_2_a = 'data/pred_data/final/final_test_dataset_2_a.csv'
 
 # DO NOT touch!!!
 final_test_dddddata = pd.read_csv(data_path)
@@ -317,7 +317,7 @@ for row in clean_data['Q10']:
 #save vocab
 vocab_df = pd.DataFrame(vocab, columns=['word'])
 ## Save the DataFrame to a CSV file
-vocab_df.to_csv('/Users/fermis/Desktop/CSC311/CSC311_ML/data/pred_data/final/final_vocab.csv', index=False)
+vocab_df.to_csv('data/pred_data/final/final_vocab.csv', index=False)
 #
 #print("Vocabulary Size: ", len(vocab_2))
 #print(vocab_2)
@@ -372,17 +372,17 @@ X_train_bow, t_train = make_bow(data_2, vocab)
 X_valid_bow, t_valid = make_bow(data_3, vocab)
 X_test_bow, t_test = make_bow(data_4, vocab)
 
-np.savetxt("../data/pred_data/matrix/X_train_bow.csv", X_train_bow,
+np.savetxt("data/pred_data/matrix/X_train_bow.csv", X_train_bow,
            delimiter=",", fmt='%i')
-np.savetxt("../data/pred_data/matrix/t_train.csv", t_train,
+np.savetxt("data/pred_data/matrix/t_train.csv", t_train,
            delimiter=",", fmt='%i')
-np.savetxt("../data/pred_data/matrix/X_valid_bow.csv", X_valid_bow,
+np.savetxt("data/pred_data/matrix/X_valid_bow.csv", X_valid_bow,
            delimiter=",", fmt='%i')
-np.savetxt("../data/pred_data/matrix/t_valid.csv", t_valid,
+np.savetxt("data/pred_data/matrix/t_valid.csv", t_valid,
            delimiter=",", fmt='%i')
-np.savetxt("../data/pred_data/matrix/X_test_bow.csv", X_test_bow,
+np.savetxt("data/pred_data/matrix/X_test_bow.csv", X_test_bow,
            delimiter=",", fmt='%i')
-np.savetxt("../data/pred_data/matrix/t_test.csv", t_test,
+np.savetxt("data/pred_data/matrix/t_test.csv", t_test,
            delimiter=",", fmt='%i')
 
 
