@@ -9,8 +9,8 @@ import data_cleaning as dc
 import numpy as np
 import seaborn as sns
 
-
-
+seed = 42
+np.random.seed(seed)
 
 if __name__ == '__main__':
 
@@ -49,15 +49,31 @@ if __name__ == '__main__':
         dtree.fit(X_train, t_train)
         a = dtree.score(X_train, t_train)
         v = dtree.score(X_valid, t_valid)
-        accuracies.append([i, a, "training"])
-        accuracies.append([i, v, "validation"])
+        accuracies.append([i, a, v])
 
-    acDF = pd.DataFrame(data=accuracies, columns=["depth", "score", "type"])
-    sns.catplot(data=acDF, kind="bar", x="depth", y="score", hue="type", palette="tab10")
+    f, ax = plt.subplots(figsize=(6, 6))
 
+    acDF = pd.DataFrame(data=accuracies, columns=["depth", "training", "validation"])
+    sns.set_color_codes("pastel")
+    sns.barplot(data=acDF, x="depth", y="training", label="Training", color="b")
+    sns.set_color_codes("muted")
+    sns.barplot(data=acDF, x="depth", y="validation", label="Validation", color="b")
+    for bar in ax.containers[0]:
+        bar.set_alpha(1)
+    for bar in ax.containers[1]:
+        bar.set_alpha(1)
+        x = bar.get_x()
+        center = x + 0.6/2
+        bar.set_x(center - 0.2)
+        bar.set_width(0.6)
+    ax.legend(ncol=2, loc="lower right", frameon=True)
+    ax.set(ylabel="Accuracy")
+
+
+    print(f'accuracy: {dtree.score(X_train, t_train)}')
+    print(f'validation: {dtree.score(X_valid, t_valid)}')
 
     #---------------------------------------------
-    # mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=5000, random_state=42)
 
     accuracies = []
     classes = np.unique(t_train)
@@ -94,12 +110,16 @@ if __name__ == '__main__':
     acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
     # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
 
-
     sns.set_style("darkgrid")
     palette = sns.cubehelix_palette(light=.8, n_colors=4)
     # flare is red & orange, crest is green & blue
     sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
     # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
+    print(f'accuracy: {mlp.score(X_train, t_train)}')
+    print(f'validation: {mlp.score(X_valid, t_valid)}')
+
+
+
 
 
     accuracies = []
@@ -115,12 +135,14 @@ if __name__ == '__main__':
             accuracies.append([lr.n_iter_[0], a, "training", s])
             accuracies.append([lr.n_iter_[0], v, "validation", s])
 
-    print(accuracies)
     # n-iter = 100
     # s = 1
 
     acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "strength"])
     sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="flare", linewidth=2)
+    print(f'lr')
+    print(f'accuracy: {lr.score(X_train, t_train)}')
+    print(f'validation: {lr.score(X_valid, t_valid)}')
 
 
 

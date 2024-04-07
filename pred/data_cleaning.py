@@ -13,6 +13,9 @@ import random
 import numpy as np
 import pandas as pd
 
+seed = 42
+np.random.seed(seed)
+
 #### Import Data ####
 # Load the dataset
 data_path = 'data/raw_data/clean_dataset.csv'
