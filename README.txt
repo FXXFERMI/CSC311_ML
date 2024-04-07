@@ -4,7 +4,7 @@ final model test etc. Please look at the git repo:
 
 https://github.com/FXXFERMI/CSC311_ML.git
 
-It includes everything for our project. It also has a very detail README.md, you can check on if you want to run our
+It includes everything for our project. It also has a very detail README.md, you can check on that if you want to run our
 code locally.
 
 p.s. we also have the git repo in our report, at the bottom of first page.
