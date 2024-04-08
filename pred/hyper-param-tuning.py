@@ -12,6 +12,89 @@ import seaborn as sns
 seed = 42
 np.random.seed(seed)
 
+class Expert:
+    def __init__(self, models, expert):
+        self.models = models
+        self.expert = expert
+        self.classes = 0
+
+    def first_predictions(self, X):
+        """
+        Returns the prediction for every datapoint for every model.
+        size is (X.shape[0], # models)
+        """
+        predictions = np.zeros((X.shape[0], len(self.models)))
+        for i, model in enumerate(self.models):
+            predictions[:, i] = model.predict(X)
+        # print(predictions)
+        return predictions
+
+    def setup(self, X, t):
+        self.predictions = self.first_predictions(X)
+        self.classes = np.unique(t)
+
+    def vote(self, X):
+        """
+        Return the prediction on a dataset X using a voting method.
+        Very simple, just looks at the majority answer for a given datapoint.
+        """
+        predictions = self.first_predictions(X)
+        final_prediction = np.array([np.bincount(row).argmax() for row in predictions.astype('int64')])
+        # print(final_prediction)
+        return final_prediction
+
+    def score(self, pred, t):
+        # pred = np.zeros((t.shape[0],)).astype('int64')
+        t = t.astype('int64')
+        # print(pred)
+        # print(np.count_nonzero(pred == t))
+        correct = np.count_nonzero(pred == t)
+        accuracy = correct / t.shape[0]
+        return accuracy
+
+    def expert_predict(self, X):
+        """
+        Turns the original very many feature input
+        into the prediction of each expert.
+        Then, performs the prediction!
+        """
+        predictions = self.first_predictions(X)
+        return self.expert.predict(predictions)
+
+    def expert_score(self, X, t):
+        """
+        Transforms the original input into the predictions from experts.
+        Then, scores the expert based on this new input.
+        """
+        predictions = self.first_predictions(X)
+        score = self.expert.score(predictions, t)
+        return score
+
+    def fit(self, X = None, t=None):
+        if X == None:
+            predictions = self.predictions
+        else:
+            predictions = self.first_predictions(X)
+        self.expert.fit(predictions, t)
+
+    def partial_fit(self, X = None, t=None, n_iter=100):
+        """
+        Partially fits the model based on the number of iterations
+        """
+        if X == None:
+            predictions = self.predictions
+        else:
+            predictions = self.first_predictions(X)
+
+        for i in range(n_iter):
+            self.expert.partial_fit(predictions, t, classes=self.classes)
+
+
+
+
+
+
+
 if __name__ == '__main__':
 
     t_train = dc.t_train
@@ -43,100 +126,6 @@ if __name__ == '__main__':
     X_test_df = pd.concat([features_test_df, X_test_bow_df], axis=1)
     X_test = X_test_df.values
 
-    accuracies = []
-    for i in range(1, 10):
-        dtree = DecisionTreeClassifier(max_depth=i)
-        dtree.fit(X_train, t_train)
-        a = dtree.score(X_train, t_train)
-        v = dtree.score(X_valid, t_valid)
-        accuracies.append([i, a, v])
-
-    f, ax = plt.subplots(figsize=(6, 6))
-
-    acDF = pd.DataFrame(data=accuracies, columns=["depth", "training", "validation"])
-    sns.set_color_codes("pastel")
-    sns.barplot(data=acDF, x="depth", y="training", label="Training", color="b")
-    sns.set_color_codes("muted")
-    sns.barplot(data=acDF, x="depth", y="validation", label="Validation", color="b")
-    for bar in ax.containers[0]:
-        bar.set_alpha(1)
-    for bar in ax.containers[1]:
-        bar.set_alpha(1)
-        x = bar.get_x()
-        center = x + 0.6/2
-        bar.set_x(center - 0.2)
-        bar.set_width(0.6)
-    ax.legend(ncol=2, loc="lower right", frameon=True)
-    ax.set(ylabel="Accuracy")
-
-    #---------------------------------------------
-
-    accuracies = []
-    classes = np.unique(t_train)
-    # sizes = [3, 5, 7]
-    # num_layers = [1, 2]
-    # sizes = [5, 7, 10]
-    # num_layers = [1, 2]
-    # sizes = [1, 7, 15]
-    # num_layers = [1]
-
-    sizes = [7]
-    num_layers = [2]
-
-    for s in sizes:
-        for n in num_layers:
-            sizes = [s] * n
-            mlp = MLPClassifier(hidden_layer_sizes=sizes, activation='relu')
-            for i in range(200):
-                mlp.partial_fit(X_train, t_train, classes=classes)
-                if i % 10 == 0:
-                    a = mlp.score(X_train, t_train)
-                    v = mlp.score(X_valid, t_valid)
-                    # accuracies.append([i, a, "training", f"{n}x{s}"])
-                    # accuracies.append([i, v, "validation", f"{n}x{s}"])
-                    # accuracies.append([i, a, "training", s])
-                    # accuracies.append([i, v, "validation", s])
-                    accuracies.append([i, a, "training", n])
-                    accuracies.append([i, v, "validation", n])
-
-
-    # ideal is 2x7
-    # n-iter is 100
-
-    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
-    acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
-
-    sns.set_style("darkgrid")
-    palette = sns.cubehelix_palette(light=.8, n_colors=4)
-    # flare is red & orange, crest is green & blue
-    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
-    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
-
-
-
-
-    accuracies = []
-    strenghts = [1, 2, 3]
-    # also tried 10, 50, low accuracy so not worth showing
-    for i in range(5, 100, 5):
-        print(i)
-        for s in strenghts:
-            lr = LogisticRegression(max_iter=i, C=s)
-            lr.fit(X_train, t_train)
-            a = lr.score(X_train, t_train)
-            v = lr.score(X_valid, t_valid)
-            # print(lr.n_iter_)
-            accuracies.append([lr.n_iter_[0], a, "training", s])
-            accuracies.append([lr.n_iter_[0], v, "validation", s])
-
-    # n-iter = 100
-    # s = 2
-
-    acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "strength"])
-    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="flare", linewidth=2)
-    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="Set2", linewidth=2)
-
-
     # -- Best Validation Models! --
 
     dtree = DecisionTreeClassifier(max_depth=3)
@@ -148,20 +137,105 @@ if __name__ == '__main__':
     lr = LogisticRegression(max_iter=100, C=2)
     lr.fit(X_train, t_train)
 
+    r = 6
 
     print(f'-- Decision Tree --')
-    print(f'accuracy: {round(dtree.score(X_train, t_train), 4)}')
-    print(f'validation: {round(dtree.score(X_valid, t_valid), 4)}')
+    print(f'accuracy: {round(dtree.score(X_train, t_train), r)}')
+    print(f'validation: {round(dtree.score(X_valid, t_valid), r)}')
 
     print()
     print(f'-- MLP --')
-    print(f'accuracy: {round(mlp.score(X_train, t_train), 4)}')
-    print(f'validation: {round(mlp.score(X_valid, t_valid), 4)}')
+    print(f'accuracy: {round(mlp.score(X_train, t_train), r)}')
+    print(f'validation: {round(mlp.score(X_valid, t_valid), r)}')
 
     print()
     print(f'-- Logistic Regression --')
-    print(f'accuracy: {round(lr.score(X_train, t_train), 4)}')
-    print(f'validation: {round(lr.score(X_valid, t_valid), 4)}')
+    print(f'accuracy: {round(lr.score(X_train, t_train), r)}')
+    print(f'validation: {round(lr.score(X_valid, t_valid), r)}')
+
+
+
+
+
+
+
+
+
+    models = [mlp, lr, dtree]
+    expert = MLPClassifier(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
+    E1 = Expert(models, expert)
+
+
+
+
+
+
+
+
+
+    train_acc = E1.score(E1.vote(X_train), t_train)
+    valid_acc = E1.score(E1.vote(X_valid), t_valid)
+
+    print()
+    print(f'Ensemble: ')
+    print(f'Training Accuracy: {round(train_acc, r)}')
+    print(f'Validation Accuracy: {round(valid_acc, r)}')
+
+
+
+    E1.setup(X_train, t_train)
+    E1.fit(t=t_train)
+    print(f'--')
+    MoE_train = E1.expert_score(X_train, t_train)
+    MoE_valid = E1.expert_score(X_valid, t_valid)
+    print(f'------')
+    print()
+    print(f'Gating: ')
+    print(f'Training Accuracy: {round(MoE_train, r)}')
+    print(f'Validation Accuracy: {round(MoE_valid, r)}')
+
+    accuracies = []
+    classes = np.unique(t_train)
+    # sizes = [3, 5, 7]
+    # num_layers = [1, 2]
+    # sizes = [5, 7, 10]
+    # num_layers = [1, 2]
+    # sizes = [1, 7, 15]
+    # num_layers = [1]
+
+    sizes = [3, 7, 30]
+    num_layers = [2]
+
+    for s in sizes:
+        for n in num_layers:
+            sizes = [s] * n
+            mlp_expert = MLPClassifier(hidden_layer_sizes=sizes, activation='relu')
+            E1 = Expert(models, mlp_expert)
+            E1.setup(X_train, t_train)
+            i = 10
+            for j in range(40):
+                E1.partial_fit(t=t_train, n_iter=i)
+                a = E1.expert_score(X_train, t_train)
+                v = E1.expert_score(X_valid, t_valid)
+                tot = i * (j + 1)
+                # accuracies.append([tot, a, "training", f"{n}x{s}"])
+                # accuracies.append([tot, v, "validation", f"{n}x{s}"])
+                accuracies.append([tot, a, "training", s])
+                accuracies.append([tot, v, "validation", s])
+                # accuracies.append([tot, a, "training", n])
+                # accuracies.append([tot, v, "validation", n])
+
+    # ideal is 2x7
+    # n-iter is 100
+
+    acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
+    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
+
+    sns.set_style("darkgrid")
+    palette = sns.cubehelix_palette(light=.8, n_colors=4)
+    # flare is red & orange, crest is green & blue
+    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
+    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
 
 
 
