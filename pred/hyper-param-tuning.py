@@ -159,7 +159,7 @@ if __name__ == '__main__':
     print(f'validation: {round(mlp.score(X_valid, t_valid), 4)}')
 
     print()
-    print(f'-- Linear Regression --')
+    print(f'-- Logistic Regression --')
     print(f'accuracy: {round(lr.score(X_train, t_train), 4)}')
     print(f'validation: {round(lr.score(X_valid, t_valid), 4)}')
 
