@@ -13,6 +13,17 @@ import seaborn as sns
 seed = 42
 np.random.seed(seed)
 
+
+def softmax(x):
+    """Compute softmax values for each sets of scores in x."""
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum(axis=0)  # only difference
+
+def pick_random(x):
+    a = x.sample(n=1, weights=x)
+    return a.index.to_list()[0]
+
+
 class Expert:
     def __init__(self, models, expert):
         self.models = models
@@ -33,37 +44,29 @@ class Expert:
         # predictions[:, i+1] = X
         return predictions
 
-    def setup(self, X_train, t_train):
-        self.predictions = self.small_predictions(X_train)
+
+    def generate_t(self, X_train, t_train):
+        """
+        Produces a vector indicating which expert we should listen to!
+        self.predictions shows the predictions for the given X_train value.
+        """
         self.classes = np.unique(t_train)
 
-        # print(self.predictions[:, 0])
-        # print(self.predictions[:, 1])
-        # print(self.predictions[:, 2])
-        # print(t)
-        self.targets = np.transpose(np.array([t_train == self.predictions[:, i] for i in range(len(models))]).astype('int64'))
-        # print(self.targets)
-        self.X = X_train
-        self.t = t_train
+        self.predictions = self.small_predictions(X_train)
+        targets = np.transpose(np.array([t_train == self.predictions[:, i] for i in range(len(models))]).astype('int64'))
+        return targets
 
 
-    def expert_predict(self, X):
-        """
-        Turns the original very many feature input
-        into the prediction of each expert.
-        Then, performs the prediction!
-        """
-        predictions = self.small_predictions(X)
-        return self.expert.predict_weights(predictions)
 
-    def expert_score(self):
+
+
+    def expert_score(self, X, t):
         """
         Transforms the original input into the predictions from experts.
         Then, scores the expert based on this new input.
         """
-        # score = self.expert.score(self.X, self.targets)
-        prediction = self.predict_weights(self.X)
-        standard_error = np.sum(np.square((prediction - self.targets))) / (prediction.shape[0] * prediction.shape[1])
+        weights = self.predict_weights(X)
+        standard_error = np.sum(np.square((weights - t))) / (weights.shape[0] * weights.shape[1])
         return standard_error
 
     # def softmax(self, x):
@@ -71,16 +74,38 @@ class Expert:
     #     e_x = np.exp(x - np.max(x))
     #     return e_x / e_x.sum(axis=0)  # only difference
 
-    def score(self, X, t):
-        predictions = self.expert_predict()
-        correct = np.count_nonzero(self.t.astype('int64') == predictions.astype('int64'))
-        acc = correct / self.t.shape[0]
+    def score(self, X, t_actual):
+        """
+        Figure out the results after deferring to an expert (deferee)
+        Calculate how often our model was correct after deferring to that expert (correct)
+        Figure out the accuracy (acc)
+        """
+        deferee = self.defer_to_expert(X)
+        correct = np.count_nonzero(t_actual.astype('int64') == deferee.astype('int64'))
+        acc = correct / t_actual.shape[0]
 
         return acc
 
-    def expert_predict(self):
-        weights = self.predict_weights(self.X)
-        indices = np.array(np.argmax(weights, axis=1))
+
+    def defer_to_expert(self, X):
+        """
+        Our main model will pick which model to use for each input.
+        We will then return the value that the given model is suggesting.
+
+        Weights represents how badly the model wants to use that expert's prediction.
+        Indices represents the index of the expert the model wants to defer to
+        """
+        self.predictions = self.small_predictions(X)
+        # weights = self.predict_weights(X)
+        weights = pd.DataFrame(self.predict_weights(X))
+        weights = weights.apply(softmax, axis=1)
+        # print(weights[:1])
+        # print(weights[:1].sample(n=1, weights=weights[0], axis=1))
+        selection = weights.apply(pick_random, axis=1)
+        indices = selection.to_numpy()
+
+        # indices = np.array(np.argmax(weights, axis=1))
+
         predictions = np.array([self.predictions[i][j] for i, j in enumerate(indices)])
         return predictions.astype('int64')
 
@@ -89,26 +114,23 @@ class Expert:
         return weights
 
     def format_X(self, X=None):
-        if X == None:
-            X = self.X
-        else:
-            X = X
+        pass
 
 
 
 
-    def fit(self):
-        self.expert.fit(self.X, self.targets)
+    def fit(self, X, t):
+        self.expert.fit(X, t)
 
         # self.expert.fit(predictions, t)
 
-    def partial_fit(self, n_iter=100):
+    def partial_fit(self, X, t, n_iter=100):
         """
         Partially fits the model based on the number of iterations
         """
 
         for i in range(n_iter):
-            self.expert.partial_fit(self.X, self.targets)
+            self.expert.partial_fit(X, t)
 
 
 
@@ -186,18 +208,23 @@ if __name__ == '__main__':
     expert = MLPRegressor(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
     # expert = LogisticRegression(max_iter=100, C=2)
     E1 = Expert(models, expert)
-    E1.setup(X_train[:10], t_train[:10])
-    E1.partial_fit(10)
+    t_train2 = E1.generate_t(X_train[:10], t_train[:10])
+    E1.partial_fit(X=X_train[:10], t=t_train2)
     E1.predict_weights(X_train[:10])
 
     print(f'score')
     print(E1.score(X_train[:10], t_train[:10]))
+    print(t_train2)
+    print(E1.defer_to_expert(X_train[:10]))
+    print(t_train[:10])
 
 
     print()
     print(f'Updated MoE:')
-    MoE_train = E1.expert_score()
-    MoE_valid = E1.expert_score()
+    MoE_train = E1.expert_score(X_train[:10], t_train2)
+
+    t_trainV = E1.generate_t(X_valid[:10], t_valid[:10])
+    MoE_valid = E1.expert_score(X_valid[:10], t_trainV)
     print(f'Training Accuracy: {round(MoE_train, r)}')
     print(f'Validation Accuracy: {round(MoE_valid, r)}')
 
@@ -224,16 +251,18 @@ if __name__ == '__main__':
     for s in sizes:
         for n in num_layers:
             sizes = [s] * n
-            mlp_expert = MLPRegressor(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
+            mlp_expert = MLPRegressor(hidden_layer_sizes=sizes, activation='relu')
             E1 = Expert(models, mlp_expert)
-            E1.setup(X_train, t_train)
+            tE_train = E1.generate_t(X_train, t_train)
+            tE_valid = E1.generate_t(X_valid, t_valid)
 
-
-            i = 10
+            i = 5
             for j in range(40):
-                E1.partial_fit(n_iter=i)
-                a = E1.expert_score()
-                v = E1.expert_score()
+                E1.partial_fit(X=X_train, t=tE_train, n_iter=i)
+                # a = E1.expert_score(X_train, tE_train)
+                # v = E1.expert_score(X_valid, tE_valid)
+                a = E1.score(X_train, t_train)
+                v = E1.score(X_valid, t_valid)
                 tot = i * (j + 1)
                 print(tot)
                 # accuracies.append([tot, a, "training", f"{n}x{s}"])
@@ -244,7 +273,11 @@ if __name__ == '__main__':
                 # accuracies.append([tot, v, "validation", n])
 
     # ideal is 2x7
-    # n-iter is 100
+    # n-iter is 65
+
+    # print(E1.score(X_test, t_test))
+
+
 
     acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
     # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
