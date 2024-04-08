@@ -113,9 +113,9 @@ if __name__ == '__main__':
     # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
 
     accuracies = []
-    strenghts = [1, 10, 100]
+    strenghts = [1, 2, 3]
     # also tried 10, 50, low accuracy so not worth showing
-    for i in range(10, 200, 10):
+    for i in range(10, 300, 10):
         print(i)
         for s in strenghts:
             lr = LogisticRegression(max_iter=i, C=s, solver='lbfgs')
@@ -140,7 +140,7 @@ if __name__ == '__main__':
     acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "strength"])
     # flare for close
     # Set2 for far
-    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="Set2",
+    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="flare",
                 linewidth=2)
     # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="strength", style="type", palette="Set2", linewidth=2)
 
