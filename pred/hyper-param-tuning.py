@@ -1,6 +1,7 @@
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import classification_report, accuracy_score, precision_score
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -18,40 +19,33 @@ class Expert:
         self.expert = expert
         self.classes = 0
 
-    def first_predictions(self, X):
+    def small_predictions(self, X):
         """
         Returns the prediction for every datapoint for every model.
         size is (X.shape[0], # models)
         """
-        predictions = np.zeros((X.shape[0], len(self.models) + X.shape[1]))
+        # predictions = np.zeros((X.shape[0], len(self.models) + X.shape[1]))
+        predictions = np.zeros((X.shape[0], len(self.models)))
+
         for i, model in enumerate(self.models):
             predictions[:, i] = model.predict(X)
-        predictions = np.concatenate((predictions, X), axis=1)
+        # predictions = np.concatenate((predictions, X), axis=1)
         # predictions[:, i+1] = X
         return predictions
 
-    def setup(self, X, t):
-        self.predictions = self.first_predictions(X)
-        self.classes = np.unique(t)
+    def setup(self, X_train, t_train):
+        self.predictions = self.small_predictions(X_train)
+        self.classes = np.unique(t_train)
 
-    def vote(self, X):
-        """
-        Return the prediction on a dataset X using a voting method.
-        Very simple, just looks at the majority answer for a given datapoint.
-        """
-        predictions = self.first_predictions(X)
-        final_prediction = np.array([np.bincount(row).argmax() for row in predictions.astype('int64')])
-        # print(final_prediction)
-        return final_prediction
+        # print(self.predictions[:, 0])
+        # print(self.predictions[:, 1])
+        # print(self.predictions[:, 2])
+        # print(t)
+        self.targets = np.transpose(np.array([t_train == self.predictions[:, i] for i in range(len(models))]).astype('int64'))
+        # print(self.targets)
+        self.X = X_train
+        self.t = t_train
 
-    def score(self, pred, t):
-        # pred = np.zeros((t.shape[0],)).astype('int64')
-        t = t.astype('int64')
-        # print(pred)
-        # print(np.count_nonzero(pred == t))
-        correct = np.count_nonzero(pred == t)
-        accuracy = correct / t.shape[0]
-        return accuracy
 
     def expert_predict(self, X):
         """
@@ -59,36 +53,62 @@ class Expert:
         into the prediction of each expert.
         Then, performs the prediction!
         """
-        predictions = self.first_predictions(X)
-        return self.expert.predict(predictions)
+        predictions = self.small_predictions(X)
+        return self.expert.predict_weights(predictions)
 
-    def expert_score(self, X, t):
+    def expert_score(self):
         """
         Transforms the original input into the predictions from experts.
         Then, scores the expert based on this new input.
         """
-        predictions = self.first_predictions(X)
-        score = self.expert.score(predictions, t)
-        return score
+        # score = self.expert.score(self.X, self.targets)
+        prediction = self.predict_weights(self.X)
+        standard_error = np.sum(np.square((prediction - self.targets))) / (prediction.shape[0] * prediction.shape[1])
+        return standard_error
 
-    def fit(self, X = None, t=None):
+    # def softmax(self, x):
+    #     """Compute softmax values for each sets of scores in x."""
+    #     e_x = np.exp(x - np.max(x))
+    #     return e_x / e_x.sum(axis=0)  # only difference
+
+    def score(self, X, t):
+        predictions = self.expert_predict()
+        correct = np.count_nonzero(self.t.astype('int64') == predictions.astype('int64'))
+        acc = correct / self.t.shape[0]
+
+        return acc
+
+    def expert_predict(self):
+        weights = self.predict_weights(self.X)
+        indices = np.array(np.argmax(weights, axis=1))
+        predictions = np.array([self.predictions[i][j] for i, j in enumerate(indices)])
+        return predictions.astype('int64')
+
+    def predict_weights(self, X):
+        weights = self.expert.predict(X)
+        return weights
+
+    def format_X(self, X=None):
         if X == None:
-            predictions = self.predictions
+            X = self.X
         else:
-            predictions = self.first_predictions(X)
-        self.expert.fit(predictions, t)
+            X = X
 
-    def partial_fit(self, X = None, t=None, n_iter=100):
+
+
+
+    def fit(self):
+        self.expert.fit(self.X, self.targets)
+
+        # self.expert.fit(predictions, t)
+
+    def partial_fit(self, n_iter=100):
         """
         Partially fits the model based on the number of iterations
         """
-        if X == None:
-            predictions = self.predictions
-        else:
-            predictions = self.first_predictions(X)
 
         for i in range(n_iter):
-            self.expert.partial_fit(predictions, t, classes=self.classes)
+            self.expert.partial_fit(self.X, self.targets)
 
 
 
@@ -163,16 +183,21 @@ if __name__ == '__main__':
 
 
     models = [mlp, lr, dtree]
-    # expert = MLPClassifier(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
-    expert = LogisticRegression(max_iter=100, C=2)
+    expert = MLPRegressor(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
+    # expert = LogisticRegression(max_iter=100, C=2)
     E1 = Expert(models, expert)
-    E1.setup(X_train, t_train)
-    E1.fit(t=t_train)
+    E1.setup(X_train[:10], t_train[:10])
+    E1.partial_fit(10)
+    E1.predict_weights(X_train[:10])
+
+    print(f'score')
+    print(E1.score(X_train[:10], t_train[:10]))
+
 
     print()
     print(f'Updated MoE:')
-    MoE_train = E1.expert_score(X_train, t_train)
-    MoE_valid = E1.expert_score(X_valid, t_valid)
+    MoE_train = E1.expert_score()
+    MoE_valid = E1.expert_score()
     print(f'Training Accuracy: {round(MoE_train, r)}')
     print(f'Validation Accuracy: {round(MoE_valid, r)}')
 
@@ -182,70 +207,54 @@ if __name__ == '__main__':
 
 
 
-    # train_acc = E1.score(E1.vote(X_train), t_train)
-    # valid_acc = E1.score(E1.vote(X_valid), t_valid)
-    #
-    # print()
-    # print(f'Ensemble: ')
-    # print(f'Training Accuracy: {round(train_acc, r)}')
-    # print(f'Validation Accuracy: {round(valid_acc, r)}')
-    #
-    #
-    #
-    # E1.setup(X_train, t_train)
-    # E1.fit(t=t_train)
-    # print(f'--')
-    # MoE_train = E1.expert_score(X_train, t_train)
-    # MoE_valid = E1.expert_score(X_valid, t_valid)
-    # print(f'------')
-    # print()
-    # print(f'Gating: ')
-    # print(f'Training Accuracy: {round(MoE_train, r)}')
-    # print(f'Validation Accuracy: {round(MoE_valid, r)}')
-    #
-    # accuracies = []
-    # classes = np.unique(t_train)
-    # # sizes = [3, 5, 7]
-    # # num_layers = [1, 2]
-    # # sizes = [5, 7, 10]
-    # # num_layers = [1, 2]
-    # # sizes = [1, 7, 15]
-    # # num_layers = [1]
-    #
-    # sizes = [3, 7, 30]
-    # num_layers = [2]
-    #
-    # for s in sizes:
-    #     for n in num_layers:
-    #         sizes = [s] * n
-    #         mlp_expert = MLPClassifier(hidden_layer_sizes=sizes, activation='relu')
-    #         E1 = Expert(models, mlp_expert)
-    #         E1.setup(X_train, t_train)
-    #         i = 10
-    #         for j in range(40):
-    #             E1.partial_fit(t=t_train, n_iter=i)
-    #             a = E1.expert_score(X_train, t_train)
-    #             v = E1.expert_score(X_valid, t_valid)
-    #             tot = i * (j + 1)
-    #             # accuracies.append([tot, a, "training", f"{n}x{s}"])
-    #             # accuracies.append([tot, v, "validation", f"{n}x{s}"])
-    #             accuracies.append([tot, a, "training", s])
-    #             accuracies.append([tot, v, "validation", s])
-    #             # accuracies.append([tot, a, "training", n])
-    #             # accuracies.append([tot, v, "validation", n])
-    #
-    # # ideal is 2x7
-    # # n-iter is 100
-    #
-    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
-    # # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
-    #
-    # sns.set_style("darkgrid")
-    # palette = sns.cubehelix_palette(light=.8, n_colors=4)
-    # # flare is red & orange, crest is green & blue
-    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
-    # # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
-    #
+
+
+    accuracies = []
+    classes = np.unique(t_train)
+    # sizes = [3, 5, 7]
+    # num_layers = [1, 2]
+    # sizes = [5, 7, 10]
+    # num_layers = [1, 2]
+    # sizes = [1, 7, 15]
+    # num_layers = [1]
+
+    sizes = [7]
+    num_layers = [2]
+
+    for s in sizes:
+        for n in num_layers:
+            sizes = [s] * n
+            mlp_expert = MLPRegressor(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
+            E1 = Expert(models, mlp_expert)
+            E1.setup(X_train, t_train)
+
+
+            i = 10
+            for j in range(40):
+                E1.partial_fit(n_iter=i)
+                a = E1.expert_score()
+                v = E1.expert_score()
+                tot = i * (j + 1)
+                print(tot)
+                # accuracies.append([tot, a, "training", f"{n}x{s}"])
+                # accuracies.append([tot, v, "validation", f"{n}x{s}"])
+                accuracies.append([tot, a, "training", s])
+                accuracies.append([tot, v, "validation", s])
+                # accuracies.append([tot, a, "training", n])
+                # accuracies.append([tot, v, "validation", n])
+
+    # ideal is 2x7
+    # n-iter is 100
+
+    acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
+    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
+
+    sns.set_style("darkgrid")
+    palette = sns.cubehelix_palette(light=.8, n_colors=4)
+    # flare is red & orange, crest is green & blue
+    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
+    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
+
 
 
 

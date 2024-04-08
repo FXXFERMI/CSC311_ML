@@ -63,7 +63,7 @@ def train_and_evaluate_k_fold(folds, model_init_func):
         model.fit(X_train, y_train)
 
         # Predict and evaluate
-        predictions = model.predict(X_valid)
+        predictions = model.predict_weights(X_valid)
         accuracy = np.mean(predictions == y_valid)
         acc_scores.append(accuracy)
 
