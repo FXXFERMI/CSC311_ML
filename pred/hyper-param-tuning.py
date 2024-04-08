@@ -23,10 +23,11 @@ class Expert:
         Returns the prediction for every datapoint for every model.
         size is (X.shape[0], # models)
         """
-        predictions = np.zeros((X.shape[0], len(self.models)))
+        predictions = np.zeros((X.shape[0], len(self.models) + X.shape[1]))
         for i, model in enumerate(self.models):
             predictions[:, i] = model.predict(X)
-        # print(predictions)
+        predictions = np.concatenate((predictions, X), axis=1)
+        # predictions[:, i+1] = X
         return predictions
 
     def setup(self, X, t):
@@ -162,81 +163,89 @@ if __name__ == '__main__':
 
 
     models = [mlp, lr, dtree]
-    expert = MLPClassifier(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
+    # expert = MLPClassifier(max_iter=100, hidden_layer_sizes=(7, 7), activation='relu')
+    expert = LogisticRegression(max_iter=100, C=2)
     E1 = Expert(models, expert)
-
-
-
-
-
-
-
-
-
-    train_acc = E1.score(E1.vote(X_train), t_train)
-    valid_acc = E1.score(E1.vote(X_valid), t_valid)
-
-    print()
-    print(f'Ensemble: ')
-    print(f'Training Accuracy: {round(train_acc, r)}')
-    print(f'Validation Accuracy: {round(valid_acc, r)}')
-
-
-
     E1.setup(X_train, t_train)
     E1.fit(t=t_train)
-    print(f'--')
+
+    print()
+    print(f'Updated MoE:')
     MoE_train = E1.expert_score(X_train, t_train)
     MoE_valid = E1.expert_score(X_valid, t_valid)
-    print(f'------')
-    print()
-    print(f'Gating: ')
     print(f'Training Accuracy: {round(MoE_train, r)}')
     print(f'Validation Accuracy: {round(MoE_valid, r)}')
 
-    accuracies = []
-    classes = np.unique(t_train)
-    # sizes = [3, 5, 7]
-    # num_layers = [1, 2]
-    # sizes = [5, 7, 10]
-    # num_layers = [1, 2]
-    # sizes = [1, 7, 15]
-    # num_layers = [1]
 
-    sizes = [3, 7, 30]
-    num_layers = [2]
 
-    for s in sizes:
-        for n in num_layers:
-            sizes = [s] * n
-            mlp_expert = MLPClassifier(hidden_layer_sizes=sizes, activation='relu')
-            E1 = Expert(models, mlp_expert)
-            E1.setup(X_train, t_train)
-            i = 10
-            for j in range(40):
-                E1.partial_fit(t=t_train, n_iter=i)
-                a = E1.expert_score(X_train, t_train)
-                v = E1.expert_score(X_valid, t_valid)
-                tot = i * (j + 1)
-                # accuracies.append([tot, a, "training", f"{n}x{s}"])
-                # accuracies.append([tot, v, "validation", f"{n}x{s}"])
-                accuracies.append([tot, a, "training", s])
-                accuracies.append([tot, v, "validation", s])
-                # accuracies.append([tot, a, "training", n])
-                # accuracies.append([tot, v, "validation", n])
 
-    # ideal is 2x7
-    # n-iter is 100
 
-    acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
-    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
 
-    sns.set_style("darkgrid")
-    palette = sns.cubehelix_palette(light=.8, n_colors=4)
-    # flare is red & orange, crest is green & blue
-    sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
-    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
 
+    # train_acc = E1.score(E1.vote(X_train), t_train)
+    # valid_acc = E1.score(E1.vote(X_valid), t_valid)
+    #
+    # print()
+    # print(f'Ensemble: ')
+    # print(f'Training Accuracy: {round(train_acc, r)}')
+    # print(f'Validation Accuracy: {round(valid_acc, r)}')
+    #
+    #
+    #
+    # E1.setup(X_train, t_train)
+    # E1.fit(t=t_train)
+    # print(f'--')
+    # MoE_train = E1.expert_score(X_train, t_train)
+    # MoE_valid = E1.expert_score(X_valid, t_valid)
+    # print(f'------')
+    # print()
+    # print(f'Gating: ')
+    # print(f'Training Accuracy: {round(MoE_train, r)}')
+    # print(f'Validation Accuracy: {round(MoE_valid, r)}')
+    #
+    # accuracies = []
+    # classes = np.unique(t_train)
+    # # sizes = [3, 5, 7]
+    # # num_layers = [1, 2]
+    # # sizes = [5, 7, 10]
+    # # num_layers = [1, 2]
+    # # sizes = [1, 7, 15]
+    # # num_layers = [1]
+    #
+    # sizes = [3, 7, 30]
+    # num_layers = [2]
+    #
+    # for s in sizes:
+    #     for n in num_layers:
+    #         sizes = [s] * n
+    #         mlp_expert = MLPClassifier(hidden_layer_sizes=sizes, activation='relu')
+    #         E1 = Expert(models, mlp_expert)
+    #         E1.setup(X_train, t_train)
+    #         i = 10
+    #         for j in range(40):
+    #             E1.partial_fit(t=t_train, n_iter=i)
+    #             a = E1.expert_score(X_train, t_train)
+    #             v = E1.expert_score(X_valid, t_valid)
+    #             tot = i * (j + 1)
+    #             # accuracies.append([tot, a, "training", f"{n}x{s}"])
+    #             # accuracies.append([tot, v, "validation", f"{n}x{s}"])
+    #             accuracies.append([tot, a, "training", s])
+    #             accuracies.append([tot, v, "validation", s])
+    #             # accuracies.append([tot, a, "training", n])
+    #             # accuracies.append([tot, v, "validation", n])
+    #
+    # # ideal is 2x7
+    # # n-iter is 100
+    #
+    # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "size"])
+    # # acDF = pd.DataFrame(data=accuracies, columns=["n-iter", "score", "type", "depth"])
+    #
+    # sns.set_style("darkgrid")
+    # palette = sns.cubehelix_palette(light=.8, n_colors=4)
+    # # flare is red & orange, crest is green & blue
+    # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="size", style="type", linewidth=2, palette="flare")
+    # # sns.relplot(data=acDF, kind="line", x="n-iter", y="score", hue="depth", style="type", linewidth=2, palette="crest")
+    #
 
 
 
