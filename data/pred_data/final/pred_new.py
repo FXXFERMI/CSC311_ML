@@ -34,12 +34,12 @@ def predict(x):
     # Calculate the probability for each city
     probabilities = pred(x, model_est)
 
-    #print("Shape of probabilities:", probabilities)
+    # print("Shape of probabilities:", probabilities)
     # Get the index of the maximum probability
     max_index = np.argmax(probabilities)
     # Predict the city with the highest probability
     prediction = y[max_index]
-    #print("Predicted:", prediction)
+    # print("Predicted:", prediction)
     return prediction
 
 
@@ -118,7 +118,7 @@ def predict_all(filename):
         clean_data[option] = 0
 
     for i, options_lst in clean_data_Q5.items():
-        #print(i, options_lst)
+        # print(i, options_lst)
         if options_lst is not np.nan:
             for lst in options_lst:
                 options = lst.split(',')
@@ -215,8 +215,8 @@ def predict_all(filename):
     vocab_path = 'final_vocab.csv'
     vocab_df = pd.read_csv(vocab_path)
     vocab = vocab_df['word'].tolist()
-    #print("Vocabulary Size: ", len(vocab))
-    #print(vocab)
+    # print("Vocabulary Size: ", len(vocab))
+    # print(vocab)
 
     # create X_test_Q10 here
     test_data_lst = list(clean_data['Q10'])
@@ -229,12 +229,13 @@ def predict_all(filename):
     # print(X_test_df.head())
     predictions = []
     for index, test_example in X_test_df.iterrows():
-        #print("Shape of test_example:", test_example.values.shape)
+        # print("Shape of test_example:", test_example.values.shape)
         # obtain a prediction for this test example
         pred_res = predict(test_example.values)
         predictions.append(pred_res)
 
     return predictions
+
 
 #####################################################################################################################
 ######## Helper Functions #######
@@ -294,9 +295,6 @@ def softmax(z):
     exp_z = np.exp(z - np.max(z))
     return exp_z / exp_z.sum(axis=0)
 
+
 def pred(x, w):
     return softmax(np.dot(x, w))
-
-if __name__ == '__main__':
-    res = predict_all('final_test_dataset_2.csv')
-    print(res)
